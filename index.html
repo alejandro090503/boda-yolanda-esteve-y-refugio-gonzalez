@@ -1,0 +1,2508 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no,viewport-fit=cover">
+<title>Yoly y Refugio · 6 de Marzo 2027</title>
+<meta name="description" content="Boda de Yoly Estevez y J. Refugio González · Sábado 6 de marzo de 2027 · Anaheim, California">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Yoly y Refugio · VI · III · MMXXVII">
+<meta property="og:description" content="Sábado 6 de marzo de 2027 · Anaheim, California">
+<meta property="og:image" content="https://boda-yolanda-esteve-y-refugio-gonzalez.vercel.app/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="es_MX">
+<meta name="twitter:card" content="summary_large_image">
+<script>if('scrollRestoration' in history){history.scrollRestoration='manual';}window.scrollTo(0,0);</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Italiana&family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600;1,700&family=Great+Vibes&display=swap" rel="stylesheet">
+<style>
+:root{
+  /* Paleta del cliente: champán #F7E7CE + dorado #D4AF37 (acabado metálico) sobre el carbón de la plantilla. */
+  --bg:#17150F;            /* carbon calido */
+  --surface:#201C15;       /* un escalon mas claro para alternar secciones */
+  --card:#262118;          /* panel sobre el carbon */
+  --accent:#D4AF37;        /* oro */
+  --dark:#FDFDFC;          /* texto principal (antes era el oscuro: ahora invertido) */
+  --text:#F7E7CE;          /* arena clara, texto de cuerpo */
+  --gold:#D4AF37;
+  --gold-light:#F0D98C;
+  --accent-deep:#A8862A;
+  --blush:#F3E3C3;
+  --border:rgba(212,175,55,.34);
+  --border-light:rgba(212,175,55,.2);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{overflow-x:hidden;max-width:100vw}
+html{scroll-behavior:auto}
+body{background:var(--bg);color:var(--text);font-family:'Cormorant Garamond',serif;font-weight:500;font-size:18px;-webkit-text-size-adjust:100%;text-size-adjust:100%}
+
+/* ── ENVELOPE ── */
+#envelope-screen{position:fixed;inset:0;z-index:9000;background:#17150F;overflow:hidden;cursor:pointer}
+#envImage,#envVideo{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center}
+#envImage{opacity:0}
+#envVideo{opacity:0}
+.env-tap{position:absolute;bottom:72px;left:50%;transform:translateX(-50%);z-index:10;font-family:'Italiana',serif;font-size:14px;letter-spacing:5px;background:rgba(253,253,252,.72);backdrop-filter:blur(2px);border-radius:50px;text-transform:uppercase;color:#0a0a0a;opacity:0;padding:16px 40px;white-space:nowrap;border:1px solid rgba(212,175,55,.45);border-radius:50px;background:rgba(250,247,242,.25);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px)}
+.env-tap::before{content:'';position:absolute;inset:0;border-radius:50px;animation:envpulse 2s ease-out infinite}
+@keyframes envpulse{0%{transform:scale(1);opacity:.6}100%{transform:scale(1.28);opacity:0}}
+#env-flash{position:fixed;inset:0;z-index:9999;background:#0a0a0a;opacity:0;pointer-events:none}
+
+/* ── PETALS ── */
+#petals{position:fixed;inset:0;z-index:20;pointer-events:none;overflow:hidden}
+.petal{position:absolute;top:-40px;will-change:transform}
+
+/* ── LAYOUT ── */
+.wrap{max-width:440px;margin:0 auto;overflow:hidden;position:relative;z-index:1;visibility:hidden}
+.rv{opacity:0}
+.sec{padding:min(11vh,88px) 32px;position:relative}
+.sec-sm{padding:min(7vh,56px) 32px;position:relative}
+
+/* ── ORNAMENT ── */
+.orn{display:flex;align-items:center;gap:12px;margin:0 auto 28px;max-width:260px}
+.orn.bot{margin:24px auto 0}
+.orn-line{flex:1;height:1px;background:linear-gradient(to right,transparent,var(--gold),transparent)}
+.orn-diamond{width:6px;height:6px;background:var(--gold);transform:rotate(45deg);flex-shrink:0;opacity:.75}
+.orn-diamond-sm{width:4px;height:4px;background:var(--gold);transform:rotate(45deg);flex-shrink:0;opacity:.45;margin:0 2px}
+
+/* ── TYPOGRAPHY ── */
+.eyebrow{font-family:'Cormorant Garamond',serif;font-style:italic;font-weight:700;font-size:18px;letter-spacing:.12em;text-transform:uppercase;color:var(--gold);text-align:center;margin-bottom:14px;display:block}
+.heading{font-family:'Great Vibes',cursive;font-size:56px;color:var(--dark);text-align:center;line-height:1.1;margin-bottom:6px}
+.heading-sm{font-family:'Great Vibes',cursive;font-size:42px;color:var(--dark);text-align:center;line-height:1.1}
+.sub{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:18px;color:var(--accent-deep);text-align:center;margin-bottom:0;opacity:1;line-height:1.65}
+.italiana{font-family:'Italiana',serif;font-size:15px;letter-spacing:.18em;text-transform:uppercase;color:var(--dark)}
+
+/* ── SCROLL HINT ── */
+.scroll-hint{position:absolute;bottom:18px;left:50%;transform:translateX(-50%);z-index:3;display:flex;flex-direction:column;align-items:center;gap:10px;opacity:1;transition:opacity .7s;white-space:nowrap}
+.scroll-hint.hidden{opacity:0;pointer-events:none}
+.scroll-hint-txt{font-family:'Italiana',serif;font-size:12px;letter-spacing:5px;text-transform:uppercase;color:rgba(212,175,55,.75)}
+.scroll-hint-arrow{animation:scrollbounce 1.8s ease-in-out infinite}
+.scroll-hint-arrow svg{width:24px;height:24px;stroke:var(--gold);stroke-width:1.4;fill:none;stroke-linecap:round;stroke-linejoin:round;opacity:.7}
+@keyframes scrollbounce{0%,100%{transform:translateY(0)}50%{transform:translateY(8px)}}
+
+/* ── HERO ── */
+#hero{position:relative;height:100vh;height:100dvh;min-height:620px;display:flex;align-items:center;justify-content:center;overflow:hidden}
+.hero-bg{position:absolute;inset:0;background:url('portada.jpg') center/cover no-repeat;background-color:var(--surface);will-change:transform;animation:heroFloat 22s ease-in-out infinite}
+@keyframes heroFloat{0%{transform:scale(1.07) translate(0,0)}20%{transform:scale(1.09) translate(-1.1%,-.7%)}40%{transform:scale(1.08) translate(.9%,-1.3%)}60%{transform:scale(1.1) translate(1.2%,.6%)}80%{transform:scale(1.08) translate(-.7%,1.1%)}100%{transform:scale(1.07) translate(0,0)}}
+.hero-sheen{position:absolute;inset:0;z-index:1;pointer-events:none;overflow:hidden}
+.hero-sheen::after{content:'';position:absolute;top:-25%;left:-60%;width:55%;height:150%;background:linear-gradient(100deg,transparent 0%,rgba(255,240,232,.08) 32%,rgba(255,226,214,.2) 50%,rgba(255,240,232,.08) 68%,transparent 100%);transform:skewX(-14deg);animation:heroSheen 11s ease-in-out infinite}
+@keyframes heroSheen{0%{left:-60%}55%,100%{left:150%}}
+.hero-veil{position:absolute;inset:0;background:linear-gradient(to bottom,rgba(10,10,10,.42) 0%,rgba(10,10,10,.2) 40%,rgba(10,10,10,.3) 75%,rgba(10,10,10,.5) 100%)}
+.hero-frame{position:absolute;inset:20px;border:1px solid rgba(212,175,55,.35);pointer-events:none}
+.hero-frame::before{content:'';position:absolute;inset:6px;border:1px solid rgba(212,175,55,.15)}
+.hero-corner{position:absolute;width:24px;height:24px}
+.hero-corner svg{width:24px;height:24px}
+.hc-tl{top:-1px;left:-1px}
+.hc-tr{top:-1px;right:-1px;transform:scaleX(-1)}
+.hc-bl{bottom:-1px;left:-1px;transform:scaleY(-1)}
+.hc-br{bottom:-1px;right:-1px;transform:scale(-1)}
+.hero-content{position:relative;z-index:2;text-align:center;padding:0 32px}
+.hero-tag{font-family:'Cormorant Garamond',serif;font-style:italic;font-weight:600;font-size:17px;letter-spacing:.2em;text-transform:uppercase;color:#F3E3C3;display:block;margin-top:16px;text-shadow:0 1px 10px rgba(0,0,0,.7)}
+.hero-bride,.hero-groom{font-family:'Great Vibes',cursive;font-size:clamp(68px,21vw,94px);color:#FDFDFC;line-height:1;display:block;text-shadow:0 2px 20px rgba(0,0,0,.4),0 1px 6px rgba(0,0,0,.3)}
+.hero-amp{font-family:'Cormorant Garamond',serif;font-style:italic;font-weight:600;font-size:38px;color:#F3E3C3;display:block;margin:.12em 0;text-shadow:0 1px 10px rgba(0,0,0,.6)}
+.hero-date{font-family:'Cormorant Garamond',serif;font-style:italic;font-weight:600;font-size:21px;letter-spacing:4px;color:#F3E3C3;margin-top:22px;display:block;text-shadow:0 1px 10px rgba(0,0,0,.7)}
+
+/* ── CARD (inner-border pattern from boda-paola-david) ── */
+.card{background:var(--card);border:1px solid var(--border);border-radius:4px;padding:36px 22px;position:relative;margin:0 4px;max-width:100%}
+.card::before{content:'';position:absolute;inset:10px;border:1px solid var(--border-light);border-radius:2px;pointer-events:none}
+
+/* ── COUNTDOWN ── */
+.cd-row{display:flex;align-items:center;justify-content:center;margin:24px 0 0}
+.cd-unit{display:flex;flex-direction:column;align-items:center;padding:0 clamp(10px,4vw,22px)}
+.cd-value{font-family:'Cormorant Garamond',serif;font-size:clamp(38px,11vw,54px);font-weight:400;color:var(--dark);line-height:1;letter-spacing:-1px;transition:transform .15s,opacity .15s}
+.cd-value.flip{transform:translateY(-8px);opacity:0}
+.cd-lbl{font-family:'Cormorant Garamond',serif;font-style:italic;font-weight:700;font-size:16px;letter-spacing:.1em;text-transform:uppercase;color:var(--gold);margin-top:6px}
+.cd-sep{display:flex;flex-direction:column;gap:6px;padding-bottom:20px;opacity:.3}
+.cd-dot{width:3px;height:3px;background:var(--gold);border-radius:50%}
+
+/* ── FAMILIARES ── */
+.fam-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:28px}
+.fam-card{background:var(--card);border:1px solid var(--border);border-radius:4px;padding:24px 10px;text-align:center;position:relative}
+.fam-card::before{content:'';position:absolute;inset:8px;border:1px solid var(--border-light);pointer-events:none}
+.fam-role-lbl{font-family:'Cormorant Garamond',serif;font-style:italic;font-weight:600;font-size:15px;letter-spacing:.05em;color:var(--gold);display:block;margin-bottom:14px}
+.fam-pair{display:flex;flex-direction:column;align-items:center;width:100%}
+.fam-name{font-family:'Great Vibes',cursive;font-size:clamp(16px,4.3vw,20px);color:var(--dark);line-height:1.3;display:block;height:2.6em;text-align:center;width:100%;overflow:hidden}
+.fam-padrinos .fam-name{height:auto}
+.fam-cross{display:inline-block;width:.36em;height:.62em;vertical-align:-.04em;color:var(--gold);margin-left:.2em;opacity:.95;fill:currentColor}
+.fam-and{display:flex;align-items:center;gap:8px;margin:4px 0;width:100%}
+.fam-and-line{flex:1;height:1px;background:var(--border)}
+.fam-and-txt{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:14px;color:var(--accent);flex-shrink:0}
+/* Las tarjetas se apilan en la misma celda del grid: solo una es visible y
+   las demas esperan con opacidad 0. Asi la altura la fija la mas alta y no
+   hay saltos al cambiar. */
+.fam-padrinos-grid{display:grid;margin-top:18px;position:relative}
+.fam-padrinos-grid .fam-padrinos{grid-area:1/1;opacity:0;visibility:hidden;display:flex;flex-direction:column;justify-content:center;
+  transform:translateY(10px);
+  transition:opacity .9s ease,transform .9s ease,visibility 0s linear .9s}
+.fam-padrinos-grid .fam-padrinos.is-on{opacity:1;visibility:visible;
+  transform:translateY(0);transition:opacity .9s ease,transform .9s ease,visibility 0s}
+.padrinos-dots{display:flex;justify-content:center;gap:8px;margin-top:16px}
+.padrinos-dots button{width:7px;height:7px;padding:0;border-radius:50%;
+  border:1px solid rgba(212,175,55,.55);background:transparent;cursor:pointer;
+  transition:background .35s,transform .35s}
+.padrinos-dots button.on{background:var(--gold);transform:scale(1.25)}
+@media (prefers-reduced-motion:reduce){
+  .fam-padrinos-grid .fam-padrinos{transition:opacity .3s ease}
+}
+.fam-padrinos-grid .fam-padrinos{margin-top:0}
+.fam-padrinos{background:var(--card);border:1px solid var(--border);border-radius:4px;padding:24px 22px;text-align:center;position:relative;margin-top:14px}
+.fam-padrinos::before{content:'';position:absolute;inset:8px;border:1px solid var(--border-light);pointer-events:none}
+
+/* ── UBICACION ── */
+@keyframes fadeUp{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
+.loc-venue-lbl{font-family:'Cormorant Garamond',serif;font-style:italic;font-weight:700;font-size:16px;letter-spacing:.08em;text-transform:uppercase;color:var(--gold);display:block;margin-bottom:10px}
+.loc-divider{height:14px}
+/* Nombre largo: la caligrafia en 4 lineas no se lee, va en serif legible */
+/* Nombre largo: la caligrafia en 4 lineas no se lee, va en serif legible.
+   Doble clase para ganarle a .loc-venue y al bloque de cajas de titulo. */
+.loc-venue.loc-venue--long{font-family:'Cormorant Garamond',serif !important;font-weight:600;font-size:22px;letter-spacing:.02em;line-height:1.45;padding:0;margin:0 0 18px;display:block}
+.loc-venue{font-family:'Great Vibes',cursive;font-size:38px;color:var(--dark);text-align:center;line-height:1.1;margin-bottom:18px}
+.loc-row{display:flex;align-items:center;gap:10px;padding:10px 0;border-bottom:1px solid rgba(122,150,104,.12);justify-content:center}
+.loc-row:last-of-type{border-bottom:none}
+.loc-icon{width:16px;height:16px;flex-shrink:0;stroke:var(--gold);stroke-width:2;fill:none;stroke-linecap:round;stroke-linejoin:round}
+.loc-txt{font-family:'Cormorant Garamond',serif;font-size:18px;color:var(--dark);line-height:1.6;text-align:center}
+.loc-txt strong{font-weight:700;color:var(--gold)}
+.map-wrap{border-radius:4px;overflow:hidden;margin-top:18px;height:200px;border:1px solid var(--border)}
+.map-wrap iframe{width:100%;height:100%;border:none;display:block}
+/* ── BOTONES — destello reactivo ── */
+.btn-map,.btn-cal,.btn-copy,.btn-wa,.rsvp-toggle-btn,.gift-cta,.rsvp-btn{position:relative;overflow:hidden}
+.btn-map::after,.btn-cal::after,.btn-copy::after,.btn-wa::after,.gift-cta::after,.rsvp-btn::after{content:'';position:absolute;top:0;left:-60%;width:35%;height:100%;background:linear-gradient(120deg,transparent,rgba(255,255,255,.4),transparent);transform:skewX(-20deg);animation:btnShine 3.6s ease-in-out infinite;pointer-events:none}
+@keyframes btnShine{0%,55%{left:-60%}85%,100%{left:130%}}
+.btn-map,.btn-wa{animation:btnBreathe 3.2s ease-in-out infinite}
+@keyframes btnBreathe{0%,100%{box-shadow:0 4px 14px rgba(0,0,0,.28)}50%{box-shadow:0 6px 22px rgba(0,0,0,.45),0 0 0 3px rgba(212,175,55,.12)}}
+.btn-map{display:flex;align-items:center;justify-content:center;gap:8px;margin-top:16px;background:var(--gold);color:#0a0a0a;text-decoration:none;font-family:'Italiana',serif;font-size:13px;letter-spacing:.25em;text-transform:uppercase;padding:14px 28px;border-radius:50px;transition:background .3s}
+.btn-map:hover{background:var(--accent)}
+.btn-map svg{width:14px;height:14px;fill:currentColor;flex-shrink:0}
+.cal-row{margin-top:20px;text-align:center}
+.btn-cal{display:inline-flex;align-items:center;gap:8px;background:transparent;border:1px solid var(--border);color:var(--text);text-decoration:none;font-family:'Italiana',serif;font-size:12px;letter-spacing:.25em;text-transform:uppercase;padding:12px 22px;border-radius:50px;transition:all .3s;cursor:pointer}
+.btn-cal:hover{background:var(--accent);color:#fff;border-color:var(--accent)}
+.btn-cal svg{width:13px;height:13px;fill:currentColor}
+
+/* ── ITINERARIO ── */
+.itin-list{display:flex;flex-direction:column;gap:0;margin-top:24px;position:relative}
+.itin-list::before{content:'';position:absolute;left:50%;transform:translateX(-50%);top:0;bottom:0;width:1px;background:linear-gradient(to bottom,transparent,var(--border),transparent)}
+.itin-item{display:flex;flex-direction:column;align-items:center;text-align:center;padding:22px 16px 10px;position:relative;z-index:1}
+.itin-dot{width:8px;height:8px;background:var(--gold);transform:rotate(45deg);border-radius:1px;margin-bottom:14px;animation:itinGlow 2.6s ease-in-out infinite}
+.itin-dot.sage{background:var(--accent);animation:itinGlowAccent 2.6s ease-in-out infinite}
+@keyframes itinGlow{0%,100%{box-shadow:0 0 0 4px rgba(212,175,55,.12),0 0 14px rgba(212,175,55,.35)}50%{box-shadow:0 0 0 6px rgba(212,175,55,.2),0 0 24px rgba(212,175,55,.65)}}
+@keyframes itinGlowAccent{0%,100%{box-shadow:0 0 0 4px rgba(212,175,55,.12),0 0 14px rgba(212,175,55,.35)}50%{box-shadow:0 0 0 6px rgba(212,175,55,.2),0 0 24px rgba(212,175,55,.65)}}
+.itin-time{font-family:'Cormorant Garamond',serif;font-size:40px;font-weight:600;letter-spacing:4px;color:var(--dark);line-height:1;margin-bottom:6px}
+.itin-ev{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:19px;letter-spacing:.5px;color:var(--text);opacity:1}
+.itin-item:last-child{padding-bottom:0}
+
+/* ── GALERÍA — rueda 3D ── */
+.wheel-scene{position:relative;width:100%;height:430px;margin:30px auto 0;perspective:1150px;transform-style:preserve-3d;overflow:visible}
+.wheel-ring{position:absolute;width:100%;height:100%;transform-style:preserve-3d;cursor:grab}
+.wheel-ring.dragging{cursor:grabbing}
+.wheel-card{position:absolute;left:50%;top:50%;border-radius:6px;overflow:hidden;border:2px solid rgba(255,226,214,.5);box-shadow:0 12px 32px rgba(0,0,0,.35);user-select:none;-webkit-user-select:none;backface-visibility:hidden}
+.wheel-card img{width:100%;height:100%;object-fit:cover;object-position:center;display:block;pointer-events:none}
+.gal-hint{font-family:'Cormorant Garamond',serif;font-style:italic;font-weight:600;font-size:14px;letter-spacing:2px;color:var(--gold);margin-top:20px;opacity:.85;text-align:center}
+
+/* ── ÁLBUM QR ── */
+.album-qr-wrap{display:flex;flex-direction:column;align-items:center;gap:14px;margin-top:26px}
+.album-qr-box{width:180px;height:180px;background:#fff;border-radius:8px;padding:14px;box-shadow:0 10px 30px rgba(0,0,0,.25);border:1px solid var(--border)}
+.album-qr-box img{width:100%;height:100%;display:block;border-radius:2px}
+.album-qr.bloqueado .album-qr-box img{filter:blur(7px);opacity:.75}
+.album-btn{display:inline-flex;align-items:center;justify-content:center;min-height:46px;padding:12px 30px;border-radius:50px;background:var(--gold);color:#0a0a0a;text-decoration:none;font-family:'Italiana',serif;font-size:13px;letter-spacing:.25em;text-transform:uppercase;box-shadow:0 8px 22px rgba(0,0,0,.28);transition:background .3s,transform .25s}
+.album-btn:hover{background:var(--accent-deep)}
+.album-btn:active{transform:scale(.97)}
+.album-qr.bloqueado .album-btn{pointer-events:none;opacity:.45}
+.album-aviso{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:17px;color:var(--text);opacity:.85;line-height:1.7;max-width:300px;margin:22px auto 0}
+.album-qr:not(.bloqueado) + .album-aviso{display:none}
+.album-qr-note{font-family:'Italiana',serif;font-size:11px;letter-spacing:.3em;text-transform:uppercase;color:var(--gold);opacity:.85}
+
+/* ── DRESS CODE ── */
+.dc-text{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:19px;color:var(--text);text-align:center;line-height:1.75;margin-bottom:24px}
+.dc-avoid-lbl{font-family:'Italiana',serif;font-size:11px;letter-spacing:.32em;text-transform:uppercase;color:var(--gold);text-align:center;display:block;margin:20px 0 12px;opacity:.8}
+/* Son 7 colores a evitar: sin wrap se salian de la pantalla en movil */
+.dc-avoid-row{display:flex;flex-wrap:wrap;justify-content:center;gap:16px 18px;margin-bottom:4px;padding:0 4px}
+.dc-avoid-sw{display:flex;flex-direction:column;align-items:center;gap:6px;width:72px}
+.dc-avoid-circle{width:32px;height:32px;border-radius:50%}
+.dc-avoid-name{font-family:'Cormorant Garamond',serif;font-weight:600;font-size:14px;color:var(--text);opacity:1;text-align:center;max-width:60px;line-height:1.4}
+.no-kids{background:rgba(212,175,55,.05);display:flex;align-items:flex-start;gap:14px;border:1px solid var(--border);border-radius:4px;padding:18px 18px;margin-top:22px;font-family:'Cormorant Garamond',serif;font-style:italic;font-size:17px;color:var(--dark);line-height:1.7;background:rgba(212,175,55,.04)}
+.no-kids svg{width:18px;height:18px;flex-shrink:0;margin-top:3px;stroke:var(--gold);stroke-width:1.5;fill:none;stroke-linecap:round;stroke-linejoin:round}
+
+/* ── HOSPEDAJE · carrusel (formato boda-roxana-y-omar) ── */
+.hosp-carousel{position:relative;max-width:380px;margin:30px auto 0}
+.hosp-viewport{overflow:hidden}
+.hosp-track{display:flex;transition:transform .45s cubic-bezier(.4,0,.2,1)}
+.hosp-slide{flex:0 0 100%;box-sizing:border-box;display:flex;flex-direction:column;align-items:center;text-align:center;padding:8px 30px}
+.hosp-photo{width:200px;height:200px;border-radius:50%;overflow:hidden;border:3px solid rgba(212,175,55,.3);box-shadow:0 12px 34px rgba(0,0,0,.22);margin-bottom:22px;background:var(--surface)}
+.hosp-photo img{width:100%;height:100%;object-fit:cover;display:block}
+.hosp-arrow{position:absolute;top:108px;transform:translateY(-50%);width:36px;height:36px;display:flex;align-items:center;justify-content:center;background:rgba(255,251,248,.8);border:1px solid rgba(212,175,55,.28);border-radius:50%;cursor:pointer;color:var(--gold);z-index:2;padding:0;backdrop-filter:blur(3px)}
+.hosp-arrow svg{width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:2}
+.hosp-arrow.prev{left:-2px}
+.hosp-arrow.next{right:-2px}
+.hosp-dots{display:flex;justify-content:center;gap:8px;margin-top:22px}
+.hosp-dots button{width:8px;height:8px;border-radius:50%;border:none;background:rgba(212,175,55,.3);cursor:pointer;padding:0;transition:background .25s,transform .25s}
+.hosp-dots button.active{background:var(--gold);transform:scale(1.3)}
+.hosp-name{font-family:'Cormorant Garamond',serif;font-weight:600;font-size:21px;color:var(--dark);margin-bottom:6px}
+.hosp-city{font-family:'Italiana',serif;font-size:11px;letter-spacing:.26em;text-transform:uppercase;color:var(--gold);opacity:.9;margin-bottom:16px}
+.hosp-btns{display:flex;gap:10px;justify-content:center;flex-wrap:wrap}
+.btn-hosp{display:inline-flex;align-items:center;gap:8px;padding:10px 20px;border:1.5px solid var(--gold);border-radius:50px;color:var(--gold);font-family:'Cormorant Garamond',serif;font-style:italic;font-weight:600;font-size:14.5px;letter-spacing:.5px;text-decoration:none;background:transparent;transition:background .25s,color .25s;position:relative;overflow:hidden}
+.btn-hosp::after{content:'';position:absolute;top:0;left:-60%;width:35%;height:100%;background:linear-gradient(120deg,transparent,rgba(255,226,214,.6),transparent);transform:skewX(-20deg);animation:btnShine 4s ease-in-out infinite;pointer-events:none}
+.btn-hosp:hover{background:var(--gold);color:#0a0a0a}
+.btn-hosp svg{width:15px;height:15px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+@media(max-width:400px){
+  .hosp-carousel{max-width:340px}
+  .hosp-slide{padding:8px 22px}
+  .hosp-photo{width:172px;height:172px}
+  .hosp-arrow{top:94px}
+  .hosp-name{font-size:20px}
+  .btn-hosp{padding:10px 18px;font-size:14px}
+}
+
+/* ── REGALOS ── */
+/* Brumas calidas que derivan — sustituye el barrido recto que se veia artificial.
+   Ambas secciones se recortan a si mismas para que el brillo no invada las vecinas. */
+#regalos,#footer{position:relative;overflow:hidden;isolation:isolate;background:#0a0a0a}
+#regalos::before,#footer::before{content:'';position:absolute;inset:0;z-index:0;pointer-events:none;
+  background:
+    radial-gradient(58% 42% at 20% 16%,rgba(212,175,55,.30),transparent 64%),
+    radial-gradient(52% 38% at 80% 84%,rgba(185,138,69,.24),transparent 66%),
+    radial-gradient(66% 52% at 62% 44%,rgba(212,175,55,.26),transparent 70%),
+    linear-gradient(152deg,#141210 0%,#0a0a0a 46%,#0a0a0a 100%);
+  background-size:190% 190%,175% 175%,210% 210%,100% 100%;
+  animation:warmDrift 30s ease-in-out infinite}
+@keyframes warmDrift{
+  0%{background-position:6% 22%,94% 78%,42% 40%,0 0}
+  33%{background-position:34% 62%,66% 36%,72% 70%,0 0}
+  66%{background-position:70% 30%,28% 68%,22% 28%,0 0}
+  100%{background-position:6% 22%,94% 78%,42% 40%,0 0}}
+/* velo de seda: entra y sale con opacidad, nunca como una barra dura */
+#regalos::after,#footer::after{content:'';position:absolute;top:-15%;bottom:-15%;left:-65%;width:62%;z-index:0;pointer-events:none;
+  background:linear-gradient(100deg,transparent 0%,rgba(255,232,214,.05) 32%,rgba(255,241,228,.11) 50%,rgba(255,232,214,.05) 68%,transparent 100%);
+  transform:skewX(-12deg);
+  animation:silkPass 15s cubic-bezier(.45,0,.55,1) infinite}
+#footer::before{animation-duration:36s;animation-delay:-9s}
+#footer::after{animation-duration:19s;animation-delay:-6s}
+@keyframes silkPass{
+  0%{left:-65%;opacity:0}
+  14%{opacity:1}
+  62%{opacity:1}
+  80%,100%{left:150%;opacity:0}}
+#regalos>*,#footer>*{position:relative;z-index:1}
+#regalos .eyebrow{color:var(--gold-light);opacity:.75}
+#regalos .heading{color:var(--gold-light)}
+#regalos .sub{color:rgba(232,212,192,.65)}
+.gift-msg{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:19px;line-height:1.85;color:rgba(254,252,248,.65);text-align:center;margin:0 auto 28px;max-width:340px}
+.gift-opts{display:flex;flex-direction:column;gap:14px;max-width:340px;margin:0 auto}
+.gift-bank-lbl{font-family:'Cormorant Garamond',serif;font-style:italic;font-weight:600;font-size:14px;letter-spacing:.1em;text-transform:uppercase;color:var(--gold);display:block;margin-bottom:10px}
+.gift-bank-name{font-family:'Cormorant Garamond',serif;font-size:24px;font-weight:600;font-style:italic;color:var(--gold-light);display:block;margin-bottom:14px}
+.gift-detail{font-family:'Cormorant Garamond',serif;font-size:17px;color:rgba(254,252,248,.65);line-height:1.9}
+.gift-detail strong{color:rgba(254,252,248,.85);font-weight:400;font-style:normal}
+.gift-box-btn{background:transparent;border:none;cursor:pointer;display:flex;flex-direction:column;align-items:center;gap:16px;margin:0 auto;padding:16px;position:relative}
+.gift-box-btn::before{content:'';position:absolute;left:50%;top:44%;transform:translate(-50%,-50%);width:210px;height:210px;border-radius:50%;background:radial-gradient(circle,rgba(255,226,214,.5) 0%,rgba(232,184,122,.34) 34%,rgba(212,175,55,.16) 55%,transparent 72%);animation:giftGlow 3.4s ease-in-out infinite;pointer-events:none;z-index:0}
+@keyframes giftGlow{0%,100%{opacity:.6;transform:translate(-50%,-50%) scale(.9)}50%{opacity:1;transform:translate(-50%,-50%) scale(1.1)}}
+.gift-box-svg{position:relative;z-index:1;width:120px;height:110px;filter:drop-shadow(0 8px 22px rgba(0,0,0,.5));transition:transform .35s cubic-bezier(.2,.8,.2,1)}
+.gift-box-label{position:relative;z-index:1}
+.gift-box-btn:hover .gift-box-svg{transform:scale(1.06) rotate(-2deg)}
+.gift-box-btn:active .gift-box-svg{transform:scale(.93)}
+.gift-box-label{font-family:'Italiana',serif;font-size:12px;letter-spacing:.3em;text-transform:uppercase;color:var(--gold-light);animation:giftPulse 2.4s ease-in-out infinite}
+@keyframes giftPulse{0%,100%{opacity:.55}50%{opacity:1}}
+.confetti-piece{position:fixed;pointer-events:none;z-index:2001;border-radius:1px}
+.gift-modal-overlay{position:fixed;inset:0;z-index:2000;background:rgba(20,8,0,.6);backdrop-filter:blur(7px);-webkit-backdrop-filter:blur(7px);display:flex;align-items:center;justify-content:center;opacity:0;pointer-events:none;transition:opacity .35s}
+.gift-modal-overlay.active{opacity:1;pointer-events:auto}
+.gift-modal-card{background:var(--card);border:1px solid var(--border);border-radius:8px;padding:40px 26px 30px;max-width:340px;width:88%;max-height:86vh;overflow-y:auto;text-align:center;position:relative;transform:scale(.85) translateY(20px);transition:transform .4s cubic-bezier(.2,.8,.2,1);box-shadow:0 24px 60px rgba(0,0,0,.45)}
+.gift-modal-overlay.active .gift-modal-card{transform:scale(1) translateY(0)}
+.gift-modal-card .gift-bank-name{color:var(--dark)}
+.gift-modal-card .gift-detail{color:var(--text)}
+.gift-modal-card .gift-detail strong{color:var(--dark);font-weight:600}
+.gift-modal-ttl{font-family:'Italiana',serif;font-size:11px;letter-spacing:.3em;text-transform:uppercase;color:var(--gold);display:block;margin-bottom:22px}
+.gift-acct{display:flex;flex-direction:column;align-items:center}
+.gift-acct-sep{display:flex;align-items:center;gap:12px;margin:22px 0}
+.gift-acct-sep span{flex:1;height:1px;background:var(--border)}
+.gift-acct-sep small{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:13px;color:var(--gold);opacity:.85}
+.gift-num{display:block;font-variant-numeric:tabular-nums;letter-spacing:.06em;font-size:18px;color:var(--dark);margin-top:2px}
+.gift-modal-card .gift-detail{margin-top:10px}
+.gift-modal-card .gift-detail strong{font-family:'Italiana',serif;font-size:10px;letter-spacing:.24em;text-transform:uppercase;color:var(--text);opacity:.75;font-weight:400;display:block}
+.gift-modal-close{position:absolute;top:12px;right:12px;width:32px;height:32px;border-radius:50%;background:var(--surface);border:1px solid var(--border);color:var(--dark);cursor:pointer;display:flex;align-items:center;justify-content:center}
+.gift-modal-close svg{width:16px;height:16px}
+.gift-cta{display:inline-flex;align-items:center;gap:6px;background:var(--dark);color:var(--gold-light);border:none;font-family:'Italiana',serif;font-size:12px;letter-spacing:.25em;text-transform:uppercase;padding:14px 26px;border-radius:50px;cursor:pointer;margin-top:16px}
+.btn-copy{display:inline-flex;align-items:center;gap:6px;background:rgba(212,175,55,.14);border:1px solid rgba(212,175,55,.3);color:var(--gold-light);font-family:'Italiana',serif;font-size:11px;letter-spacing:.25em;text-transform:uppercase;padding:10px 18px;border-radius:50px;cursor:pointer;margin-top:14px;transition:background .2s}
+.btn-copy:hover{background:rgba(212,175,55,.28)}
+.btn-copy svg{width:12px;height:12px;fill:currentColor}
+.copy-toast{position:fixed;bottom:90px;left:50%;transform:translateX(-50%);background:var(--accent);color:#fff;font-family:'Italiana',serif;font-size:11px;letter-spacing:.2em;text-transform:uppercase;padding:10px 24px;border-radius:50px;opacity:0;pointer-events:none;z-index:9999;transition:opacity .3s}
+.copy-toast.show{opacity:1}
+
+/* ── RSVP — estilo jennifer ── */
+.rsvp-card{max-width:400px;margin:0 auto;background:rgba(38,33,24,.8);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border:1px solid rgba(212,175,55,.32);padding:clamp(38px,7vw,58px) clamp(22px,5vw,34px);position:relative;border-radius:6px;box-shadow:0 24px 60px rgba(0,0,0,.14),0 4px 18px rgba(212,175,55,.14)}
+.rsvp-card::before{content:'';position:absolute;inset:10px;border:1px solid rgba(212,175,55,.2);pointer-events:none;border-radius:2px}
+.rsvp-corner{position:absolute;width:42px;height:42px;pointer-events:none}
+.rsvp-corner--tl{top:0;left:0}
+.rsvp-corner--tr{top:0;right:0;transform:scaleX(-1)}
+.rsvp-corner--bl{bottom:0;left:0;transform:scaleY(-1)}
+.rsvp-corner--br{bottom:0;right:0;transform:scale(-1,-1)}
+.rsvp-inner{text-align:center}
+.rsvp-ornament{display:block;margin:0 auto 22px;width:min(240px,70vw);height:auto}
+.rsvp-title{font-family:'Great Vibes',cursive;font-size:clamp(34px,7vw,46px);color:var(--dark);margin-bottom:14px;line-height:1.15}
+.rsvp-title em{color:var(--accent-deep);font-style:normal}
+.rsvp-text{font-family:'Cormorant Garamond',serif;font-size:16px;color:var(--text);line-height:1.75;margin-bottom:22px;max-width:320px;margin-left:auto;margin-right:auto}
+.rsvp-text strong{color:var(--dark)}
+.rsvp-divider{display:flex;align-items:center;justify-content:center;margin-bottom:20px}
+.rsvp-divider-heart{color:var(--gold);opacity:.8}
+.rsvp-pases-display{max-width:280px;margin:0 auto 22px;padding:16px 26px;background:rgba(212,175,55,.08);border:1px solid var(--border);border-radius:10px;display:flex;align-items:center;justify-content:space-between;gap:14px}
+.rsvp-pases-label{font-family:'Italiana',serif;font-size:11px;letter-spacing:.3em;text-transform:uppercase;color:var(--text);opacity:.75}
+.rsvp-pases-num{font-family:'Cormorant Garamond',serif;font-style:italic;font-weight:600;font-size:clamp(30px,5vw,42px);color:var(--gold);line-height:1}
+.rsvp-fields{max-width:340px;margin:0 auto 8px}
+.rsvp-field{margin-bottom:18px;text-align:left}
+.rsvp-field label{display:block;font-family:'Cormorant Garamond',serif;font-style:italic;font-size:16px;letter-spacing:.3px;color:var(--dark);margin-bottom:10px;opacity:.9}
+.rsvp-field input,.rsvp-field select{width:100%;background:var(--surface);border:1px solid var(--border);border-radius:8px;padding:14px 16px;font-family:'Cormorant Garamond',serif;font-size:17px;color:var(--text);outline:none;transition:border-color .2s,box-shadow .2s;-webkit-appearance:none;appearance:none}
+.rsvp-field input:focus,.rsvp-field select:focus{border-color:var(--accent-deep);box-shadow:0 0 0 3px rgba(212,175,55,.14)}
+.rsvp-toggle{display:flex;gap:10px;max-width:340px;margin:0 auto 20px}
+.rsvp-toggle-btn{flex:1;padding:14px 8px;border-radius:8px;border:1.5px solid var(--border);background:var(--surface);cursor:pointer;font-family:'Cormorant Garamond',serif;font-style:italic;font-size:17px;color:var(--text);transition:all .25s}
+.rsvp-toggle-btn.selected-yes{background:rgba(212,175,55,.12);border-color:var(--accent-deep);color:var(--accent-deep)}
+.rsvp-toggle-btn.selected-no{background:rgba(212,175,55,.09);border-color:var(--gold);color:var(--gold)}
+.rsvp-btn{display:flex;align-items:center;justify-content:center;gap:10px;width:100%;max-width:340px;margin:0 auto;padding:17px 24px;border-radius:50px;border:1.5px solid rgba(212,175,55,.5);background:var(--gold);color:#0a0a0a;font-family:'Cormorant Garamond',serif;font-style:italic;font-weight:700;font-size:18px;letter-spacing:.05em;cursor:pointer;transition:transform .25s,box-shadow .25s;box-shadow:0 6px 20px rgba(0,0,0,.35)}
+.rsvp-btn:hover{transform:translateY(-2px);box-shadow:0 12px 28px rgba(0,0,0,.45)}
+.rsvp-deadline{display:inline-flex;align-items:center;gap:8px;margin-top:24px;font-family:'Italiana',serif;font-size:11px;letter-spacing:.3em;text-transform:uppercase;color:var(--gold);font-weight:600}
+/* ── RSVP de X pases: contador, avisos y agradecimiento ── */
+.rsvp-para-note{font-family:'Cormorant Garamond',serif;font-style:italic;font-weight:600;font-size:17px;color:var(--dark);margin-bottom:10px;line-height:1.5}
+.rsvp-fields{display:flex;flex-direction:column;gap:12px}
+.rsvp-input{width:100%;background:var(--surface);border:1px solid var(--border);border-radius:8px;padding:14px 16px;font-family:'Cormorant Garamond',serif;font-size:17px;color:var(--text);outline:none;-webkit-appearance:none;appearance:none;transition:border-color .2s,box-shadow .2s}
+.rsvp-input::placeholder{color:var(--text);opacity:.55}
+.rsvp-input:focus{border-color:var(--accent-deep);box-shadow:0 0 0 3px rgba(212,175,55,.14)}
+.rsvp-input.rsvp-input-falta{border-color:#E0A27A;box-shadow:0 0 0 3px rgba(224,162,122,.22)}
+#rsvp-feedback{font-family:'Cormorant Garamond',serif;font-style:italic;font-weight:600;font-size:15px;text-align:center;margin:14px auto 0;max-width:340px;min-height:18px;line-height:1.55;color:var(--accent)}
+.rsvp-contador-wrap{display:none;margin:0 auto 18px;max-width:340px}
+.rsvp-contador-nota{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:16px;font-weight:600;line-height:1.55;color:var(--text);margin:0 auto 12px}
+.rsvp-contador{display:flex;align-items:center;justify-content:center;gap:18px;margin:0 auto 8px;padding:12px 16px;background:rgba(212,175,55,.08);border:1px solid var(--border);border-radius:10px}
+.rsvp-contador-btn{width:44px;height:44px;flex-shrink:0;border-radius:50%;border:1.5px solid rgba(212,175,55,.5);background:var(--surface);color:var(--gold);font-family:'Cormorant Garamond',serif;font-size:26px;font-weight:700;line-height:1;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:background .25s,color .25s}
+.rsvp-contador-btn:hover:not(:disabled){background:var(--gold);color:#0a0a0a}
+.rsvp-contador-btn:disabled{opacity:.35;cursor:default}
+.rsvp-contador-valor{font-family:'Cormorant Garamond',serif;font-style:italic;font-weight:600;font-size:40px;color:var(--gold);line-height:1;min-width:56px;text-align:center}
+.rsvp-contador-pie{font-family:'Italiana',serif;font-size:11px;letter-spacing:.25em;text-transform:uppercase;color:var(--gold);margin:0 auto 4px}
+#rsvp-gracias{max-width:340px;margin:0 auto;padding:28px 22px;background:rgba(212,175,55,.08);border:1px solid var(--border);border-radius:10px;text-align:center}
+.rsvp-gracias-title{font-family:'Great Vibes',cursive;font-size:34px;color:var(--dark);line-height:1.25;margin-bottom:10px}
+.rsvp-gracias-sub{font-family:'Cormorant Garamond',serif;font-size:17px;color:var(--text);line-height:1.65;margin-bottom:20px}
+.rsvp-editar-btn{font-family:'Italiana',serif;font-size:12px;letter-spacing:.22em;text-transform:uppercase;color:var(--gold);background:transparent;border:1.5px solid rgba(212,175,55,.45);border-radius:50px;padding:13px 24px;cursor:pointer;transition:background .3s}
+.rsvp-editar-btn:hover:not(:disabled){background:rgba(212,175,55,.12)}
+.rsvp-editar-btn:disabled{opacity:.45;cursor:default}
+.rsvp-toggle-btn:disabled,.rsvp-btn:disabled{opacity:.55;cursor:default}
+
+/* ── FOOTER ── */
+#footer{padding:64px 32px 48px;text-align:center}
+.footer-names{font-family:'Great Vibes',cursive;font-size:52px;color:var(--gold-light)}
+.footer-date{font-family:'Italiana',serif;font-size:14px;letter-spacing:.32em;text-transform:uppercase;color:rgba(247,231,206,.7);margin-top:12px}
+.footer-hr{width:40px;height:1px;background:var(--gold);margin:24px auto 16px;opacity:.2}
+.footer-credit{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:13px;letter-spacing:.5px;color:rgba(212,175,55,.35);text-decoration:none;display:block;transition:color .3s}
+.footer-credit:hover{color:var(--gold)}
+
+/* ── MUSIC — vinyl button ── */
+.vinyl-btn{position:fixed;bottom:20px;right:20px;z-index:998;width:64px;height:64px;border-radius:50%;padding:0;border:none;cursor:pointer;background:transparent;opacity:0;transform:scale(.6);pointer-events:none;transition:transform .35s cubic-bezier(.2,.7,.2,1);box-shadow:0 4px 18px rgba(0,0,0,.4),0 0 0 1px rgba(212,175,55,.18)}
+.vinyl-btn.is-ready{opacity:1;transform:scale(1);pointer-events:auto}
+.vinyl-btn:hover{transform:scale(1.08)}
+.vinyl-spin{width:100%;height:100%;border-radius:50%;position:relative}
+.vinyl-btn.is-playing .vinyl-spin{animation:vinylSpin 1.8s linear infinite}
+@keyframes vinylSpin{to{transform:rotate(360deg)}}
+.vinyl-disc{width:100%;height:100%;border-radius:50%;overflow:hidden;position:relative;
+  background:
+    radial-gradient(circle,#0a0a0a 4%,transparent 4.5%),
+    radial-gradient(circle,#F0D98C 0%,#B8962E 17%,#D4AF37 19%,transparent 19.5%),
+    repeating-radial-gradient(circle,
+      transparent 20%,rgba(255,255,255,.06) 20.8%,transparent 21.5%,
+      transparent 24%,rgba(255,255,255,.04) 24.8%,transparent 25.5%,
+      transparent 28%,rgba(255,255,255,.06) 28.8%,transparent 29.5%,
+      transparent 32%,rgba(255,255,255,.04) 32.8%,transparent 33.5%,
+      transparent 36%,rgba(255,255,255,.06) 36.8%,transparent 37.5%,
+      transparent 40%,rgba(255,255,255,.04) 40.8%,transparent 41.5%,
+      transparent 44%,rgba(255,255,255,.06) 44.8%,transparent 45.5%,
+      transparent 48%,rgba(255,255,255,.04) 48.8%,transparent 49.5%,
+      transparent 52%,rgba(255,255,255,.06) 52.8%,transparent 53.5%,
+      transparent 56%,rgba(255,255,255,.04) 56.8%,transparent 57.5%,
+      transparent 60%,rgba(255,255,255,.06) 60.8%,transparent 61.5%,
+      transparent 64%,rgba(255,255,255,.04) 64.8%,transparent 65.5%,
+      transparent 68%,rgba(255,255,255,.06) 68.8%,transparent 69.5%,
+      transparent 72%,rgba(255,255,255,.04) 72.8%,transparent 73.5%,
+      transparent 76%,rgba(255,255,255,.06) 76.8%,transparent 77.5%,
+      transparent 80%,rgba(255,255,255,.04) 80.8%,transparent 81.5%,
+      transparent 84%,rgba(255,255,255,.06) 84.8%,transparent 85.5%,
+      transparent 88%,rgba(255,255,255,.04) 88.8%,transparent 89.5%,
+      transparent 92%,rgba(255,255,255,.06) 92.8%,transparent 93.5%,
+      transparent 96%,rgba(255,255,255,.04) 96.8%,transparent 97.5%
+    ),
+    radial-gradient(circle,#0a0a0a 0%,#0a0a0a 60%,#0a0a0a 100%);
+  box-shadow:inset 0 0 8px rgba(0,0,0,.4)}
+.vinyl-sheen{position:absolute;inset:0;border-radius:50%;background:linear-gradient(135deg,transparent 30%,rgba(255,255,255,.09) 42%,rgba(255,255,255,.15) 48%,rgba(255,255,255,.09) 54%,transparent 66%);pointer-events:none}
+.vinyl-label-text{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);font-family:'Great Vibes',cursive;font-size:13px;color:#F3E3C3;text-align:center;line-height:1.1;opacity:.85;pointer-events:none;width:28px}
+.vinyl-label-text small{font-family:'Italiana',serif;font-size:5px;letter-spacing:.15em;display:block;margin-top:1px;opacity:.7}
+.vinyl-hole{position:absolute;top:50%;left:50%;width:6px;height:6px;transform:translate(-50%,-50%);border-radius:50%;background:#0a0a0a;box-shadow:0 0 0 1.5px rgba(212,175,55,.5)}
+.vinyl-icons{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:18px;height:18px;pointer-events:none;z-index:2}
+.vinyl-icons svg{width:100%;height:100%;display:block}
+.vinyl-icon-pause{display:none}
+.vinyl-btn.is-playing .vinyl-icon-play{display:none}
+.vinyl-btn.is-playing .vinyl-icon-pause{display:block}
+.vinyl-btn::after{content:"";position:absolute;inset:-5px;border-radius:50%;border:1px solid var(--gold);opacity:.35;animation:vinylPulse 3s ease-in-out infinite}
+.vinyl-btn.is-playing::after{animation-duration:1.6s}
+@keyframes vinylPulse{0%,100%{transform:scale(1);opacity:.35}50%{transform:scale(1.12);opacity:.05}}
+.vinyl-tonearm{position:absolute;top:-4px;right:-2px;width:24px;height:34px;transform-origin:top right;transform:rotate(-28deg);transition:transform .6s cubic-bezier(.2,.7,.2,1);pointer-events:none;z-index:1}
+.vinyl-btn.is-playing .vinyl-tonearm{transform:rotate(-12deg)}
+.vinyl-tonearm-line{position:absolute;top:2px;right:4px;width:2px;height:28px;background:linear-gradient(to bottom,#D4AF37,#B8962E 40%,#D4AF37);border-radius:1px;transform:rotate(-5deg);transform-origin:top center}
+.vinyl-tonearm-head{position:absolute;bottom:0;right:2px;width:5px;height:6px;background:#B8962E;border-radius:0 0 2px 2px}
+.vinyl-tonearm-pivot{position:absolute;top:0;right:2px;width:7px;height:7px;background:radial-gradient(circle,#F0D98C,#D4AF37);border-radius:50%;box-shadow:0 1px 3px rgba(0,0,0,.3)}
+
+/* ── LOADER ── */
+#loader{display:none}
+
+.sec-bg{position:absolute;inset:0;background-size:cover;background-position:center;background-repeat:no-repeat;pointer-events:none;z-index:-1}
+
+@media(prefers-reduced-motion:reduce){*{animation-duration:.01ms!important;transition-duration:.01ms!important}}
+
+/* ── RESPLANDOR DE ORO ─────────────────────────────────────────────
+   El degradado se recorta contra el texto y se desplaza; el resplandor va en
+   drop-shadow porque text-shadow no se ve con el relleno transparente.
+   Version para FONDO CLARO: el punto mas alto del barrido se topa en #D4AF37,
+   asi el destello nunca queda menos legible que el dorado solido de antes. */
+.heading,.heading-sm,.loc-venue,.rsvp-title,.footer-names,.footer-date,
+.gift-modal-ttl,.hosp-name,.eyebrow,.itin-time,
+.cd-lbl,.fam-and-txt,.fam-role-lbl,.rsvp-deadline,.album-qr-note,
+.hero-bride,.hero-groom,.fam-name{
+  background-image:linear-gradient(100deg,
+    #C29E2E 0%,#C29E2E 10%,#C29E2E 20%,#C29E2E 27%,#D4AF37 32%,#C29E2E 37%,
+    #C29E2E 46%,#C29E2E 58%,#C29E2E 70%,#C29E2E 80%,#C29E2E 90%,#C29E2E 100%);
+  /* Sin no-repeat: con background-size 300% las posiciones >100% caen fuera de
+     la caja y el degradado dejaria de pintar; al repetir siempre cubre el texto. */
+  background-size:300% 100%;
+  -webkit-background-clip:text;background-clip:text;
+  -webkit-text-fill-color:transparent;color:transparent;
+  text-shadow:none;
+  animation:goldSweep 5s linear infinite;
+  filter:drop-shadow(0 0 5px rgba(212,175,55,.45)) drop-shadow(0 0 16px rgba(212,175,55,.25));
+  /* background-clip:text solo pinta dentro de la caja y los rasgos de Great Vibes
+     sobresalen, quedando cortados. Se ensancha la caja con padding y se cancela
+     con margen negativo para no mover el layout. */
+  padding-left:.34em;padding-right:.34em;
+  margin-left:-.34em;margin-right:-.34em;
+}
+.eyebrow,.itin-time,.cd-lbl,.fam-role-lbl,.rsvp-deadline,.album-qr-note{animation-duration:7s}
+/* La fecha limite es una fila con icono: el padding negativo la descuadra */
+.rsvp-deadline{padding-left:0;padding-right:0;margin-left:0;margin-right:0}
+.rsvp-deadline svg{fill:#C29E2E}
+
+/* Version para FONDO OSCURO (hero sobre foto y mesa de regalos):
+   aqui si conviene el brillo casi blanco, porque contrasta contra la foto
+   en vez de diluirse. */
+.hero-bride,.hero-groom,.hero-amp,.hero-date,.hero-tag,
+#regalos .heading,#regalos .eyebrow,.gift-box-label{
+  background-image:linear-gradient(100deg,
+    #C29E2E 0%,#D4AF37 10%,#F0D98C 20%,#FBF1D6 27%,#FDFDFC 32%,#FBF1D6 37%,
+    #F0D98C 46%,#D4AF37 58%,#F0D98C 70%,#FBF1D6 80%,#D4AF37 90%,#C29E2E 100%);
+  background-size:300% 100%;
+  -webkit-background-clip:text;background-clip:text;
+  -webkit-text-fill-color:transparent;color:transparent;
+  text-shadow:none;
+  animation:goldSweep 5s linear infinite;
+  padding-left:.34em;padding-right:.34em;
+  margin-left:-.34em;margin-right:-.34em;
+}
+/* El hero va sobre foto: necesita mas resplandor y una sombra que lo despegue */
+.hero-bride,.hero-groom{
+  filter:
+    drop-shadow(0 0 10px rgba(212,175,55,.7))
+    drop-shadow(0 0 28px rgba(212,175,55,.45))
+    drop-shadow(0 2px 6px rgba(0,0,0,.55));
+}
+.hero-amp,.hero-date,.hero-tag{
+  filter:drop-shadow(0 0 8px rgba(212,175,55,.5)) drop-shadow(0 1px 5px rgba(0,0,0,.6));
+}
+#regalos .heading,#regalos .eyebrow,.gift-box-label{
+  filter:drop-shadow(0 0 6px rgba(212,175,55,.4)) drop-shadow(0 0 18px rgba(212,175,55,.22));
+}
+
+@keyframes goldSweep{
+  0%{background-position:200% center}
+  100%{background-position:-200% center}
+}
+@media (prefers-reduced-motion:reduce){
+  .heading,.heading-sm,.loc-venue,.rsvp-title,.footer-names,.footer-date,
+  .hero-bride,.hero-groom,.hero-amp,.hero-date,.hero-tag,.eyebrow,.itin-time{animation:none}
+}
+
+
+/* ── FONDOS POR SECCION ────────────────────────────────────────────
+   Marmol negro con vetas de oro y tinta dorada, alternados para que
+   ninguna seccion repita la de al lado. Opacidad baja: son textura,
+   no imagen — el texto arena tiene que seguir leyendose encima. */
+#sinv,#scd,#sfam,#subic,#siti,#galeria,#sdc,#lodging,#regalos,#salbum,#rsvp,#footer{
+  position:relative;overflow:hidden;isolation:isolate}
+#sinv::before,#scd::before,#sfam::before,#subic::before,#siti::before,
+#galeria::before,#sdc::before,#lodging::before,#regalos::before,
+#salbum::before,#rsvp::before,#footer::before{
+  content:'';position:absolute;inset:0;z-index:-1;
+  background-size:cover;background-position:center;background-repeat:no-repeat}
+#sinv::before   {background-image:url('bg-1.webp');opacity:.75}
+#scd::before    {background-image:url('bg-2.webp');opacity:.6}
+#sfam::before   {background-image:url('bg-3.webp');opacity:.6}
+#subic::before  {background-image:url('bg-4.webp');opacity:.65}
+#siti::before   {background-image:url('bg-1.webp');opacity:.62}
+#galeria::before{background-image:url('bg-2.webp');opacity:.55}
+#sdc::before    {background-image:url('bg-3.webp');opacity:.58}
+#lodging::before{background-image:url('bg-4.webp');opacity:.6}
+#regalos::before{background-image:url('bg-1.webp');opacity:.7}
+#salbum::before {background-image:url('bg-2.webp');opacity:.6}
+#rsvp::before   {background-image:url('bg-3.webp');opacity:.65}
+#footer::before {background-image:url('bg-4.webp');opacity:.6}
+/* Velo que asienta la textura sobre el negro y mantiene el contraste del texto */
+#sinv::after,#scd::after,#sfam::after,#subic::after,#siti::after,
+#galeria::after,#sdc::after,#lodging::after,#regalos::after,
+#salbum::after,#rsvp::after,#footer::after{
+  content:'';position:absolute;inset:0;z-index:-1;pointer-events:none;
+  background:radial-gradient(ellipse at center,rgba(23,21,15,.3) 0%,rgba(23,21,15,.5) 60%,rgba(23,21,15,.72) 100%)}
+
+/* ── CAJA DE LOS TITULOS CALIGRAFICOS ──────────────────────────────
+   Great Vibes dibuja rasgos que se salen del line-box. Como el relleno
+   viene de un background recortado contra el texto, todo lo que cae fuera
+   de la caja se corta en seco. Se le da caja propia (inline-block) con
+   holgura arriba, abajo y a los lados, y se cancela con margen negativo
+   para que el espaciado siga igual. */
+.hero-bride,.hero-groom,.heading,.heading-sm,.loc-venue,.rsvp-title,
+.footer-names,.fam-name{
+  display:inline-block;width:auto;max-width:100%;
+  padding:.20em .40em .26em;
+  margin-left:-.40em;margin-right:-.40em;
+  margin-top:-.20em;margin-bottom:-.26em;
+  overflow:visible;
+}
+/* Los nombres del hero van en lineas propias: el "y" intermedio es block */
+.hero-bride,.hero-groom{line-height:1.05}
+.heading{margin-bottom:calc(6px - .26em)}
+.heading-sm{line-height:1.15}
+.loc-venue{margin-bottom:calc(18px - .26em)}
+/* Esta tarjeta recortaba los nombres con height fija + overflow:hidden */
+.fam-name{height:auto;min-height:2.6em;overflow:visible;
+  display:flex;align-items:center;justify-content:center}
+
+/* ── FIGURAS DEL CODIGO DE VESTIMENTA ──────────────────────────────
+   Los dibujos van sobre tarjeta de arena: son ilustraciones oscuras y
+   sobre el fondo negro de la seccion se perdian. */
+.dc-figures{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:26px}
+.dc-fig{background:linear-gradient(170deg,#F7E7CE 0%,#F3E3C3 100%);
+  border:1px solid rgba(212,175,55,.55);border-radius:10px;
+  padding:18px 10px 14px;display:flex;flex-direction:column;align-items:center;gap:12px;
+  box-shadow:0 10px 26px rgba(0,0,0,.45)}
+/* Las dos ilustraciones tienen proporciones distintas: se les fija la misma
+   altura para que las tarjetas queden a la par */
+.dc-fig img{width:100%;max-width:150px;height:200px;display:block;object-fit:contain}
+.dc-fig-label{font-family:'Italiana',serif;font-size:13px;letter-spacing:.28em;
+  text-transform:uppercase;color:#0a0a0a;
+  -webkit-text-fill-color:#0a0a0a;background:none;animation:none;filter:none;
+  padding:0;margin:0}
+.dc-desc{font-family:'Cormorant Garamond',serif;font-size:18px;line-height:1.7;
+  color:var(--text);max-width:340px;margin:22px auto 0}
+
+/* ── MESA DE REGALOS ───────────────────────────────────────────────
+   El boton llenaba la tarjeta de lado a lado; ahora se ajusta al texto.
+   El logo de Liverpool es morado y naranja: va en una pastilla de arena
+   para que respire sobre el negro y conserve sus colores de marca. */
+.gift-cta{display:inline-flex;align-items:center;justify-content:center;gap:8px;
+  background:var(--gold);color:#0a0a0a;border:none;
+  font-family:'Italiana',serif;font-size:12px;letter-spacing:.22em;text-transform:uppercase;
+  padding:11px 22px;border-radius:50px;cursor:pointer;width:auto;max-width:100%;
+  margin-top:16px;transition:filter .25s,transform .25s;text-decoration:none;white-space:nowrap}
+.gift-cta:hover{filter:brightness(1.08);transform:translateY(-1px)}
+.gift-cta:active{transform:translateY(0)}
+.gift-cta svg{width:15px;height:15px;flex-shrink:0}
+.gift-logo{background:linear-gradient(170deg,#FBF3E2 0%,#EEDCB8 100%);
+  border:1px solid rgba(212,175,55,.5);border-radius:10px;
+  padding:14px 18px;margin:2px auto 4px;max-width:220px;
+  box-shadow:0 8px 22px rgba(0,0,0,.4)}
+.gift-logo img{width:100%;height:auto;display:block}
+.gift-num{color:#FDFDFC;font-weight:600;letter-spacing:.1em}
+.gift-modal-card .gift-num{color:#FDFDFC}
+
+/* ── TIPOGRAFIA DEL CLIENTE: Symphony Pro ──────────────────────────
+   Reemplaza a Great Vibes en los titulos caligraficos. Es la misma
+   fuente de boda-victoria-y-eduardo. */
+@font-face{font-family:'Symphony';src:url('symphony.woff?v=pro') format('woff');
+  font-weight:400;font-style:normal;font-display:swap}
+.hero-bride,.hero-groom,.heading,.heading-sm,.loc-venue,.rsvp-title,
+.footer-names,.fam-name{
+  font-family:'Symphony','Great Vibes',cursive!important}
+/* El titular de la cuenta es dato critico: en script no se lee */
+.gift-bank-name{font-family:'Cormorant Garamond',serif!important}
+/* Symphony tiene ojo mas chico que Great Vibes: se compensa el cuerpo */
+.hero-bride,.hero-groom{font-size:clamp(76px,23vw,104px)}
+.heading{font-size:62px}
+.heading-sm{font-size:47px}
+.loc-venue{font-size:42px}
+.rsvp-title{font-size:clamp(38px,7.8vw,51px)}
+.footer-names{font-size:58px}
+.fam-name{font-size:clamp(18px,4.8vw,22px)}
+/* El nombre largo sigue en serif: es dato critico y en script no se lee */
+.loc-venue.loc-venue--long{font-family:'Cormorant Garamond',serif!important}
+
+/* ── ZOOM DE LA GALERIA ────────────────────────────────────────────
+   La rueda 3D muestra las fotos muy chicas; al tocar una se abre
+   a pantalla completa. El tap se distingue del arrastre por umbral. */
+.wheel-card{cursor:pointer}
+.lb{position:fixed;inset:0;z-index:9500;background:rgba(10,9,6,.94);
+  backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);
+  display:flex;align-items:center;justify-content:center;
+  opacity:0;visibility:hidden;transition:opacity .3s ease,visibility 0s linear .3s}
+.lb.is-open{opacity:1;visibility:visible;transition:opacity .3s ease,visibility 0s}
+.lb-img{max-width:92vw;max-height:80vh;object-fit:contain;border-radius:4px;
+  border:1px solid rgba(212,175,55,.4);box-shadow:0 20px 60px rgba(0,0,0,.7);
+  transform:scale(.92);transition:transform .35s cubic-bezier(.2,.8,.2,1)}
+.lb.is-open .lb-img{transform:scale(1)}
+.lb-close,.lb-nav{position:absolute;z-index:2;background:rgba(38,33,24,.82);
+  border:1px solid rgba(212,175,55,.4);color:var(--gold);cursor:pointer;
+  display:flex;align-items:center;justify-content:center;border-radius:50%;
+  transition:background .25s}
+.lb-close:hover,.lb-nav:hover{background:rgba(212,175,55,.22)}
+.lb-close{top:18px;right:18px;width:42px;height:42px}
+.lb-close svg{width:18px;height:18px}
+.lb-nav{top:50%;transform:translateY(-50%);width:44px;height:44px}
+.lb-nav svg{width:20px;height:20px}
+.lb-prev{left:12px}
+.lb-next{right:12px}
+.lb-count{position:absolute;bottom:26px;left:50%;transform:translateX(-50%);
+  font-family:'Italiana',serif;font-size:13px;letter-spacing:.3em;color:var(--gold)}
+
+/* ── PORTADA: los novios quedan en la mitad baja de la foto ──────
+   Los textos suben a la zona del follaje para no taparlos. */
+#hero{align-items:flex-start}
+.hero-content{padding-top:max(6vh,44px)}
+.hero-bride,.hero-groom{font-size:clamp(58px,17vw,82px)!important;line-height:1}
+.hero-amp{font-size:34px;margin:.02em 0}
+.hero-date{margin-top:12px}
+.hero-tag{margin-top:8px}
+/* Encuadre: en escritorio la foto se recorta en alto; se ancla abajo
+   para no perder a los novios */
+.hero-bg{background-position:center 62%}
+/* Velo: oscuro arriba donde va el texto, limpio sobre los novios */
+.hero-veil{background:linear-gradient(to bottom,
+  rgba(10,10,10,.62) 0%,rgba(10,10,10,.42) 28%,rgba(10,10,10,.06) 48%,
+  rgba(10,10,10,0) 72%,rgba(10,10,10,.35) 100%)}
+
+
+/* ── SECCIONES DE FOTO ─────────────────────────────────────────────
+   Cinco fotos repartidas por la invitacion, cada una en su propia
+   seccion: flotan suavemente y un destello dorado las cruza. Se anima
+   solo transform (el brillo es un ::after que se desplaza). */
+.sec-foto{position:relative;padding:44px 24px;display:flex;justify-content:center;
+  background:radial-gradient(ellipse at center,rgba(212,175,55,.13) 0%,transparent 62%),var(--bg)}
+.sf-marco{position:relative;width:min(68vw,300px);aspect-ratio:3/4;border-radius:12px;overflow:hidden;
+  border:2px solid rgba(212,175,55,.8);
+  box-shadow:0 18px 40px rgba(0,0,0,.55),0 0 30px rgba(212,175,55,.3);
+  animation:levita 6.5s ease-in-out infinite}
+.sec-foto--izq .sf-marco{--rot:-2.5deg;margin-right:14%}
+.sec-foto--der .sf-marco{--rot:2.5deg;margin-left:14%;animation-delay:-3.2s}
+.sf-marco img{width:100%;height:100%;object-fit:cover;display:block}
+.sf-marco::after{content:'';position:absolute;top:0;left:0;width:60%;height:100%;
+  background:linear-gradient(105deg,transparent 0%,rgba(255,246,214,0) 30%,
+    rgba(255,246,214,.5) 50%,rgba(255,246,214,0) 70%,transparent 100%);
+  transform:translateX(-180%) skewX(-12deg);animation:destello 5s ease-in-out infinite}
+.sec-foto--der .sf-marco::after{animation-delay:-2.5s}
+@keyframes levita{
+  0%,100%{transform:translateY(0) rotate(var(--rot))}
+  50%{transform:translateY(-12px) rotate(calc(var(--rot) * -.5))}}
+@keyframes destello{
+  0%,55%{transform:translateX(-180%) skewX(-12deg)}
+  100%{transform:translateX(260%) skewX(-12deg)}}
+@media (prefers-reduced-motion:reduce){.sf-marco,.sf-marco::after{animation:none}}
+
+/* ── IDEAS DE REGALO (Mercado Libre) ───────────────────────────────
+   Tarjetas de producto dentro del modal de regalos. La foto va sobre
+   papel claro porque las fotos de tienda traen fondo blanco. Sin precio:
+   cambia a diario en la tienda. */
+.ml-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:6px;width:100%}
+.ml-card{display:flex;flex-direction:column;align-items:center;gap:8px;text-decoration:none;
+  background:rgba(212,175,55,.06);border:1px solid rgba(212,175,55,.35);border-radius:10px;
+  padding:10px 8px 12px;transition:border-color .25s,transform .25s}
+.ml-card:hover{border-color:rgba(212,175,55,.7);transform:translateY(-2px)}
+.ml-img{width:100%;aspect-ratio:1/1;background:#fff;border-radius:7px;overflow:hidden;
+  display:flex;align-items:center;justify-content:center}
+.ml-img img{width:100%;height:100%;object-fit:contain;display:block}
+.ml-name{font-family:'Cormorant Garamond',serif;font-weight:600;font-size:15px;line-height:1.3;
+  color:#FDFDFC;text-align:center}
+.ml-cta{display:inline-flex;align-items:center;gap:5px;font-family:'Italiana',serif;font-size:11px;
+  letter-spacing:.2em;text-transform:uppercase;color:var(--gold)}
+.ml-cta svg{width:12px;height:12px}
+
+/* Amazon: su logo trae texto negro y sonrisa naranja; respira sobre la pastilla arena */
+.gift-logo--amz{padding:18px 26px 14px}
+
+/* ══════════ YOLY & REFUGIO · capa propia ══════════ */
+
+/* Dorado metálico real (highlight → base → sombra) para botones dorados */
+.btn-map,.gift-cta,.album-btn,.rsvp-btn{
+  background:linear-gradient(135deg,#F6E3A1 0%,#D4AF37 38%,#A8862A 62%,#E9C766 100%);color:#17150F}
+
+/* Legibilidad (invitados mayores): nada informativo bajo 13px */
+.album-qr-note,.rsvp-deadline,.rsvp-pases-label,.gift-modal-ttl,.rsvp-contador-pie,.dc-avoid-lbl{font-size:13px}
+.fam-and-txt{font-size:16px}
+.footer-credit{font-size:15px;color:rgba(212,175,55,.6)}
+.dc-avoid-name{font-size:15px}
+.itin-ev{font-size:20px;font-weight:600}
+.itin-time{font-size:34px}
+
+/* Nombres de papás y padrinos: serif legible (son datos, no títulos) */
+.fam-name{font-family:'Cormorant Garamond',serif!important;font-weight:600;font-size:clamp(19px,5vw,22px)!important;line-height:1.3}
+
+/* Nombre de la invitación en el RSVP: grande y con brillo suave */
+.rsvp-para-note{margin-bottom:18px}
+.rsvp-para-lbl{display:block;font-family:'Italiana',serif;font-size:13px;letter-spacing:.28em;text-transform:uppercase;color:var(--gold);font-style:normal;margin-bottom:8px}
+.rsvp-para-name{display:block;font-family:'Cormorant Garamond',serif;font-style:normal;font-weight:700;font-size:clamp(26px,7.4vw,34px);line-height:1.2;color:#FBF1D6;
+  text-shadow:0 0 14px rgba(212,175,55,.55),0 0 30px rgba(212,175,55,.25);word-break:break-word}
+
+/* ── HERO: capa de parallax ── */
+.hero-par{position:absolute;inset:0;transform-origin:50% 40%}
+.hero-bg{background-position:center 60%}
+
+/* ── RELOJ ANTIGUO ── */
+.clock-card{padding-top:30px}
+.clock{position:relative;width:min(230px,62vw);aspect-ratio:1;margin:0 auto 6px;border-radius:50%;
+  box-shadow:0 14px 34px rgba(0,0,0,.55),0 0 0 1px rgba(212,175,55,.35),0 0 38px rgba(212,175,55,.18)}
+.clock svg{width:100%;height:100%;display:block}
+.clk-nums text{font-family:'Cormorant Garamond',serif;font-weight:700;font-size:13px;fill:#4A3712;text-anchor:middle;dominant-baseline:central}
+.clk-mono{font-family:'Italiana',serif;font-size:10px;letter-spacing:.2em;fill:#6B5118;text-anchor:middle}
+.clk-yr{font-family:'Cormorant Garamond',serif;font-weight:700;font-size:8.5px;letter-spacing:.3em;fill:#6B5118;text-anchor:middle}
+.clk-ticks line{stroke-linecap:round}
+.clk-hand{transform-box:view-box;transform-origin:100px 100px;transition:transform .45s cubic-bezier(.35,1.9,.55,1)}
+#clkH,#clkM{transition-duration:.9s}
+.clock-glow{position:absolute;inset:-6px;border-radius:50%;pointer-events:none;opacity:0;
+  box-shadow:0 0 0 2px rgba(240,217,140,.5),0 0 26px rgba(212,175,55,.55)}
+.clock.tk .clock-glow{animation:clkGlow .9s ease-out}
+@keyframes clkGlow{0%{opacity:.85}100%{opacity:0}}
+.clock-card .cd-row{margin-top:18px}
+.clock-card .cd-unit{position:relative}
+.clock-card .cd-value{font-weight:600;color:#FBF1D6;text-shadow:0 0 10px rgba(212,175,55,.35)}
+
+/* ── UBICACIÓN: tarjetas que levitan ── */
+.loc-float{animation:locFloat 5.6s ease-in-out infinite;transition:box-shadow .45s,transform .45s cubic-bezier(.2,.8,.2,1)}
+.loc-float.lifted,.loc-float:hover{box-shadow:0 26px 48px rgba(0,0,0,.55),0 0 0 1px rgba(212,175,55,.45);animation:none;
+  transform:translateY(-10px) perspective(700px) rotateX(3deg) rotateY(-3deg)}
+@keyframes locFloat{0%,100%{transform:translateY(0)}50%{transform:translateY(-6px)}}
+.btn-map svg{animation:pinBeat 1.6s ease-in-out infinite;transform-origin:50% 90%}
+@keyframes pinBeat{0%,100%{transform:scale(1)}50%{transform:scale(1.22)}}
+
+/* ── ITINERARIO: línea que se dibuja + rezo ── */
+.itin-list::before{display:none}
+.itin-line{position:absolute;left:50%;top:0;bottom:0;width:1.5px;margin-left:-.75px;transform-origin:top center;
+  background:linear-gradient(to bottom,transparent,#D4AF37 6%,#F0D98C 50%,#D4AF37 94%,transparent)}
+.itin-item{background:radial-gradient(ellipse at center,rgba(23,21,15,.92) 40%,transparent 72%)}
+.itin-rezo{position:relative;z-index:1;margin:26px 6px 14px;padding:34px 22px 28px;border-radius:6px;text-align:center;
+  background:linear-gradient(170deg,rgba(38,33,24,.97),rgba(23,21,15,.97));border:1px solid rgba(212,175,55,.5);
+  box-shadow:0 18px 40px rgba(0,0,0,.45),0 0 30px rgba(212,175,55,.12)}
+.itin-rezo::before{content:'';position:absolute;inset:8px;border:1px solid rgba(212,175,55,.22);border-radius:3px;pointer-events:none}
+.rezo-cross{width:18px;height:30px;fill:#D4AF37;display:block;margin:0 auto 12px;filter:drop-shadow(0 0 8px rgba(212,175,55,.6))}
+.rezo-lbl{display:block;font-family:'Cormorant Garamond',serif;font-style:italic;font-weight:700;font-size:21px;letter-spacing:.06em;color:#F0D98C;margin-bottom:14px}
+.rezo-txt{font-family:'Cormorant Garamond',serif;font-weight:500;font-size:18px;line-height:1.7;color:#F7E7CE;max-width:320px;margin:0 auto}
+.rezo-amen{display:block;margin-top:14px;font-family:'Italiana',serif;font-size:14px;letter-spacing:.4em;text-transform:uppercase;color:#D4AF37}
+
+/* ── FOTOS: zoom al hacer scroll + flecha a la siguiente ── */
+.sec-foto{flex-direction:column;align-items:center}
+.sf-marco img{transform-origin:50% 50%}
+.sf-next{display:flex;flex-direction:column;align-items:center;gap:4px;margin-top:22px;min-height:44px;min-width:88px;padding:6px 14px;
+  background:transparent;border:none;cursor:pointer;color:#D4AF37;-webkit-tap-highlight-color:transparent}
+.sf-next span{font-family:'Italiana',serif;font-size:13px;letter-spacing:.32em;text-transform:uppercase;color:rgba(247,231,206,.85)}
+.sf-next svg{width:26px;height:26px;fill:none;stroke:currentColor;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round;animation:scrollbounce 1.8s ease-in-out infinite}
+.sec-foto--izq .sf-next{margin-right:14%}
+.sec-foto--der .sf-next{margin-left:14%}
+
+/* ── TÍTULOS: reveal por palabras (cada palabra conserva el dorado) ── */
+.tw{display:inline-block;background:inherit;background-size:inherit;-webkit-background-clip:text;background-clip:text;
+  -webkit-text-fill-color:transparent;animation:inherit;padding:.2em .22em .26em;margin:-.2em -.22em -.26em}
+
+/* ── DRESS CODE (estructura de boda-fabiola-y-fernando) ── */
+.dc-looks{display:flex;flex-direction:column;gap:12px;max-width:380px;margin:4px auto 26px}
+.dc-look{display:flex;align-items:center;gap:14px;width:100%;padding:14px 16px;min-height:72px;cursor:pointer;border-radius:14px;text-align:left;
+  border:1px solid rgba(212,175,55,.45);background:linear-gradient(120deg,#2A2419 0%,#1D1A13 100%);
+  box-shadow:0 10px 24px rgba(0,0,0,.4);transition:transform .22s cubic-bezier(.34,1.56,.64,1),border-color .22s;
+  -webkit-tap-highlight-color:transparent;animation:dcLookBreathe 3.4s ease-in-out infinite}
+.dc-looks .dc-look:nth-child(2){animation-delay:1.7s}
+@keyframes dcLookBreathe{0%,100%{box-shadow:0 10px 24px rgba(0,0,0,.4),0 0 0 0 rgba(212,175,55,0)}50%{box-shadow:0 10px 24px rgba(0,0,0,.4),0 0 20px 2px rgba(212,175,55,.25)}}
+.dc-look:hover,.dc-look:focus-visible{transform:translateY(-3px);border-color:#D4AF37;outline:none}
+.dc-look:active{transform:translateY(-1px) scale(.985)}
+.dc-look-ico{flex:0 0 auto;width:46px;height:46px;border-radius:50%;display:flex;align-items:center;justify-content:center;color:#17150F;
+  background:linear-gradient(140deg,#F6E3A1,#D4AF37 55%,#A8862A);box-shadow:0 4px 12px rgba(0,0,0,.4),inset 0 1px 0 rgba(255,255,255,.4);
+  animation:icoSway 5s ease-in-out infinite}
+.dc-looks .dc-look:nth-child(2) .dc-look-ico{animation-delay:-2.5s}
+@keyframes icoSway{0%,100%{transform:translateY(0) rotate(-4deg)}50%{transform:translateY(-4px) rotate(4deg)}}
+.dc-look-ico svg{width:24px;height:24px}
+.dc-look-txt{display:flex;flex-direction:column;gap:2px;flex:1}
+.dc-look-rol{font-family:'Cormorant Garamond',serif;font-style:italic;font-weight:700;font-size:23px;color:#F7E7CE;line-height:1.15}
+.dc-look-cta{font-family:'Italiana',serif;font-size:13px;letter-spacing:.24em;text-transform:uppercase;color:#D4AF37}
+.dc-look-arrow{flex:0 0 auto;width:22px;height:22px;color:#D4AF37;animation:dcArrowNudge 1.9s ease-in-out infinite}
+.dc-look-arrow svg{width:100%;height:100%}
+@keyframes dcArrowNudge{0%,100%{transform:translateX(0);opacity:.6}50%{transform:translateX(4px);opacity:1}}
+.dc-viewer{position:fixed;inset:0;z-index:100000;display:flex;align-items:center;justify-content:center;padding:16px;
+  background:rgba(10,9,6,.72);opacity:0;transition:opacity .28s ease}
+.dc-viewer.on{opacity:1}
+.dc-viewer[hidden]{display:none!important}
+.dc-viewer:not(.on){pointer-events:none}
+.dcv-box{position:relative;width:min(92vw,440px);border-radius:20px;overflow:hidden;background:var(--card);
+  border:1px solid rgba(212,175,55,.55);box-shadow:0 26px 70px rgba(0,0,0,.6);padding:18px 0 16px}
+.dcv-head{font-family:'Cormorant Garamond',serif;font-style:italic;font-weight:700;font-size:24px;color:#F0D98C;text-align:center;margin:0 56px 14px}
+.dcv-viewport{overflow:hidden}
+.dcv-track{display:flex;transition:transform .42s cubic-bezier(.25,.8,.25,1);touch-action:pan-y}
+.dcv-slide{flex:0 0 100%;margin:0;display:flex;justify-content:center;padding:0 40px}
+.dcv-frame{position:relative;width:100%;max-width:300px;height:min(56vh,440px);padding:14px;border-radius:6px;
+  background:linear-gradient(145deg,#F6E3A1 0%,#B8962E 30%,#F0D98C 52%,#8E6B1E 74%,#E9C766 100%);
+  box-shadow:0 14px 30px rgba(0,0,0,.45),inset 0 0 0 1px rgba(255,255,255,.5),inset 0 0 0 4px rgba(46,34,12,.25)}
+.dcv-mat{position:relative;height:100%;border-radius:3px;display:flex;align-items:flex-end;justify-content:center;padding:20px 18px 14px;
+  background:radial-gradient(ellipse 72% 58% at 50% 62%,#FFFFFF 0%,#FBF3E2 62%,#F3E3C3 100%);
+  box-shadow:inset 0 0 0 1px rgba(168,134,42,.4),inset 0 0 0 7px #FBF3E2,inset 0 0 0 8px rgba(184,150,46,.55),inset 0 3px 10px rgba(46,34,12,.2)}
+.dcv-mat img{max-height:100%;max-width:100%;object-fit:contain;display:block;filter:drop-shadow(0 6px 10px rgba(46,34,12,.25))}
+.dcv-frame::before,.dcv-frame::after{content:'';position:absolute;width:18px;height:18px;border:1.5px solid #6B5118;opacity:.55;pointer-events:none}
+.dcv-frame::before{top:6px;left:6px;border-right:none;border-bottom:none}
+.dcv-frame::after{bottom:6px;right:6px;border-left:none;border-top:none}
+.dcv-cap{margin:14px 16px 8px;text-align:center;font-family:'Cormorant Garamond',serif;font-weight:700;font-size:16px;letter-spacing:.06em;color:#F7E7CE}
+.dcv-dots{display:flex;justify-content:center;gap:9px}
+.dcv-dot{width:10px;height:10px;border-radius:50%;padding:0;cursor:pointer;border:1px solid #D4AF37;background:transparent;transition:transform .2s,background .2s}
+.dcv-dot.on{background:#D4AF37;transform:scale(1.25)}
+.dcv-nav,.dc-viewer-close{position:absolute;z-index:3;width:44px;height:44px;border-radius:50%;cursor:pointer;display:flex;align-items:center;justify-content:center;
+  color:#17150F;border:none;background:linear-gradient(140deg,#F6E3A1,#D4AF37 55%,#A8862A);box-shadow:0 6px 16px rgba(0,0,0,.45)}
+.dcv-nav{top:50%;transform:translateY(-50%)}
+.dcv-nav svg{width:20px;height:20px}
+.dcv-prev{left:6px}.dcv-next{right:6px}
+.dc-viewer-close{top:10px;right:10px;z-index:4}
+.dc-viewer-close svg{width:18px;height:18px}
+
+/* ── REGALOS: destello que cruza la tarjeta ── */
+.gift-opts{position:relative}
+.gift-sheen-wrap{position:absolute;inset:0;overflow:hidden;border-radius:50%;pointer-events:none;z-index:3}
+.gift-sheen{position:absolute;top:0;left:0;width:45%;height:100%;z-index:3;pointer-events:none;transform:translateX(-160%) skewX(-16deg);
+  background:linear-gradient(100deg,transparent,rgba(255,240,200,.32),transparent)}
+.gift-env{width:70px;height:52px;margin:0 auto 14px;display:block;filter:drop-shadow(0 0 10px rgba(212,175,55,.45))}
+.gift-modal-card .gift-detail{font-size:18px;color:#F7E7CE;line-height:1.7}
+
+/* ── RSVP: el botón respira ── */
+.rsvp-btn:not(:disabled){animation:rsvpBreathe 3.2s ease-in-out infinite}
+@keyframes rsvpBreathe{0%,100%{transform:scale(1)}50%{transform:scale(1.025)}}
+
+/* ── MENÚ FLOTANTE ── */
+.nav-pill{position:fixed;z-index:990;left:50%;display:flex;align-items:center;gap:10px;padding:7px 8px 7px 16px;border-radius:999px;
+  background:rgba(32,28,21,.72);-webkit-backdrop-filter:blur(16px);backdrop-filter:blur(16px);border:1px solid rgba(212,175,55,.32);
+  box-shadow:0 18px 50px rgba(0,0,0,.45);opacity:0;visibility:hidden;transform:translate(-50%,40px);
+  transition:opacity .7s ease,transform .7s cubic-bezier(.2,.8,.2,1),visibility 0s linear .7s}
+.nav-pill.on{opacity:1;visibility:visible;transform:translate(-50%,0);transition:opacity .7s ease,transform .7s cubic-bezier(.2,.8,.2,1),visibility 0s}
+.nav-mono{font-family:'Cormorant Garamond',serif;font-weight:700;font-size:21px;letter-spacing:.04em;color:#F0D98C;text-decoration:none;white-space:nowrap;
+  min-height:44px;display:flex;align-items:center}
+.nav-mono i{font-style:italic;color:#D4AF37;margin:0 2px;font-size:.85em}
+.nav-links{position:relative;display:none;align-items:center}
+.nav-links a{position:relative;z-index:1;font-family:'Italiana',serif;font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:#F7E7CE;
+  text-decoration:none;padding:12px 11px;border-radius:999px;white-space:nowrap;transition:color .3s}
+.nav-links a.cur{color:#17150F}
+.nav-ind{position:absolute;top:50%;left:0;height:34px;margin-top:-17px;border-radius:999px;opacity:0;
+  background:linear-gradient(135deg,#F6E3A1,#D4AF37 55%,#B8962E);transition:transform .45s cubic-bezier(.3,.9,.3,1),width .45s cubic-bezier(.3,.9,.3,1),opacity .3s}
+.nav-sep{width:1px;height:22px;background:rgba(212,175,55,.35);display:none}
+.nav-share{width:44px;height:44px;border-radius:50%;border:1px solid rgba(212,175,55,.35);background:transparent;color:#D4AF37;cursor:pointer;
+  display:flex;align-items:center;justify-content:center;flex:0 0 auto}
+.nav-share svg{width:18px;height:18px}
+.nav-menu-btn{min-height:44px;padding:0 18px;border-radius:999px;border:none;cursor:pointer;white-space:nowrap;
+  font-family:'Italiana',serif;font-size:14px;letter-spacing:.16em;text-transform:uppercase;color:#17150F;
+  background:linear-gradient(135deg,#F6E3A1,#D4AF37 55%,#B8962E);box-shadow:0 4px 14px rgba(0,0,0,.35)}
+@media (max-width:1023px){
+  .nav-pill{bottom:max(1rem,env(safe-area-inset-bottom))}
+  #footer{padding-bottom:calc(110px + env(safe-area-inset-bottom))}
+  .vinyl-btn{bottom:calc(max(1rem,env(safe-area-inset-bottom)) + 74px);right:16px;width:56px;height:56px}
+}
+@media (min-width:1024px){
+  .nav-pill{top:20px}
+  .nav-pill:not(.on){transform:translate(-50%,-40px)}
+  .nav-links,.nav-sep{display:flex}
+  .nav-menu-btn{display:none}
+}
+.nav-full{position:fixed;inset:0;z-index:1000;display:flex;flex-direction:column;padding:max(18px,env(safe-area-inset-top)) 26px max(26px,env(safe-area-inset-bottom));
+  background:rgba(23,21,15,.95);-webkit-backdrop-filter:blur(22px);backdrop-filter:blur(22px);
+  clip-path:circle(0% at 85% 95%);visibility:hidden;transition:clip-path .6s cubic-bezier(.3,.8,.3,1),visibility 0s linear .6s}
+.nav-full.open{clip-path:circle(150% at 85% 95%);visibility:visible;transition:clip-path .6s cubic-bezier(.3,.8,.3,1),visibility 0s}
+.nf-top{display:flex;align-items:center;justify-content:space-between}
+.nf-close{width:46px;height:46px;border-radius:50%;border:1px solid rgba(212,175,55,.45);background:transparent;color:#F0D98C;cursor:pointer;display:flex;align-items:center;justify-content:center}
+.nf-close svg{width:20px;height:20px}
+.nf-list{list-style:none;margin:auto 0;padding:10px 0}
+.nf-list li{opacity:0;transform:translateY(18px);transition:opacity .45s ease,transform .45s ease}
+.nav-full.open .nf-list li{opacity:1;transform:none;transition-delay:calc(.18s + var(--i) * 70ms)}
+.nf-list a{display:flex;align-items:baseline;gap:16px;min-height:44px;padding:5px 0;text-decoration:none;color:#F7E7CE}
+.nf-num{font-family:'Italiana',serif;font-size:13px;letter-spacing:.2em;color:#D4AF37;width:26px}
+.nf-name{font-family:'Cormorant Garamond',serif;font-weight:600;font-size:clamp(2rem,9vw,3rem);line-height:1.08}
+.nf-list a.cur .nf-name{font-style:italic;color:#D4AF37}
+.nf-foot{text-align:center;font-family:'Italiana',serif;font-size:13px;letter-spacing:.24em;text-transform:uppercase;color:rgba(247,231,206,.8)}
+@media (prefers-reduced-motion:reduce){
+  .loc-float,.btn-map svg,.dc-look,.dc-look-ico,.dc-look-arrow,.rsvp-btn,.sf-next svg{animation:none!important}
+  .nav-full{transition:visibility 0s}
+}
+</style>
+</head>
+<body>
+
+<div id="loader">
+  <div class="ld-mono" id="ldMono"><span>J</span><span>&nbsp;</span><span>y</span><span>&nbsp;</span><span>Y</span></div>
+  <p class="ld-tag" id="ldTag">Anaheim, California · 6 Marzo · 2027</p>
+</div>
+
+<div id="petals"></div>
+
+<div id="envelope-screen">
+  <img id="envImage" src="sobre.jpg" alt="Invitación de boda Yoly y Refugio">
+  <video id="envVideo" src="apertura.mp4" muted playsinline preload="auto" poster="sobre.jpg"></video>
+  <div class="env-tap" id="envTap">Toca para abrir</div>
+</div>
+
+<div class="copy-toast" id="copyToast">¡Copiado!</div>
+
+<div class="lb" id="lightbox" aria-hidden="true">
+  <button class="lb-close" id="lbClose" type="button" aria-label="Cerrar">
+    <svg viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"><line x1="6" y1="6" x2="18" y2="18"/><line x1="6" y1="18" x2="18" y2="6"/></svg>
+  </button>
+  <button class="lb-nav lb-prev" id="lbPrev" type="button" aria-label="Anterior">
+    <svg viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+  </button>
+  <button class="lb-nav lb-next" id="lbNext" type="button" aria-label="Siguiente">
+    <svg viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+  </button>
+  <img class="lb-img" id="lbImg" alt="Yoly y Refugio">
+  <span class="lb-count" id="lbCount"></span>
+</div>
+
+<div class="wrap">
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-par"><div class="hero-bg"></div></div>
+    <div class="hero-veil"></div>
+    <div class="hero-sheen"></div>
+    <div class="hero-frame">
+      <div class="hero-corner hc-tl"><svg viewBox="0 0 24 24" fill="none"><path d="M1 1L1 11M1 1L11 1" stroke="#D4AF37" stroke-width="1.4" opacity=".7"/></svg></div>
+      <div class="hero-corner hc-tr"><svg viewBox="0 0 24 24" fill="none"><path d="M1 1L1 11M1 1L11 1" stroke="#D4AF37" stroke-width="1.4" opacity=".7"/></svg></div>
+      <div class="hero-corner hc-bl"><svg viewBox="0 0 24 24" fill="none"><path d="M1 1L1 11M1 1L11 1" stroke="#D4AF37" stroke-width="1.4" opacity=".7"/></svg></div>
+      <div class="hero-corner hc-br"><svg viewBox="0 0 24 24" fill="none"><path d="M1 1L1 11M1 1L11 1" stroke="#D4AF37" stroke-width="1.4" opacity=".7"/></svg></div>
+    </div>
+    <div class="hero-content">
+      <span class="hero-bride rv">Yoly</span>
+      <span class="hero-amp rv">y</span>
+      <span class="hero-groom rv">Refugio</span>
+      <span class="hero-date rv">Sábado · 6 de Marzo</span>
+      <span class="hero-tag rv">Anaheim, California · 2027</span>
+    </div>
+    <div class="scroll-hint" id="scrollHint">
+      <span class="scroll-hint-txt">Desliza</span>
+      <span class="scroll-hint-arrow"><svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg></span>
+    </div>
+  </section>
+
+  <!-- INVITACIÓN -->
+  <section id="sinv" class="sec rv" style="text-align:center;overflow:hidden">
+    <span class="eyebrow">Con la gracia de Dios</span>
+    <div class="orn"><div class="orn-line"></div><div class="orn-diamond-sm"></div><div class="orn-diamond"></div><div class="orn-diamond-sm"></div><div class="orn-line"></div></div>
+    <h1 class="heading">Yoly y Refugio</h1>
+    <p class="sub" style="margin-top:8px;font-weight:600;color:#F0D98C">tienen el honor de invitarte a<br>su boda</p>
+    <div class="orn bot"><div class="orn-line"></div><div class="orn-diamond-sm"></div><div class="orn-diamond"></div><div class="orn-diamond-sm"></div><div class="orn-line"></div></div>
+    <p style="font-family:'Cormorant Garamond',serif;font-style:italic;font-size:18px;color:#F7E7CE;line-height:1.8;margin-top:24px;opacity:.92">
+      Sábado, 6 de Marzo de 2027<br>
+      Anaheim, California
+    </p>
+  </section>
+
+
+  <section class="sec-foto sec-foto--izq"><div class="sf-marco"><img src="flota1.jpg" alt="Yoly y Refugio" loading="eager"></div><button class="sf-next" type="button" aria-label="Ir a la siguiente foto"><span>Siguiente</span><svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg></button></section>
+  <!-- CUENTA REGRESIVA -->
+  <section id="scd" class="sec-sm rv" style="text-align:center">
+    <span class="eyebrow">Faltan</span>
+    <div class="card clock-card" style="max-width:380px;margin:0 auto">
+      <div class="clock" id="clock" aria-hidden="true">
+        <svg viewBox="0 0 200 200">
+          <defs>
+            <linearGradient id="clkBezel" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0" stop-color="#F6E3A1"/><stop offset=".28" stop-color="#D4AF37"/>
+              <stop offset=".55" stop-color="#8E6B1E"/><stop offset=".78" stop-color="#E9C766"/><stop offset="1" stop-color="#9C7A24"/>
+            </linearGradient>
+            <radialGradient id="clkFace" cx=".5" cy=".45" r=".6">
+              <stop offset="0" stop-color="#FCF4E2"/><stop offset=".7" stop-color="#F3E1BB"/><stop offset="1" stop-color="#DCC08A"/>
+            </radialGradient>
+          </defs>
+          <circle cx="100" cy="100" r="98" fill="url(#clkBezel)"/>
+          <circle cx="100" cy="100" r="92" fill="#3A2C10"/>
+          <circle cx="100" cy="100" r="90.5" fill="url(#clkBezel)"/>
+          <circle cx="100" cy="100" r="88" fill="url(#clkFace)"/>
+          <circle cx="100" cy="100" r="76" fill="none" stroke="#8E6B1E" stroke-width=".5" opacity=".7"/>
+          <circle cx="100" cy="100" r="55" fill="none" stroke="#8E6B1E" stroke-width=".5" stroke-dasharray="1 3" opacity=".7"/>
+          <g class="clk-ticks" stroke="#4A3712"><line x1="100.00" y1="14.00" x2="100.00" y2="21.50" stroke-width="1.6"/><line x1="108.99" y1="14.47" x2="108.57" y2="18.45" stroke-width="0.7"/><line x1="117.88" y1="15.88" x2="117.05" y2="19.79" stroke-width="0.7"/><line x1="126.58" y1="18.21" x2="125.34" y2="22.01" stroke-width="0.7"/><line x1="134.98" y1="21.44" x2="133.35" y2="25.09" stroke-width="0.7"/><line x1="143.00" y1="25.52" x2="139.25" y2="32.02" stroke-width="1.6"/><line x1="150.55" y1="30.42" x2="148.20" y2="33.66" stroke-width="0.7"/><line x1="157.55" y1="36.09" x2="154.87" y2="39.06" stroke-width="0.7"/><line x1="163.91" y1="42.45" x2="160.94" y2="45.13" stroke-width="0.7"/><line x1="169.58" y1="49.45" x2="166.34" y2="51.80" stroke-width="0.7"/><line x1="174.48" y1="57.00" x2="167.98" y2="60.75" stroke-width="1.6"/><line x1="178.56" y1="65.02" x2="174.91" y2="66.65" stroke-width="0.7"/><line x1="181.79" y1="73.42" x2="177.99" y2="74.66" stroke-width="0.7"/><line x1="184.12" y1="82.12" x2="180.21" y2="82.95" stroke-width="0.7"/><line x1="185.53" y1="91.01" x2="181.55" y2="91.43" stroke-width="0.7"/><line x1="186.00" y1="100.00" x2="178.50" y2="100.00" stroke-width="1.6"/><line x1="185.53" y1="108.99" x2="181.55" y2="108.57" stroke-width="0.7"/><line x1="184.12" y1="117.88" x2="180.21" y2="117.05" stroke-width="0.7"/><line x1="181.79" y1="126.58" x2="177.99" y2="125.34" stroke-width="0.7"/><line x1="178.56" y1="134.98" x2="174.91" y2="133.35" stroke-width="0.7"/><line x1="174.48" y1="143.00" x2="167.98" y2="139.25" stroke-width="1.6"/><line x1="169.58" y1="150.55" x2="166.34" y2="148.20" stroke-width="0.7"/><line x1="163.91" y1="157.55" x2="160.94" y2="154.87" stroke-width="0.7"/><line x1="157.55" y1="163.91" x2="154.87" y2="160.94" stroke-width="0.7"/><line x1="150.55" y1="169.58" x2="148.20" y2="166.34" stroke-width="0.7"/><line x1="143.00" y1="174.48" x2="139.25" y2="167.98" stroke-width="1.6"/><line x1="134.98" y1="178.56" x2="133.35" y2="174.91" stroke-width="0.7"/><line x1="126.58" y1="181.79" x2="125.34" y2="177.99" stroke-width="0.7"/><line x1="117.88" y1="184.12" x2="117.05" y2="180.21" stroke-width="0.7"/><line x1="108.99" y1="185.53" x2="108.57" y2="181.55" stroke-width="0.7"/><line x1="100.00" y1="186.00" x2="100.00" y2="178.50" stroke-width="1.6"/><line x1="91.01" y1="185.53" x2="91.43" y2="181.55" stroke-width="0.7"/><line x1="82.12" y1="184.12" x2="82.95" y2="180.21" stroke-width="0.7"/><line x1="73.42" y1="181.79" x2="74.66" y2="177.99" stroke-width="0.7"/><line x1="65.02" y1="178.56" x2="66.65" y2="174.91" stroke-width="0.7"/><line x1="57.00" y1="174.48" x2="60.75" y2="167.98" stroke-width="1.6"/><line x1="49.45" y1="169.58" x2="51.80" y2="166.34" stroke-width="0.7"/><line x1="42.45" y1="163.91" x2="45.13" y2="160.94" stroke-width="0.7"/><line x1="36.09" y1="157.55" x2="39.06" y2="154.87" stroke-width="0.7"/><line x1="30.42" y1="150.55" x2="33.66" y2="148.20" stroke-width="0.7"/><line x1="25.52" y1="143.00" x2="32.02" y2="139.25" stroke-width="1.6"/><line x1="21.44" y1="134.98" x2="25.09" y2="133.35" stroke-width="0.7"/><line x1="18.21" y1="126.58" x2="22.01" y2="125.34" stroke-width="0.7"/><line x1="15.88" y1="117.88" x2="19.79" y2="117.05" stroke-width="0.7"/><line x1="14.47" y1="108.99" x2="18.45" y2="108.57" stroke-width="0.7"/><line x1="14.00" y1="100.00" x2="21.50" y2="100.00" stroke-width="1.6"/><line x1="14.47" y1="91.01" x2="18.45" y2="91.43" stroke-width="0.7"/><line x1="15.88" y1="82.12" x2="19.79" y2="82.95" stroke-width="0.7"/><line x1="18.21" y1="73.42" x2="22.01" y2="74.66" stroke-width="0.7"/><line x1="21.44" y1="65.02" x2="25.09" y2="66.65" stroke-width="0.7"/><line x1="25.52" y1="57.00" x2="32.02" y2="60.75" stroke-width="1.6"/><line x1="30.42" y1="49.45" x2="33.66" y2="51.80" stroke-width="0.7"/><line x1="36.09" y1="42.45" x2="39.06" y2="45.13" stroke-width="0.7"/><line x1="42.45" y1="36.09" x2="45.13" y2="39.06" stroke-width="0.7"/><line x1="49.45" y1="30.42" x2="51.80" y2="33.66" stroke-width="0.7"/><line x1="57.00" y1="25.52" x2="60.75" y2="32.02" stroke-width="1.6"/><line x1="65.02" y1="21.44" x2="66.65" y2="25.09" stroke-width="0.7"/><line x1="73.42" y1="18.21" x2="74.66" y2="22.01" stroke-width="0.7"/><line x1="82.12" y1="15.88" x2="82.95" y2="19.79" stroke-width="0.7"/><line x1="91.01" y1="14.47" x2="91.43" y2="18.45" stroke-width="0.7"/></g>
+          <g class="clk-nums"><text x="100.00" y="32.00" transform="rotate(0 100.00 32.00)">XII</text><text x="134.00" y="41.11" transform="rotate(30 134.00 41.11)">I</text><text x="158.89" y="66.00" transform="rotate(60 158.89 66.00)">II</text><text x="168.00" y="100.00" transform="rotate(90 168.00 100.00)">III</text><text x="158.89" y="134.00" transform="rotate(120 158.89 134.00)">IIII</text><text x="134.00" y="158.89" transform="rotate(150 134.00 158.89)">V</text><text x="100.00" y="168.00" transform="rotate(180 100.00 168.00)">VI</text><text x="66.00" y="158.89" transform="rotate(210 66.00 158.89)">VII</text><text x="41.11" y="134.00" transform="rotate(240 41.11 134.00)">VIII</text><text x="32.00" y="100.00" transform="rotate(270 32.00 100.00)">IX</text><text x="41.11" y="66.00" transform="rotate(300 41.11 66.00)">X</text><text x="66.00" y="41.11" transform="rotate(330 66.00 41.11)">XI</text></g>
+          <text class="clk-mono" x="100" y="80">J &amp; Y</text>
+          <text class="clk-yr" x="100" y="132">MMXXVII</text>
+          <g class="clk-hand" id="clkH"><path d="M100 104 L97.6 84 Q100 76 100 58 Q100 76 102.4 84 Z" fill="#2E220C"/><circle cx="100" cy="72" r="4.2" fill="none" stroke="#2E220C" stroke-width="1.6"/></g>
+          <g class="clk-hand" id="clkM"><path d="M100 106 L98.4 80 L100 30 L101.6 80 Z" fill="#2E220C"/></g>
+          <g class="clk-hand" id="clkS"><line x1="100" y1="116" x2="100" y2="24" stroke="#A8862A" stroke-width="1.1"/><circle cx="100" cy="116" r="3.4" fill="#A8862A"/></g>
+          <circle cx="100" cy="100" r="5" fill="url(#clkBezel)"/><circle cx="100" cy="100" r="1.6" fill="#2E220C"/>
+        </svg>
+        <span class="clock-glow"></span>
+      </div>
+      <div class="cd-row">
+        <div class="cd-unit">
+          <span class="cd-value" id="cdDias">000</span>
+          <span class="cd-lbl">Días</span>
+        </div>
+        <div class="cd-sep"><div class="cd-dot"></div><div class="cd-dot"></div></div>
+        <div class="cd-unit">
+          <span class="cd-value" id="cdHoras">00</span>
+          <span class="cd-lbl">Horas</span>
+        </div>
+        <div class="cd-sep"><div class="cd-dot"></div><div class="cd-dot"></div></div>
+        <div class="cd-unit">
+          <span class="cd-value" id="cdMins">00</span>
+          <span class="cd-lbl">Min</span>
+        </div>
+        <div class="cd-sep"><div class="cd-dot"></div><div class="cd-dot"></div></div>
+        <div class="cd-unit">
+          <span class="cd-value" id="cdSecs">00</span>
+          <span class="cd-lbl">Seg</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec-foto sec-foto--der"><div class="sf-marco"><img src="flota6.jpg" alt="Yoly y Refugio" loading="eager"></div><button class="sf-next" type="button" aria-label="Ir a la siguiente foto"><span>Siguiente</span><svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg></button></section>
+  <!-- NUESTRAS FAMILIAS -->
+  <section id="sfam" class="sec rv" style="text-align:center">
+    <span class="eyebrow">Con la bendición de</span>
+    <h2 class="heading-sm">Nuestras Familias</h2>
+    <div class="orn" style="margin-top:16px"><div class="orn-line"></div><div class="orn-diamond-sm"></div><div class="orn-diamond"></div><div class="orn-diamond-sm"></div><div class="orn-line"></div></div>
+    <div class="fam-grid rv">
+      <div class="fam-card">
+        <span class="fam-role-lbl">Papás de la novia</span>
+        <div class="fam-pair">
+          <span class="fam-name">Gabriela<br>Ruvalcaba<svg class="fam-cross" viewBox="0 0 18 30" role="img" aria-label="finado"><path d="M8.25 1.1h1.5l.34 7.5h6.06l.35 1.5-.35 1.5h-6.06l-.34 17.4-.75.5-.75-.5-.34-17.4H1.85L1.5 10.1l.35-1.5h6.06z"/></svg></span>
+          <div class="fam-and"><div class="fam-and-line"></div><span class="fam-and-txt">y</span><div class="fam-and-line"></div></div>
+          <span class="fam-name">Albino<br>Estevez<svg class="fam-cross" viewBox="0 0 18 30" role="img" aria-label="finado"><path d="M8.25 1.1h1.5l.34 7.5h6.06l.35 1.5-.35 1.5h-6.06l-.34 17.4-.75.5-.75-.5-.34-17.4H1.85L1.5 10.1l.35-1.5h6.06z"/></svg></span>
+        </div>
+      </div>
+      <div class="fam-card">
+        <span class="fam-role-lbl">Papás del novio</span>
+        <div class="fam-pair">
+          <span class="fam-name">José<br>González<svg class="fam-cross" viewBox="0 0 18 30" role="img" aria-label="finado"><path d="M8.25 1.1h1.5l.34 7.5h6.06l.35 1.5-.35 1.5h-6.06l-.34 17.4-.75.5-.75-.5-.34-17.4H1.85L1.5 10.1l.35-1.5h6.06z"/></svg></span>
+          <div class="fam-and"><div class="fam-and-line"></div><span class="fam-and-txt">y</span><div class="fam-and-line"></div></div>
+          <span class="fam-name">M. Beatriz<br>González</span>
+        </div>
+      </div>
+    </div>
+    <span class="eyebrow" style="display:block;margin-top:38px">Nuestros Padrinos</span>
+    <div class="fam-padrinos-grid" id="padrinosStack">
+      <div class="fam-padrinos rv">
+        <span class="fam-role-lbl">Velación</span>
+        <span class="fam-name">Evangelina Plascencia</span>
+        <div class="fam-and"><div class="fam-and-line"></div><span class="fam-and-txt">y</span><div class="fam-and-line"></div></div>
+        <span class="fam-name">Guillermo Plascencia</span>
+      </div>
+      <div class="fam-padrinos rv">
+        <span class="fam-role-lbl">Mancuerna</span>
+        <span class="fam-name">Sonia González</span>
+        <div class="fam-and"><div class="fam-and-line"></div><span class="fam-and-txt">y</span><div class="fam-and-line"></div></div>
+        <span class="fam-name">José de Jesús González</span>
+      </div>
+      <div class="fam-padrinos rv">
+        <span class="fam-role-lbl">Anillos</span>
+        <span class="fam-name">María Elena Estevez</span>
+        <div class="fam-and"><div class="fam-and-line"></div><span class="fam-and-txt">y</span><div class="fam-and-line"></div></div>
+        <span class="fam-name">Óscar Estevez</span>
+      </div>
+      <div class="fam-padrinos rv">
+        <span class="fam-role-lbl">Arras</span>
+        <span class="fam-name">Lorena González</span>
+        <div class="fam-and"><div class="fam-and-line"></div><span class="fam-and-txt">y</span><div class="fam-and-line"></div></div>
+        <span class="fam-name">Miguel Ángel Estevez</span>
+      </div>
+      <div class="fam-padrinos rv">
+        <span class="fam-role-lbl">Ramo</span>
+        <span class="fam-name">Gaby Estevez</span>
+        <div class="fam-and"><div class="fam-and-line"></div><span class="fam-and-txt">y</span><div class="fam-and-line"></div></div>
+        <span class="fam-name">Omar Estevez</span>
+      </div>
+      <div class="fam-padrinos rv">
+        <span class="fam-role-lbl">Biblia y Rosario</span>
+        <span class="fam-name">Silvia Sánchez</span>
+        <div class="fam-and"><div class="fam-and-line"></div><span class="fam-and-txt">y</span><div class="fam-and-line"></div></div>
+        <span class="fam-name">Javier Medina</span>
+      </div>
+      <div class="fam-padrinos rv">
+        <span class="fam-role-lbl">Imagen</span>
+        <span class="fam-name">Silvia Morales</span>
+        <div class="fam-and"><div class="fam-and-line"></div><span class="fam-and-txt">y</span><div class="fam-and-line"></div></div>
+        <span class="fam-name">Marco Antonio Estevez</span>
+      </div>
+      <div class="fam-padrinos rv">
+        <span class="fam-role-lbl">Cojines</span>
+        <span class="fam-name">Beatriz Canal</span>
+        <div class="fam-and"><div class="fam-and-line"></div><span class="fam-and-txt">y</span><div class="fam-and-line"></div></div>
+        <span class="fam-name">Mario Ballesteros</span>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="sec-foto sec-foto--der"><div class="sf-marco"><img src="flota2.jpg" alt="Yoly y Refugio" loading="eager"></div><button class="sf-next" type="button" aria-label="Ir a la siguiente foto"><span>Siguiente</span><svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg></button></section>
+  <!-- UBICACIÓN -->
+  <section id="subic" class="sec rv" style="text-align:center">
+    <span class="eyebrow">Dónde Celebramos</span>
+    <h2 class="heading-sm">Ubicación</h2>
+    <p class="sub" style="margin-top:6px;color:var(--gold);font-weight:600">Anaheim, California</p>
+
+    <div class="card loc-float" style="max-width:380px;margin:24px auto 0">
+      <span class="loc-venue-lbl">Recepción</span>
+      <div class="loc-venue loc-venue--long">St. John the Baptist<br>Greek Orthodox Church</div>
+      <div class="loc-row">
+        <svg class="loc-icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+        <div class="loc-txt"><strong>3:45 p.m.</strong></div>
+      </div>
+      <div class="loc-row">
+        <svg class="loc-icon" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg>
+        <div class="loc-txt">405 N Dale Ave<br>Anaheim, CA 92801</div>
+      </div>
+      <a href="https://www.google.com/maps/search/?api=1&amp;query=St.+John+the+Baptist+Greek+Orthodox+Church%2C+405+N+Dale+Ave%2C+Anaheim%2C+CA+92801" target="_blank" rel="noopener" class="btn-map" style="margin-top:20px">
+        <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+        Cómo llegar
+      </a>
+    </div>
+
+    <div class="cal-row rv" style="margin-top:22px">
+      <a href="https://calendar.google.com/calendar/render?action=TEMPLATE&amp;text=Boda+Yoly+%26+Refugio&amp;dates=20270306T210000Z/20270307T073000Z&amp;details=Ceremonia+religiosa+1%3A00+PM+%7C+Recepci%C3%B3n+3%3A45+PM&amp;location=St.+John+the+Baptist+Greek+Orthodox+Church%2C+405+N+Dale+Ave%2C+Anaheim%2C+CA+92801" target="_blank" rel="noopener" class="btn-cal">
+        <svg viewBox="0 0 24 24"><path d="M19 3h-1V1h-2v2H8V1H6v2H5C3.89 4 3 4.9 3 6v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V9h14v10zM7 11h5v5H7z"/></svg>
+        Guardar en Calendario
+      </a>
+    </div>
+  </section>
+
+  <!-- ITINERARIO -->
+  <section id="siti" class="sec rv" style="text-align:center;overflow:hidden">
+    <span class="eyebrow">Programa del Día</span>
+    <h2 class="heading-sm">Itinerario</h2>
+    <div class="orn" style="margin-top:16px"><div class="orn-line"></div><div class="orn-diamond-sm"></div><div class="orn-diamond"></div><div class="orn-diamond-sm"></div><div class="orn-line"></div></div>
+    <div class="itin-list">
+      <div class="itin-line" aria-hidden="true"></div>
+      <div class="itin-item"><div class="itin-dot"></div><div class="itin-time">1:00 p.m.</div><div class="itin-ev">Ceremonia religiosa</div></div>
+      <div class="itin-rezo" id="srezo">
+        <svg class="rezo-cross" viewBox="0 0 18 30" aria-hidden="true"><path d="M8.25 1.1h1.5l.34 7.5h6.06l.35 1.5-.35 1.5h-6.06l-.34 17.4-.75.5-.75-.5-.34-17.4H1.85L1.5 10.1l.35-1.5h6.06z"/></svg>
+        <span class="rezo-lbl">Oración de los esposos</span>
+        <p class="rezo-txt">Señor, Dios nuestro, que en el principio creaste al hombre y a la mujer y los uniste en el amor: bendice esta unión que hoy ponemos en tus manos.<br><br>Que nuestro hogar sea casa de paz, de perdón y de fe; que en la alegría te demos gracias y en la prueba te busquemos siempre.<br><br>Bajo el amparo de la Santísima Virgen María, concédenos caminar juntos, fieles y unidos, todos los días de nuestra vida.</p>
+        <span class="rezo-amen">Amén</span>
+      </div>
+      <div class="itin-item"><div class="itin-dot sage"></div><div class="itin-time">3:45 p.m.</div><div class="itin-ev">Recepción</div></div>
+      <div class="itin-item"><div class="itin-dot"></div><div class="itin-time">4:45 p.m.</div><div class="itin-ev">Entrada de los novios</div></div>
+      <div class="itin-item"><div class="itin-dot sage"></div><div class="itin-time">5:00 p.m.</div><div class="itin-ev">Cena</div></div>
+      <div class="itin-item"><div class="itin-dot"></div><div class="itin-time">6:15 p.m.</div><div class="itin-ev">Vals de los novios</div></div>
+      <div class="itin-item"><div class="itin-dot sage"></div><div class="itin-time">6:45 p.m.</div><div class="itin-ev">Fotos</div></div>
+      <div class="itin-item"><div class="itin-dot"></div><div class="itin-time">7:00 p.m.</div><div class="itin-ev">Brindis</div></div>
+      <div class="itin-item"><div class="itin-dot sage"></div><div class="itin-ev">¡Abrimos pista!</div></div>
+      <div class="itin-item"><div class="itin-dot"></div><div class="itin-time">7:30 p.m.</div><div class="itin-ev">Banda</div></div>
+      <div class="itin-item"><div class="itin-dot sage"></div><div class="itin-time">8:15 p.m.</div><div class="itin-ev">Baile del dólar</div></div>
+      <div class="itin-item"><div class="itin-dot"></div><div class="itin-time">9:15 p.m.</div><div class="itin-ev">Lanzamiento de liga y ramo</div></div>
+      <div class="itin-item"><div class="itin-dot sage"></div><div class="itin-time">11:30 p.m.</div><div class="itin-ev">Fin de la boda</div></div>
+    </div>
+  </section>
+
+
+  <section class="sec-foto sec-foto--izq"><div class="sf-marco"><img src="flota3.jpg" alt="Yoly y Refugio" loading="eager"></div><button class="sf-next" type="button" aria-label="Ir a la siguiente foto"><span>Siguiente</span><svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg></button></section>
+  <!-- GALERÍA — RUEDA 3D -->
+  <section id="galeria" class="sec-sm rv" style="text-align:center;overflow:visible" aria-label="Galería de fotos">
+    <span class="eyebrow">Nuestra Historia</span>
+    <h2 class="heading-sm">Galería</h2>
+    <div class="orn" style="margin-top:16px;margin-bottom:26px"><div class="orn-line"></div><div class="orn-diamond-sm"></div><div class="orn-diamond"></div><div class="orn-diamond-sm"></div><div class="orn-line"></div></div>
+    <div class="wheel-scene" id="wheel-scene">
+      <div class="wheel-ring" id="wheel-ring">
+        <div class="wheel-card"><img src="foto1.jpg" alt="Yoly y Refugio" loading="eager"></div>
+        <div class="wheel-card"><img src="foto2.jpg" alt="Yoly y Refugio" loading="eager"></div>
+        <div class="wheel-card"><img src="foto3.jpg" alt="Yoly y Refugio" loading="eager"></div>
+        <div class="wheel-card"><img src="foto4.jpg" alt="Yoly y Refugio" loading="eager"></div>
+        <div class="wheel-card"><img src="foto5.jpg" alt="Yoly y Refugio" loading="eager"></div>
+        <div class="wheel-card"><img src="foto6.jpg" alt="Yoly y Refugio" loading="eager"></div>
+        <div class="wheel-card"><img src="foto7.jpg" alt="Yoly y Refugio" loading="eager"></div>
+        <div class="wheel-card"><img src="foto8.jpg" alt="Yoly y Refugio" loading="eager"></div>
+        <div class="wheel-card"><img src="foto9.jpg" alt="Yoly y Refugio" loading="eager"></div>
+        <div class="wheel-card"><img src="foto10.jpg" alt="Yoly y Refugio" loading="eager"></div>
+        <div class="wheel-card"><img src="foto11.jpg" alt="Yoly y Refugio" loading="eager"></div>
+        <div class="wheel-card"><img src="foto12.jpg" alt="Yoly y Refugio" loading="eager"></div>
+        <div class="wheel-card"><img src="foto13.jpg" alt="Yoly y Refugio" loading="eager"></div>
+        <div class="wheel-card"><img src="foto14.jpg" alt="Yoly y Refugio" loading="eager"></div>
+        <div class="wheel-card"><img src="foto15.jpg" alt="Yoly y Refugio" loading="eager"></div>
+      </div>
+    </div>
+    <p class="gal-hint rv">Arrastra para girar</p>
+  </section>
+
+  <!-- DRESS CODE -->
+  <section id="sdc" class="sec rv" style="text-align:center">
+    <span class="eyebrow">Código de Vestimenta</span>
+    <h2 class="heading-sm">Formal</h2>
+    <div class="orn" style="margin-top:16px"><div class="orn-line"></div><div class="orn-diamond-sm"></div><div class="orn-diamond"></div><div class="orn-diamond-sm"></div><div class="orn-line"></div></div>
+    <p class="dc-text" style="margin-top:22px">Te pedimos vestir formal durante toda la celebración.</p>
+    <p class="dc-desc rv" style="margin-top:0;margin-bottom:22px">Para ellas, el rebozo es opcional.</p>
+
+    <div class="dc-looks rv">
+      <button class="dc-look" type="button" data-look="caballeros" aria-label="Ver ideas de vestimenta para caballeros">
+        <span class="dc-look-ico" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M8 3l4 3 4-3 3 2.2c1.2.9 1.9 2.3 1.9 3.8V21H3V9c0-1.5.7-2.9 1.9-3.8L8 3z"/><path d="M12 6v15"/><path d="M9.4 4.2L12 9l2.6-4.8"/></svg>
+        </span>
+        <span class="dc-look-txt"><span class="dc-look-rol">Caballeros</span><span class="dc-look-cta">Ver ideas</span></span>
+        <span class="dc-look-arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg></span>
+      </button>
+      <button class="dc-look" type="button" data-look="damas" aria-label="Ver ideas de vestimenta para damas">
+        <span class="dc-look-ico" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 3h6l-1.4 5.2L21 21H3l7.4-12.8L9 3z"/><path d="M10.6 8.2h2.8"/></svg>
+        </span>
+        <span class="dc-look-txt"><span class="dc-look-rol">Damas</span><span class="dc-look-cta">Ver ideas</span></span>
+        <span class="dc-look-arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg></span>
+      </button>
+    </div>
+
+    <div class="dc-viewer" id="dcViewer" role="dialog" aria-modal="true" aria-label="Ideas de vestimenta" hidden>
+      <div class="dcv-box">
+        <button class="dc-viewer-close" id="dcViewerClose" type="button" aria-label="Cerrar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+        <p class="dcv-head" id="dcvHead"></p>
+        <div class="dcv-viewport"><div class="dcv-track" id="dcvTrack"></div></div>
+        <button class="dcv-nav dcv-prev" id="dcvPrev" type="button" aria-label="Anterior"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 6l-6 6 6 6"/></svg></button>
+        <button class="dcv-nav dcv-next" id="dcvNext" type="button" aria-label="Siguiente"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg></button>
+        <p class="dcv-cap" id="dcvCap"></p>
+        <div class="dcv-dots" id="dcvDots"></div>
+      </div>
+    </div>
+
+    <span class="dc-avoid-lbl">Por favor evita estos colores</span>
+    <div class="dc-avoid-row rv">
+      <div class="dc-avoid-sw"><div class="dc-avoid-circle" style="background:#FFFFFF;border:1px solid var(--border)"></div><span class="dc-avoid-name">Blanco</span></div>
+      <div class="dc-avoid-sw"><div class="dc-avoid-circle" style="background:#FFECD4;border:1px solid var(--border)"></div><span class="dc-avoid-name">Crema</span></div>
+    </div>
+    <div class="no-kids rv">
+      <svg viewBox="0 0 24 24"><circle cx="12" cy="7" r="4"/><path d="M5.5 21v-2a4.5 4.5 0 0 1 9 0v2"/><line x1="17" y1="11" x2="23" y2="11"/></svg>
+      <span>Celebración <strong>solo para adultos</strong>. Con cariño les pedimos no traer niños al evento.<br>¡Los esperamos libres y disfrutando!</span>
+    </div>
+  </section>
+
+
+
+  <section class="sec-foto sec-foto--der"><div class="sf-marco"><img src="flota4.jpg" alt="Yoly y Refugio" loading="eager"></div><button class="sf-next" type="button" aria-label="Ir a la siguiente foto"><span>Siguiente</span><svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg></button></section>
+  <!-- MESA DE REGALOS -->
+  <section id="regalos" class="sec rv" style="text-align:center">
+    <span class="eyebrow">Mesa de Regalos</span>
+    <h2 class="heading" style="color:var(--gold-light)">Un Obsequio</h2>
+    <div class="orn" style="margin-top:16px"><div class="orn-line" style="background:linear-gradient(to right,transparent,rgba(212,175,55,.4),transparent)"></div><div class="orn-diamond-sm" style="background:var(--gold)"></div><div class="orn-diamond" style="background:var(--gold)"></div><div class="orn-diamond-sm" style="background:var(--gold)"></div><div class="orn-line" style="background:linear-gradient(to right,transparent,rgba(212,175,55,.4),transparent)"></div></div>
+      <p class="gift-msg rv">Tu presencia es el mejor regalo.<br>Si deseas celebrarnos con un obsequio,<br>con infinita gratitud lo recibiremos<br>en nuestra <strong>lluvia de sobres</strong>.</p>
+    <div class="gift-opts rv"><span class="gift-sheen-wrap" aria-hidden="true"><span class="gift-sheen"></span></span>
+      <button class="gift-box-btn" id="giftBoxBtn" type="button" aria-label="Abrir regalo">
+        <svg class="gift-box-svg" viewBox="0 0 120 110" fill="none">
+          <rect x="10" y="42" width="100" height="60" rx="4" fill="var(--gold)"/>
+          <rect x="10" y="42" width="100" height="16" fill="#A8862A"/>
+          <rect x="52" y="10" width="16" height="92" fill="#14110C"/>
+          <path d="M60 42 C40 20 20 20 20 34 C20 44 40 42 60 42 C80 42 100 44 100 34 C100 20 80 20 60 42Z" fill="#14110C"/>
+        </svg>
+        <span class="gift-box-label">Toca para abrir</span>
+      </button>
+    </div>
+  </section>
+
+  <div class="gift-modal-overlay" id="giftModalOverlay">
+    <div class="gift-modal-card">
+      <button class="gift-modal-close" id="giftModalClose" type="button" aria-label="Cerrar">
+        <svg viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"><line x1="6" y1="6" x2="18" y2="18"/><line x1="6" y1="18" x2="18" y2="6"/></svg>
+      </button>
+      <span class="gift-modal-ttl">Mesa de regalos</span>
+      <div class="gift-acct">
+        <svg class="gift-env" viewBox="0 0 64 48" fill="none" aria-hidden="true"><rect x="3" y="6" width="58" height="38" rx="3" stroke="var(--gold)" stroke-width="1.6"/><path d="M4 8l28 21L60 8" stroke="var(--gold)" stroke-width="1.6" stroke-linejoin="round"/><circle cx="32" cy="29" r="5.5" fill="var(--gold)"/></svg>
+        <span class="gift-bank-name">Lluvia de sobres</span>
+        <p class="gift-detail" style="max-width:280px">El día de la boda habrá un buzón para recibir tu sobre. Agradecemos de corazón tu cariño y tu presencia en este día tan especial.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ÁLBUM DE FOTOS -->
+  <section class="sec-foto sec-foto--izq"><div class="sf-marco"><img src="flota7.jpg" alt="Yoly y Refugio" loading="eager"></div><button class="sf-next" type="button" aria-label="Ir a la siguiente foto"><span>Siguiente</span><svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg></button></section>
+  <section id="salbum" class="sec rv" style="text-align:center">
+    <span class="eyebrow">Comparte tus Fotos</span>
+    <h2 class="heading-sm">Álbum de fotos</h2>
+    <div class="orn" style="margin-top:16px"><div class="orn-line"></div><div class="orn-diamond-sm"></div><div class="orn-diamond"></div><div class="orn-diamond-sm"></div><div class="orn-line"></div></div>
+    <p class="dc-text" style="margin-top:22px">Ayúdanos a guardar cada momento: sube aquí las fotos que tomes durante el evento.</p>
+    <!-- Álbum de Elysium: el QR abre /album → panel-invitados.vercel.app/subir/boda-yolanda-esteve-y-refugio-gonzalez -->
+    <div class="album-qr-wrap album-qr rv" data-fecha="2027-03-06">
+      <div class="album-qr-box">
+        <img src="qr-album.png" alt="Código QR del álbum de fotos" width="152" height="152">
+      </div>
+      <a class="album-btn" href="/album">Subir mis fotos</a>
+    </div>
+    <p class="album-aviso">El álbum de fotos se habilita el día del evento. Regresa aquí y sube todas tus fotos de la noche.</p>
+    <script>
+      /* Se desbloquea solo el día del evento (la base además rechaza fotos antes de tiempo) */
+      (function(){
+        var box = document.querySelector('.album-qr');
+        if(!box) return;
+        var p = box.dataset.fecha.split('-');
+        var abre = new Date(+p[0], +p[1] - 1, +p[2], 0, 0, 0);
+        if(new Date() < abre) box.classList.add('bloqueado');
+      })();
+    </script>
+  </section>
+
+
+  <section class="sec-foto sec-foto--izq"><div class="sf-marco"><img src="flota5.jpg" alt="Yoly y Refugio" loading="eager"></div><button class="sf-next" type="button" aria-label="Ir a la siguiente foto"><span>Siguiente</span><svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg></button></section>
+  <!-- RSVP -->
+  <section id="rsvp" class="sec rv" style="text-align:center;overflow:hidden;position:relative">
+    <div class="sec-bg" style="background:radial-gradient(circle at 20% 15%,rgba(212,175,55,.12),transparent 45%),radial-gradient(circle at 80% 85%,rgba(212,175,55,.16),transparent 50%);opacity:1"></div>
+    <div class="rsvp-card rv">
+      <svg class="rsvp-corner rsvp-corner--tl" viewBox="0 0 52 52" fill="none" aria-hidden="true"><path d="M2 50 L2 2 L50 2" stroke="var(--gold)" stroke-width=".9" opacity=".6"/><circle cx="2" cy="2" r="2.5" fill="var(--gold)" opacity=".5"/></svg>
+      <svg class="rsvp-corner rsvp-corner--tr" viewBox="0 0 52 52" fill="none" aria-hidden="true"><path d="M2 50 L2 2 L50 2" stroke="var(--gold)" stroke-width=".9" opacity=".6"/><circle cx="2" cy="2" r="2.5" fill="var(--gold)" opacity=".5"/></svg>
+      <svg class="rsvp-corner rsvp-corner--bl" viewBox="0 0 52 52" fill="none" aria-hidden="true"><path d="M2 50 L2 2 L50 2" stroke="var(--gold)" stroke-width=".9" opacity=".6"/><circle cx="2" cy="2" r="2.5" fill="var(--gold)" opacity=".5"/></svg>
+      <svg class="rsvp-corner rsvp-corner--br" viewBox="0 0 52 52" fill="none" aria-hidden="true"><path d="M2 50 L2 2 L50 2" stroke="var(--gold)" stroke-width=".9" opacity=".6"/><circle cx="2" cy="2" r="2.5" fill="var(--gold)" opacity=".5"/></svg>
+      <div class="rsvp-inner">
+        <svg class="rsvp-ornament" viewBox="0 0 320 56" fill="none" aria-hidden="true">
+          <g stroke="var(--gold)" stroke-width=".9" opacity=".8" fill="none">
+            <path d="M18 28 Q50 10 82 28 Q106 42 130 28"/>
+            <path d="M190 28 Q214 42 238 28 Q270 10 302 28"/>
+            <circle cx="160" cy="28" r="5.5"/>
+            <circle cx="160" cy="28" r="2" fill="var(--gold)" stroke="none"/>
+            <path d="M148 28 L154 28" opacity=".5"/>
+            <path d="M166 28 L172 28" opacity=".5"/>
+            <path d="M154 20 Q160 13 166 20" opacity=".55"/>
+            <path d="M154 36 Q160 43 166 36" opacity=".55"/>
+          </g>
+        </svg>
+        <span class="eyebrow">Confirmación</span>
+        <h2 class="rsvp-title">¿Nos <em>acompañas</em>?</h2>
+        <p class="rsvp-text">Por favor confirma tu asistencia antes del <strong>20 de enero de 2027</strong>. Nos encantará saber que estarás con nosotros.</p>
+        <p class="rsvp-para-note" id="rsvp-pases-note" style="display:none"></p>
+        <div class="rsvp-divider">
+          <svg class="rsvp-divider-heart" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 21.593c-5.63-5.539-11-10.297-11-14.402 0-3.791 3.068-5.191 5.281-5.191 1.312 0 4.151.501 5.719 4.457 1.59-3.968 4.464-4.447 5.726-4.447 2.54 0 5.274 1.621 5.274 5.181 0 4.069-5.136 8.625-11 14.402z"/></svg>
+        </div>
+        <div id="rsvp-bandeja">
+          <div class="rsvp-pases-display" id="rsvp-pases-display">
+            <div class="rsvp-pases-label" id="rsvp-pases-label">Pases reservados</div>
+            <div class="rsvp-pases-num" id="rsvp-pases-num">1</div>
+          </div>
+          <div class="rsvp-toggle">
+            <button class="rsvp-toggle-btn" id="rsvpBtnYes" type="button">¡Con mucho gusto!</button>
+            <button class="rsvp-toggle-btn" id="rsvpBtnNo" type="button">No podré asistir</button>
+          </div>
+          <!-- Contador: cuántos de sus pases va a ocupar realmente -->
+          <div class="rsvp-contador-wrap" id="rsvp-contador-wrap">
+            <p class="rsvp-contador-nota" id="rsvp-contador-nota"></p>
+            <div class="rsvp-contador" id="rsvp-contador">
+              <button class="rsvp-contador-btn" id="rsvp-menos" type="button" aria-label="Quitar un pase">−</button>
+              <span class="rsvp-contador-valor" id="rsvp-contador-valor" aria-live="polite">1</span>
+              <button class="rsvp-contador-btn" id="rsvp-mas" type="button" aria-label="Agregar un pase">+</button>
+            </div>
+            <p class="rsvp-contador-pie" id="rsvp-contador-pie"></p>
+          </div>
+          <!-- Contador de menores: solo aparece si la invitación trae pases para menores -->
+          <div class="rsvp-contador-wrap" id="rsvp-menores-wrap">
+            <p class="rsvp-contador-nota" id="rsvp-menores-nota"></p>
+            <div class="rsvp-contador">
+              <button class="rsvp-contador-btn" id="rsvp-menores-menos" type="button" aria-label="Quitar un menor">−</button>
+              <span class="rsvp-contador-valor" id="rsvp-menores-valor" aria-live="polite">0</span>
+              <button class="rsvp-contador-btn" id="rsvp-menores-mas" type="button" aria-label="Agregar un menor">+</button>
+            </div>
+            <p class="rsvp-contador-pie" id="rsvp-menores-pie"></p>
+          </div>
+          <div class="rsvp-fields" id="rsvp-fields" style="display:none"></div>
+          <button type="button" id="rsvpSubmitBtn" class="rsvp-btn">
+            <span id="rsvpBtnText">Confirmar asistencia</span>
+          </button>
+          <p id="rsvp-feedback"></p>
+          <div class="rsvp-deadline">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zm.5 5v5.25l4.5 2.67-.75 1.23L11 13V7h1.5z"/></svg>
+            Fecha límite · 20 de enero de 2027
+          </div>
+        </div>
+        <div id="rsvp-gracias" style="display:none">
+          <p class="rsvp-gracias-title" id="rsvp-gracias-title"></p>
+          <p class="rsvp-gracias-sub" id="rsvp-gracias-sub"></p>
+          <button class="rsvp-editar-btn" id="rsvp-editar-btn" type="button">Modificar mi respuesta</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer id="footer">
+    <div class="orn" style="margin-bottom:24px"><div class="orn-line" style="background:linear-gradient(to right,transparent,rgba(212,175,55,.3),transparent)"></div><div class="orn-diamond-sm" style="background:var(--gold)"></div><div class="orn-diamond" style="background:var(--gold)"></div><div class="orn-diamond-sm" style="background:var(--gold)"></div><div class="orn-line" style="background:linear-gradient(to right,transparent,rgba(212,175,55,.3),transparent)"></div></div>
+    <div class="footer-names rv">Yoly y Refugio</div>
+    <div class="footer-date rv">6 · Marzo · 2027</div>
+    <div class="footer-hr"></div>
+    <a href="https://www.instagram.com/elysium.invitaciones" target="_blank" rel="noopener" class="footer-credit rv">@elysium.invitaciones</a>
+  </footer>
+
+</div>
+
+<button class="vinyl-btn" id="musicFab" type="button" aria-label="Reproducir música de la invitación">
+  <div class="vinyl-tonearm">
+    <div class="vinyl-tonearm-pivot"></div>
+    <div class="vinyl-tonearm-line"></div>
+    <div class="vinyl-tonearm-head"></div>
+  </div>
+  <div class="vinyl-spin">
+    <div class="vinyl-disc">
+      <div class="vinyl-sheen"></div>
+      <div class="vinyl-label-text">J&amp;Y<small>2027</small></div>
+      <div class="vinyl-hole"></div>
+    </div>
+  </div>
+  <div class="vinyl-icons">
+    <svg class="ic-play" viewBox="0 0 24 24" fill="#F3E3C3"><path d="M8 5v14l11-7z"/></svg>
+    <svg class="ic-pause" viewBox="0 0 24 24" fill="#F3E3C3"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
+  </div>
+</button>
+<audio id="bgAudio" loop preload="none"><source src="https://bsjoelxktbvlavfoozhk.supabase.co/storage/v1/object/public/fotos-clientes/audio/boda-yolanda-esteve-y-refugio-gonzalez/cancion.mp3?v=2" type="audio/mpeg"></audio>
+<div id="env-flash"></div>
+
+<!-- MENÚ DE SECCIONES (aparece al abrir el sobre) -->
+<nav class="nav-pill" id="navPill" aria-label="Secciones de la invitación">
+  <a class="nav-mono" href="#hero" data-sec="hero" aria-label="Inicio">J<i>&amp;</i>Y</a>
+  <div class="nav-links" id="navLinks">
+    <span class="nav-ind" id="navInd" aria-hidden="true"></span>
+      <a href="#sfam" data-sec="sfam">Familias</a>
+      <a href="#subic" data-sec="subic">Ubicación</a>
+      <a href="#siti" data-sec="siti">Itinerario</a>
+      <a href="#galeria" data-sec="galeria">Galería</a>
+      <a href="#sdc" data-sec="sdc">Vestimenta</a>
+      <a href="#regalos" data-sec="regalos">Regalos</a>
+      <a href="#salbum" data-sec="salbum">Álbum</a>
+      <a href="#rsvp" data-sec="rsvp">Confirmar</a>
+  </div>
+  <span class="nav-sep" aria-hidden="true"></span>
+  <button class="nav-share" id="navShare" type="button" aria-label="Compartir invitación"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg></button>
+  <button class="nav-menu-btn" id="navMenuBtn" type="button" aria-expanded="false" aria-controls="navFull">&#9776; Menú</button>
+</nav>
+<div class="nav-full" id="navFull" aria-hidden="true">
+  <div class="nf-top">
+    <span class="nav-mono">J<i>&amp;</i>Y</span>
+    <button class="nf-close" id="nfClose" type="button" aria-label="Cerrar menú"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+  </div>
+  <ol class="nf-list">
+      <li style="--i:0"><a href="#hero" data-sec="hero"><span class="nf-num">01</span><span class="nf-name">Inicio</span></a></li>
+      <li style="--i:1"><a href="#sfam" data-sec="sfam"><span class="nf-num">02</span><span class="nf-name">Familias</span></a></li>
+      <li style="--i:2"><a href="#subic" data-sec="subic"><span class="nf-num">03</span><span class="nf-name">Ubicación</span></a></li>
+      <li style="--i:3"><a href="#siti" data-sec="siti"><span class="nf-num">04</span><span class="nf-name">Itinerario</span></a></li>
+      <li style="--i:4"><a href="#galeria" data-sec="galeria"><span class="nf-num">05</span><span class="nf-name">Galería</span></a></li>
+      <li style="--i:5"><a href="#sdc" data-sec="sdc"><span class="nf-num">06</span><span class="nf-name">Vestimenta</span></a></li>
+      <li style="--i:6"><a href="#regalos" data-sec="regalos"><span class="nf-num">07</span><span class="nf-name">Regalos</span></a></li>
+      <li style="--i:7"><a href="#salbum" data-sec="salbum"><span class="nf-num">08</span><span class="nf-name">Álbum</span></a></li>
+      <li style="--i:8"><a href="#rsvp" data-sec="rsvp"><span class="nf-num">09</span><span class="nf-name">Confirmar</span></a></li>
+  </ol>
+  <p class="nf-foot">6 de marzo de 2027 · Anaheim, California</p>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" crossorigin="anonymous"></script>
+<script>
+history.scrollRestoration='manual';window.scrollTo(0,0);
+window.addEventListener('load',()=>window.scrollTo(0,0));
+window.addEventListener('beforeunload',()=>window.scrollTo(0,0));
+gsap.registerPlugin(ScrollTrigger);
+ScrollTrigger.config({ignoreMobileResize:true});
+
+/* ── ENVELOPE ── */
+function initEnvelope(){
+  const envScreen=document.getElementById('envelope-screen'),
+        envImage=document.getElementById('envImage'),
+        envVideo=document.getElementById('envVideo'),
+        envTap=document.getElementById('envTap'),
+        envFlash=document.getElementById('env-flash'),
+        mainWrap=document.querySelector('.wrap');
+  let tapped=false;
+  gsap.fromTo(envImage,{opacity:0},{opacity:1,duration:1.4,ease:'power2.out'});
+  gsap.fromTo(envTap,{opacity:0,y:8},{opacity:1,y:0,duration:.9,delay:1.2,ease:'power2.out'});
+  function onTap(e){
+    if(tapped)return;tapped=true;e.preventDefault();
+    if(typeof window._startAudio==='function')window._startAudio();
+    gsap.to(envTap,{opacity:0,duration:.3});
+    envVideo.src=envVideo.src;
+    envVideo.load();
+    const playProm=envVideo.play();
+    gsap.to(envImage,{opacity:0,duration:.35,delay:.1});
+    gsap.fromTo(envVideo,{opacity:0},{opacity:1,duration:.35,delay:.1});
+    let finished=false;
+    function finish(){
+      /* 'ended' y la red de seguridad pueden llegar los dos: initMain solo una vez */
+      if(finished)return;finished=true;
+      gsap.to(envFlash,{opacity:1,duration:.18,ease:'power2.in',onComplete:()=>{
+        envScreen.style.display='none';
+        mainWrap.style.visibility='visible';
+        gsap.to(envFlash,{opacity:0,duration:.35,delay:.05});
+        initMain();
+      }});
+    }
+    if(playProm!==undefined){
+      playProm.catch(()=>{});
+    }
+    envVideo.addEventListener('ended',finish,{once:true});
+    /* Red de seguridad: el video dura 8 s, damos margen para que gane "ended" */
+    setTimeout(finish,10500);
+  }
+  envScreen.addEventListener('click',onTap,{passive:false});
+  envScreen.addEventListener('touchstart',onTap,{passive:false});
+}
+
+/* ── AUDIO — vinyl button ── */
+(function(){
+  const audio=document.getElementById('bgAudio');
+  const fab=document.getElementById('musicFab');
+  if(!audio||!fab)return;
+  audio.volume=.55;
+  audio.addEventListener('play',()=>fab.classList.add('is-playing'));
+  audio.addEventListener('pause',()=>fab.classList.remove('is-playing'));
+  audio.addEventListener('ended',()=>{try{audio.currentTime=0;}catch(e){}audio.play().catch(()=>{});});
+  function showFab(){fab.classList.add('is-ready');}
+  fab.addEventListener('click',()=>{
+    if(audio.paused)audio.play().catch(()=>{});
+    else audio.pause();
+  });
+  function tryAutoAudio(){
+    showFab();
+    const p=audio.play();
+    if(p&&typeof p.catch==='function'){
+      p.catch(()=>{
+        function onFirst(){audio.play().catch(()=>{});document.removeEventListener('click',onFirst);document.removeEventListener('touchstart',onFirst);}
+        document.addEventListener('click',onFirst,{passive:true});
+        document.addEventListener('touchstart',onFirst,{passive:true});
+      });
+    }
+  }
+  window._startAudio=tryAutoAudio;
+  if(audio.readyState>=2)showFab();
+  else audio.addEventListener('canplay',showFab,{once:true});
+})();
+
+/* ── PETALS ── */
+function launchPetals(){
+  const container=document.getElementById('petals');
+  const colors=['#B8962E','#D4AF37','#F3E3C3','#D4AF37'];
+  for(let i=0;i<22;i++){
+    setTimeout(()=>{
+      const p=document.createElement('div');
+      p.className='petal';
+      const size=6+Math.random()*8;
+      const color=colors[Math.floor(Math.random()*colors.length)];
+      p.style.cssText=`left:${Math.random()*100}%;width:${size}px;height:${size*1.4}px;background:${color};border-radius:50% 50% 50% 50%/60% 60% 40% 40%;opacity:0;transform:rotate(${Math.random()*360}deg)`;
+      container.appendChild(p);
+      gsap.fromTo(p,
+        {opacity:0,y:-20,x:0,rotation:Math.random()*360},
+        {opacity:.7,y:window.innerHeight+60,x:(Math.random()-.5)*120,rotation:Math.random()*720,
+         duration:5+Math.random()*4,ease:'none',
+         onComplete:()=>p.remove()}
+      );
+    },i*300+Math.random()*400);
+  }
+}
+
+/* ── GALLERY — 3D WHEEL (drag para girar) ── */
+function initWheel(){
+  const ring=document.getElementById('wheel-ring');
+  if(!ring)return;
+  const cards=ring.querySelectorAll('.wheel-card');
+  const n=cards.length;
+  if(!n)return;
+  const vw=window.innerWidth;
+  const cardW=vw<380?132:(vw<430?146:164);
+  const cardH=Math.round(cardW*1.4);
+  /* radio geometrico exacto: los bordes se tocan pero no se traslapan */
+  const radius=Math.round((cardW/2)/Math.tan(Math.PI/n))+2;
+  let rot=0,vel=0,isDrag=false,startX=0,startRot=0,lastX=0,rafId=null;
+
+  cards.forEach((card,i)=>{
+    card.style.width=cardW+'px';
+    card.style.height=cardH+'px';
+    card.style.marginLeft=(-cardW/2)+'px';
+    card.style.marginTop=(-cardH/2)+'px';
+    card.style.transform=`rotateY(${360/n*i}deg) translateZ(${radius}px)`;
+  });
+
+  function setRot(){gsap.set(ring,{rotateY:rot});}
+  setRot();
+
+  function inertia(){
+    if(isDrag)return;
+    rot+=vel;vel*=0.94;setRot();
+    if(Math.abs(vel)>0.05)rafId=requestAnimationFrame(inertia);
+  }
+  function pointerDown(x){
+    isDrag=true;ring.classList.add('dragging');
+    startX=x;lastX=x;startRot=rot;vel=0;
+    if(rafId)cancelAnimationFrame(rafId);
+    auto=false;
+  }
+  function pointerMove(x){
+    if(!isDrag)return;
+    const dx=x-startX;
+    rot=startRot+dx*0.45;
+    vel=(x-lastX)*0.5;
+    lastX=x;setRot();
+  }
+  function pointerUp(){
+    if(!isDrag)return;
+    isDrag=false;ring.classList.remove('dragging');
+    rafId=requestAnimationFrame(inertia);
+  }
+  /* Un tap corto sobre una card abre el zoom; si el dedo se movio, fue arrastre */
+  let downX=0,downT=0;
+  function maybeOpen(x,target){
+    if(Math.abs(x-downX)>8 || Date.now()-downT>500) return;
+    const card=target.closest && target.closest('.wheel-card');
+    if(card) window._lbOpen && window._lbOpen(card);
+  }
+  ring.addEventListener('mousedown',e=>{e.preventDefault();downX=e.clientX;downT=Date.now();pointerDown(e.clientX);});
+  ring.addEventListener('mouseup',e=>maybeOpen(e.clientX,e.target));
+  ring.addEventListener('touchend',e=>{
+    const t=e.changedTouches[0];
+    if(t) maybeOpen(t.clientX,document.elementFromPoint(t.clientX,t.clientY)||e.target);
+  });
+  window.addEventListener('mousemove',e=>pointerMove(e.clientX));
+  window.addEventListener('mouseup',pointerUp);
+  ring.addEventListener('touchstart',e=>{downX=e.touches[0].clientX;downT=Date.now();pointerDown(e.touches[0].clientX);},{passive:true});
+  ring.addEventListener('touchmove',e=>pointerMove(e.touches[0].clientX),{passive:true});
+  ring.addEventListener('touchend',pointerUp);
+
+  let auto=true;
+  (function spin(){
+    if(auto&&!isDrag){rot+=0.1;setRot();}
+    requestAnimationFrame(spin);
+  })();
+}
+
+/* ── LIGHTBOX DE LA GALERIA ── */
+function initLightbox(){
+  const lb=document.getElementById('lightbox');
+  const img=document.getElementById('lbImg');
+  const cnt=document.getElementById('lbCount');
+  if(!lb||!img)return;
+  const srcs=[...document.querySelectorAll('.wheel-card img')].map(i=>i.getAttribute('src'));
+  let idx=0;
+  function show(i){
+    idx=(i+srcs.length)%srcs.length;
+    img.src=srcs[idx];
+    if(cnt)cnt.textContent=(idx+1)+' / '+srcs.length;
+  }
+  function open(card){
+    const i=[...document.querySelectorAll('.wheel-card')].indexOf(card);
+    show(i<0?0:i);
+    lb.classList.add('is-open');
+    lb.setAttribute('aria-hidden','false');
+    document.body.style.overflow='hidden';
+  }
+  function close(){
+    lb.classList.remove('is-open');
+    lb.setAttribute('aria-hidden','true');
+    document.body.style.overflow='';
+  }
+  window._lbOpen=open;
+  document.getElementById('lbClose').addEventListener('click',close);
+  document.getElementById('lbPrev').addEventListener('click',e=>{e.stopPropagation();show(idx-1);});
+  document.getElementById('lbNext').addEventListener('click',e=>{e.stopPropagation();show(idx+1);});
+  lb.addEventListener('click',e=>{if(e.target===lb||e.target===img)close();});
+  document.addEventListener('keydown',e=>{
+    if(!lb.classList.contains('is-open'))return;
+    if(e.key==='Escape')close();
+    if(e.key==='ArrowLeft')show(idx-1);
+    if(e.key==='ArrowRight')show(idx+1);
+  });
+}
+
+/* ── MAIN ── */
+function initMain(){
+  window.scrollTo(0,0);
+  launchPetals();
+  initWheel();
+  initLightbox();
+  initVida();
+  initMenu();
+
+  /* Countdown */
+  const target=new Date('2027-03-06T13:00:00-08:00');
+  /* Manecillas del reloj antiguo: avanzan con la cuenta (giro acumulado, sin brincos de 360 a 0) */
+  const clkH=document.getElementById('clkH'),clkM=document.getElementById('clkM'),clkS=document.getElementById('clkS'),clock=document.getElementById('clock');
+  let aH=null,aM=null,aS=null;
+  function turn(prev,next){if(prev===null)return next;let d=((next-prev)%360+360)%360;if(d>180)d-=360;return prev+d;}
+  function hands(h,m,s){
+    if(!clkS)return;
+    aS=turn(aS,((60-s)%60)*6);aM=turn(aM,((60-m)%60)*6+((60-s)%60)*.1);aH=turn(aH,((24-h)%12)*30+((60-m)%60)*.5);
+    clkS.style.transform='rotate('+aS+'deg)';clkM.style.transform='rotate('+aM+'deg)';clkH.style.transform='rotate('+aH+'deg)';
+    if(clock){clock.classList.remove('tk');void clock.offsetWidth;clock.classList.add('tk');}
+  }
+  function updateCd(){
+    const diff=target-Date.now();
+    if(diff<=0)return;
+    const d=Math.floor(diff/86400000);
+    const h=Math.floor((diff%86400000)/3600000);
+    const m=Math.floor((diff%3600000)/60000);
+    const s=Math.floor((diff%60000)/1000);
+    hands(h,m,s);
+    ['Dias','Horas','Mins','Secs'].forEach((id,i)=>{
+      const el=document.getElementById('cd'+id);
+      if(!el)return;
+      const vals=[String(d).padStart(3,'0'),String(h).padStart(2,'0'),String(m).padStart(2,'0'),String(s).padStart(2,'0')];
+      if(el.textContent!==vals[i]){
+        gsap.to(el,{y:-8,opacity:0,duration:.12,onComplete:()=>{el.textContent=vals[i];gsap.to(el,{y:0,opacity:1,duration:.12});}});
+      }
+    });
+  }
+  updateCd();setInterval(updateCd,1000);
+
+  /* Scroll hint */
+  const hint=document.getElementById('scrollHint');
+  let hintHidden=false;
+  window.addEventListener('scroll',()=>{if(!hintHidden&&window.scrollY>60){hintHidden=true;hint.classList.add('hidden');}},{passive:true});
+
+  /* Reveal animations */
+  gsap.utils.toArray('.rv').forEach(el=>{
+    gsap.fromTo(el,{opacity:0,y:28},{opacity:1,y:0,duration:.85,ease:'power2.out',
+      scrollTrigger:{trigger:el,start:'top 88%',toggleActions:'play none none none'}});
+  });
+
+  function initRSVP(){
+    var PANEL_API = 'https://panel-invitados.vercel.app/api/confirmar';
+    var RSVP_URL  = 'https://boda-yolanda-esteve-y-refugio-gonzalez.vercel.app';
+    var DEADLINE  = new Date(2027, 0, 20, 23, 59, 59, 999); /* 20 ene 2027 */
+    var frozen    = Date.now() > DEADLINE.getTime();
+    var ROJO      = '#E0A27A';
+
+    /* Solo español: T() conserva la forma del RSVP estándar */
+    function T(es){ return es; }
+
+    /* WhatsApp y Messenger cortan la URL en el primer espacio o "&". El panel
+       manda un token base64url en ?i= ("nombre|pases|menores") que llega intacto.
+       Se conserva ?para=&pases= para los links que ya se enviaron. */
+    function decodeInvite(tok){
+      try{
+        var b64 = tok.replace(/-/g,'+').replace(/_/g,'/');
+        while(b64.length % 4) b64 += '=';
+        var bin = atob(b64), bytes = new Uint8Array(bin.length);
+        for(var i=0;i<bin.length;i++){ bytes[i] = bin.charCodeAt(i); }
+        var pr = new TextDecoder().decode(bytes).split('|');
+        return { para:(pr[0]||'').trim(), pases: parseInt(pr[1],10) || 1, menores: parseInt(pr[2],10) || 0 };
+      }catch(e){ return null; }
+    }
+
+    var qp = new URLSearchParams(window.location.search);
+    var urlPara = '', rawP = 1, rawM = 0;
+    var token = qp.get('i');
+    if(token){
+      var dec = decodeInvite(token);
+      if(dec && dec.para){ urlPara = dec.para; rawP = dec.pases; rawM = dec.menores; }
+    }
+    if(!urlPara){
+      urlPara = (qp.get('para') || '').trim();
+      rawP    = parseInt(qp.get('pases'), 10);
+      rawM    = parseInt(qp.get('menores') || '0', 10);
+    }
+    /* Tope: lo que los novios asignaron en el panel */
+    var pasesAsignados = (isNaN(rawP) || rawP < 1 || rawP > 20) ? 1 : rawP;
+    /* Lo que el invitado va a ocupar: arranca en 1 y nunca pasa del tope */
+    var pasesAUsar = 1;
+    /* Pases para menores: tienen su propio contador, que arranca en 0 */
+    var pasesMenores = (isNaN(rawM) || rawM < 0 || rawM > 20) ? 0 : rawM;
+    var menoresAUsar = 0;
+    var MARCA_MENOR = ' (Menor)';
+
+    var rsvpChoice = null, savedNames = [], savedMenores = [], bloqueado = false;
+    var noteEl    = document.getElementById('rsvp-pases-note');
+    var dispEl    = document.getElementById('rsvp-pases-display');
+    var numEl     = document.getElementById('rsvp-pases-num');
+    var contWrap  = document.getElementById('rsvp-contador-wrap');
+    var contBox   = document.getElementById('rsvp-contador');
+    var contNota  = document.getElementById('rsvp-contador-nota');
+    var contValor = document.getElementById('rsvp-contador-valor');
+    var contPie   = document.getElementById('rsvp-contador-pie');
+    var btnMenos  = document.getElementById('rsvp-menos');
+    var btnMas    = document.getElementById('rsvp-mas');
+    var fieldsEl  = document.getElementById('rsvp-fields');
+    var bandejaEl = document.getElementById('rsvp-bandeja');
+    var graciasEl = document.getElementById('rsvp-gracias');
+    var gTitleEl  = document.getElementById('rsvp-gracias-title');
+    var gSubEl    = document.getElementById('rsvp-gracias-sub');
+    var editarBtn = document.getElementById('rsvp-editar-btn');
+    var btnYes    = document.getElementById('rsvpBtnYes');
+    var btnNo     = document.getElementById('rsvpBtnNo');
+    var btnConf   = document.getElementById('rsvpSubmitBtn');
+    var btnText   = document.getElementById('rsvpBtnText');
+    var feedEl    = document.getElementById('rsvp-feedback');
+    var lblEl     = document.getElementById('rsvp-pases-label');
+    var menWrap   = document.getElementById('rsvp-menores-wrap');
+    var menNota   = document.getElementById('rsvp-menores-nota');
+    var menValor  = document.getElementById('rsvp-menores-valor');
+    var menPie    = document.getElementById('rsvp-menores-pie');
+    var menMenos  = document.getElementById('rsvp-menores-menos');
+    var menMas    = document.getElementById('rsvp-menores-mas');
+    if(!btnConf || !btnYes) return;
+
+    /* El panel guarda a los menores con la marca " (Menor)" para distinguirlos */
+    function esMenor(n){ return /\(menor\)\s*$/i.test(String(n || '')); }
+    function sinMarca(n){ return String(n || '').replace(/\s*\(menor\)\s*$/i, ''); }
+    function repartir(lista){
+      savedNames = []; savedMenores = [];
+      (lista || []).forEach(function(n){ if(esMenor(n)) savedMenores.push(sinMarca(n)); else savedNames.push(n); });
+    }
+
+    function setFeedback(msg, color){
+      if(!feedEl) return;
+      feedEl.style.color = color || 'var(--accent)';
+      feedEl.textContent = msg || '';
+    }
+
+    function pintaEncabezado(){
+      if(numEl) numEl.textContent = pasesAsignados + pasesMenores;
+      if(lblEl) lblEl.textContent = pasesMenores > 0
+        ? pasesAsignados + (pasesAsignados === 1 ? ' adulto' : ' adultos') + ' + ' + pasesMenores + (pasesMenores === 1 ? ' menor' : ' menores')
+        : 'Pases reservados';
+      if(!urlPara || !noteEl) return;
+      noteEl.textContent = '';
+      var l1 = document.createElement('span'); l1.className = 'rsvp-para-lbl'; l1.textContent = 'Esta invitación es para';
+      var l2 = document.createElement('span'); l2.className = 'rsvp-para-name'; l2.textContent = urlPara;
+      noteEl.appendChild(l1); noteEl.appendChild(l2);
+      noteEl.style.display = 'block';
+    }
+
+    /* Un campo por pase que se va a usar: primero adultos, luego menores */
+    function guardaCampos(){
+      Array.prototype.forEach.call(fieldsEl.querySelectorAll('.rsvp-input'), function(inp){
+        var idx = +inp.getAttribute('data-idx');
+        if(inp.getAttribute('data-menor')) savedMenores[idx] = inp.value; else savedNames[idx] = inp.value;
+      });
+    }
+    function campo(placeholder, idx, menor){
+      var inp = document.createElement('input');
+      inp.type = 'text'; inp.className = 'rsvp-input';
+      inp.placeholder = placeholder;
+      inp.setAttribute('aria-label', placeholder);
+      inp.setAttribute('data-idx', idx);
+      if(menor) inp.setAttribute('data-menor', '1');
+      inp.autocomplete = 'off'; inp.maxLength = 60; inp.disabled = frozen || bloqueado;
+      /* Sin prellenar con el nombre de la invitación: "Familia X" no es una persona */
+      inp.value = (menor ? savedMenores[idx] : savedNames[idx]) || '';
+      inp.addEventListener('input', function(){
+        if(menor) savedMenores[idx] = this.value; else savedNames[idx] = this.value;
+        this.classList.remove('rsvp-input-falta');
+      });
+      fieldsEl.appendChild(inp);
+    }
+    function renderFields(){
+      guardaCampos();
+      fieldsEl.innerHTML = '';
+      for(var i=0;i<pasesAUsar;i++){
+        campo(pasesAUsar === 1 && menoresAUsar === 0 ? 'Tu nombre completo' : 'Nombre del invitado ' + (i+1), i, false);
+      }
+      for(var j=0;j<menoresAUsar;j++){
+        campo('Nombre del menor ' + (j+1), j, true);
+      }
+    }
+
+    function pintaContador(){
+      var cerrado = frozen || bloqueado;
+      contValor.textContent = pasesAUsar;
+      btnMenos.disabled = cerrado || pasesAUsar <= 1;
+      btnMas.disabled   = cerrado || pasesAUsar >= pasesAsignados;
+      /* Con pases de menores se aclara que este contador es el de adultos */
+      contNota.textContent = pasesAsignados === 1
+        ? (pasesMenores > 0 ? 'Tienes 1 pase de adulto.' : 'Tienes 1 pase reservado para ti.')
+        : 'Tienes ' + pasesAsignados + (pasesMenores > 0 ? ' pases para adultos' : ' pases reservados') + '. Aumenta el número de pases que vayas a ocupar.';
+      var multi = pasesAsignados > 1;
+      contBox.style.display = multi ? 'flex' : 'none';
+      contPie.style.display = multi ? 'block' : 'none';
+      contPie.textContent = pasesAUsar >= pasesAsignados
+        ? T('Estás usando todos tus pases', 'You are using all your seats')
+        : T(pasesAUsar + ' de ' + pasesAsignados + ' pases', pasesAUsar + ' of ' + pasesAsignados + ' seats');
+    }
+
+    function setPases(n){
+      n = Math.max(1, Math.min(pasesAsignados, n));
+      if(n === pasesAUsar) return;
+      pasesAUsar = n;
+      pintaContador();
+      renderFields();
+      setFeedback('');
+    }
+    function pintaMenores(){
+      var cerrado = frozen || bloqueado;
+      menWrap.style.display = (rsvpChoice === 'yes' && pasesMenores > 0) ? 'block' : 'none';
+      menValor.textContent = menoresAUsar;
+      menMenos.disabled = cerrado || menoresAUsar <= 0;
+      menMas.disabled   = cerrado || menoresAUsar >= pasesMenores;
+      menNota.textContent = pasesMenores === 1
+        ? 'También tienes 1 pase para un menor. Súmalo si asistirá.'
+        : 'También tienes ' + pasesMenores + ' pases para menores. Aumenta el número de menores que asistirán.';
+      menPie.textContent = menoresAUsar + ' de ' + pasesMenores + (pasesMenores === 1 ? ' pase de menor' : ' pases de menores');
+    }
+    function setMenores(n){
+      n = Math.max(0, Math.min(pasesMenores, n));
+      if(n === menoresAUsar) return;
+      menoresAUsar = n;
+      pintaMenores();
+      renderFields();
+      setFeedback('');
+    }
+    menMenos.addEventListener('click', function(){ if(!frozen && !bloqueado) setMenores(menoresAUsar - 1); });
+    menMas.addEventListener('click',   function(){ if(!frozen && !bloqueado) setMenores(menoresAUsar + 1); });
+    btnMenos.addEventListener('click', function(){ if(!frozen && !bloqueado) setPases(pasesAUsar - 1); });
+    btnMas.addEventListener('click',   function(){ if(!frozen && !bloqueado) setPases(pasesAUsar + 1); });
+
+    function selectRsvp(choice){
+      rsvpChoice = choice;
+      if(choice === 'yes'){
+        btnYes.className = 'rsvp-toggle-btn selected-yes';
+        btnNo.className  = 'rsvp-toggle-btn';
+        contWrap.style.display = 'block';
+        pintaContador();
+        pintaMenores();
+        renderFields();
+        fieldsEl.style.display = 'flex';
+      } else {
+        btnYes.className = 'rsvp-toggle-btn';
+        btnNo.className  = 'rsvp-toggle-btn selected-no';
+        contWrap.style.display = 'none';
+        menWrap.style.display = 'none';
+        fieldsEl.style.display = 'none';
+      }
+    }
+    btnYes.addEventListener('click', function(){ if(!frozen && !bloqueado){ selectRsvp('yes'); setFeedback(''); } });
+    btnNo.addEventListener('click',  function(){ if(!frozen && !bloqueado){ selectRsvp('no');  setFeedback(''); } });
+
+    function mostrarGracias(estado, nombres){
+      if(estado === 'confirmado'){
+        gTitleEl.textContent = T('¡Gracias por confirmar!','Thank you for confirming!');
+        gSubEl.textContent = nombres.length === 1
+          ? T('Te esperamos, ' + nombres[0] + '.', 'See you there, ' + nombres[0] + '.')
+          : T('Confirmamos ' + nombres.length + ' lugares: ' + nombres.join(', ') + '.',
+              nombres.length + ' seats confirmed: ' + nombres.join(', ') + '.');
+      } else {
+        gTitleEl.textContent = T('Gracias por avisarnos','Thank you for letting us know');
+        gSubEl.textContent = T('Lamentamos que no puedas acompañarnos. Te vamos a extrañar.',
+                               'We are sorry you cannot join us. We will miss you.');
+      }
+      bandejaEl.style.display = 'none';
+      if(estado === 'confirmado' && window._rsvpConfetti) window._rsvpConfetti(graciasEl);
+      /* 'block' y no '': con '' un CSS que los esconda volvería a ganar */
+      graciasEl.style.display = 'block';
+      editarBtn.disabled = frozen;
+      editarBtn.style.display = bloqueado ? 'none' : 'inline-block';
+      setFeedback('');
+    }
+    editarBtn.addEventListener('click', function(){
+      if(frozen || bloqueado) return;
+      graciasEl.style.display = 'none';
+      bandejaEl.style.display = 'block';
+      setFeedback('');
+    });
+
+    function applyFreeze(){
+      if(!frozen) return;
+      btnYes.disabled = true; btnNo.disabled = true; btnConf.disabled = true; editarBtn.disabled = true;
+      btnMenos.disabled = true; btnMas.disabled = true; menMenos.disabled = true; menMas.disabled = true;
+      var ins = fieldsEl.querySelectorAll('.rsvp-input');
+      for(var i=0;i<ins.length;i++){ ins[i].disabled = true; }
+      btnText.textContent = T('Fecha límite alcanzada','RSVP deadline passed');
+      setFeedback(T('La fecha para confirmar asistencia ya pasó.','The date to confirm your attendance has passed.'));
+    }
+
+    function cierraPorBloqueo(){
+      bloqueado = true;
+      btnYes.disabled = true; btnNo.disabled = true; btnConf.disabled = true;
+      btnMenos.disabled = true; btnMas.disabled = true; menMenos.disabled = true; menMas.disabled = true;
+      var ins = fieldsEl.querySelectorAll('.rsvp-input');
+      for(var i=0;i<ins.length;i++){ ins[i].disabled = true; }
+      btnText.textContent = T('Confirmaciones cerradas','RSVP closed');
+      editarBtn.style.display = 'none';
+    }
+
+    pintaEncabezado();
+
+    if(urlPara){
+      btnYes.disabled = true; btnNo.disabled = true;
+      fetch(PANEL_API + '?nombre=' + encodeURIComponent(urlPara) + '&url_boda=' + encodeURIComponent(RSVP_URL))
+        .then(function(r){ return r.json(); })
+        .then(function(resp){
+          var d = resp && resp.invitado;
+          /* Si el panel no la tiene (la borraron o el link está mal) no se deja
+             confirmar: el envío crearía una invitación nueva con ese nombre. */
+          if(!d){
+            pintaEncabezado();
+            btnConf.disabled = true;
+            setFeedback(T('No encontramos tu invitación. Pide a los novios que te envíen tu enlace de nuevo.'), ROJO);
+            applyFreeze();
+            return;
+          }
+          if(d && typeof d.pases === 'number' && d.pases > 0 && d.pases <= 20){ pasesAsignados = d.pases; }
+          if(pasesAUsar > pasesAsignados) pasesAUsar = pasesAsignados;
+          if(typeof d.pases_menores === 'number' && d.pases_menores >= 0 && d.pases_menores <= 20){ pasesMenores = d.pases_menores; }
+          pintaEncabezado();
+          if(!frozen){ btnYes.disabled = false; btnNo.disabled = false; }
+          if(d && (d.estado === 'confirmado' || d.estado === 'declino')){
+            if(d.nombres_confirmados && d.nombres_confirmados.length){ repartir(d.nombres_confirmados); }
+            /* Los contadores arrancan en cuántos pases había ocupado antes */
+            pasesAUsar = Math.min(pasesAsignados, Math.max(1, savedNames.length));
+            menoresAUsar = Math.min(pasesMenores, savedMenores.length);
+            selectRsvp(d.estado === 'confirmado' ? 'yes' : 'no');
+            btnText.textContent = T('Actualizar respuesta','Update my answer');
+            mostrarGracias(d.estado, d.nombres_confirmados || []);
+          }
+          /* La ronda puede estar cerrada desde el panel */
+          if(d && d.bloqueado){
+            cierraPorBloqueo();
+            setFeedback(T('Las confirmaciones de esta invitación ya están cerradas. Si necesitas un cambio, contacta a los novios.',
+                          'This invitation is closed for changes. Please contact the couple if you need a change.'), ROJO);
+          }
+          applyFreeze();
+        })
+        .catch(function(){
+          pintaEncabezado();
+          if(!frozen){ btnYes.disabled = false; btnNo.disabled = false; }
+          applyFreeze();
+        });
+    } else {
+      /* Sin link personalizado no hay invitación que actualizar */
+      btnConf.disabled = true; btnConf.style.opacity = '.55';
+      if(dispEl) dispEl.style.display = 'none';
+      if(noteEl){
+        noteEl.style.display = 'block';
+        noteEl.textContent = T('Abre el enlace personalizado que te enviaron para confirmar tu asistencia.',
+                               'Open the personal link you were sent to confirm your attendance.');
+      }
+      applyFreeze();
+    }
+
+
+    btnConf.addEventListener('click', function(){
+      if(frozen || bloqueado || !urlPara) return;
+      if(!rsvpChoice){ setFeedback(T('Por favor selecciona si asistirás o no.','Please choose whether you will attend.'), ROJO); return; }
+      var nombres = [];
+      if(rsvpChoice === 'yes'){
+        var inputs = fieldsEl.querySelectorAll('.rsvp-input');
+        for(var i=0;i<inputs.length;i++){
+          var v = inputs[i].value.trim();
+          if(v) nombres.push(inputs[i].getAttribute('data-menor') ? sinMarca(v) + MARCA_MENOR : v);
+        }
+        var totalAUsar = pasesAUsar + menoresAUsar;
+        if(nombres.length === 0){ setFeedback(T('Por favor escribe al menos un nombre.','Please write at least one name.'), ROJO); return; }
+        /* Dos personas en un solo campo ("Ana & Luis") se guardaban como UNA:
+           el panel contaba un lugar de menos. Se pide un nombre por campo. */
+        var doble = null;
+        for(var d=0; d<inputs.length; d++){
+          if(/[&\/+,]|\sand\s/i.test(inputs[d].value.trim())){ doble = inputs[d]; break; }
+        }
+        if(doble){
+          doble.classList.add('rsvp-input-falta');
+          setFeedback(T('Escribe un solo nombre por campo. Si asisten más personas, sube el contador y escribe cada nombre en su campo.',
+                        'Write one name per field. If more people are coming, raise the counter and write each name in its own field.'), ROJO);
+          if(feedEl) feedEl.scrollIntoView({ block:'nearest', behavior:'smooth' });
+          doble.focus({ preventScroll:true });
+          return;
+        }
+        if(nombres.length < totalAUsar){
+          var faltan = totalAUsar - nombres.length, primero = null;
+          /* Se marcan los campos vacíos para que se note cuál falta */
+          for(var k=0;k<inputs.length;k++){
+            var vacio = !inputs[k].value.trim();
+            inputs[k].classList.toggle('rsvp-input-falta', vacio);
+            if(vacio && !primero) primero = inputs[k];
+          }
+          setFeedback(T('Elegiste ' + totalAUsar + ' pases pero escribiste ' + nombres.length + ' nombre' + (nombres.length===1?'':'s') + '. Escribe ' + (faltan===1 ? 'el nombre que falta' : 'los ' + faltan + ' nombres que faltan') + ' o baja el contador a los pases que vas a utilizar.',
+                        'You chose ' + pasesAUsar + ' seats but wrote ' + nombres.length + ' name' + (nombres.length===1?'':'s') + '. Write the missing name' + (faltan===1?'':'s') + ' or lower the counter to the seats you will use.'), ROJO);
+          if(feedEl) feedEl.scrollIntoView({ block:'nearest', behavior:'smooth' });
+          if(primero) primero.focus({ preventScroll:true });
+          return;
+        }
+      }
+      var estadoFinal = rsvpChoice === 'yes' ? 'confirmado' : 'declino';
+      btnText.textContent = T('Enviando…','Sending…');
+      btnConf.disabled = true;
+      setFeedback('');
+      fetch(PANEL_API, {
+        method:'POST',
+        headers:{'Content-Type':'application/json'},
+        body: JSON.stringify({
+          nombre: urlPara,
+          url_boda: RSVP_URL,
+          estado: estadoFinal,
+          pases_confirmados: estadoFinal === 'confirmado' ? nombres.length : 0,
+          nombres_confirmados: estadoFinal === 'confirmado' ? nombres : []
+        })
+      })
+      .then(function(r){ return r.json().then(function(d){ return {ok:r.ok, status:r.status, d:d}; }).catch(function(){ return {ok:r.ok, status:r.status, d:null}; }); })
+      .then(function(res){
+        btnConf.disabled = false;
+        /* Solo se da por registrada si el panel la guardó de verdad */
+        if(res.ok && res.d && res.d.ok){
+          btnText.textContent = T('Actualizar respuesta','Update my answer');
+          mostrarGracias(estadoFinal, nombres);
+          return;
+        }
+        btnText.textContent = T('Confirmar asistencia','Confirm attendance');
+        var err = res.d && res.d.error;
+        if(err === 'respuestas_cerradas'){
+          cierraPorBloqueo();
+          setFeedback(T('Las confirmaciones de esta invitación ya están cerradas. Si necesitas un cambio, contacta a los novios.',
+                        'This invitation is closed for changes. Please contact the couple if you need a change.'), ROJO);
+          return;
+        }
+        setFeedback(
+          err === 'no_match'
+            ? T('No pudimos identificar tu invitación. Abre el enlace personalizado que te enviaron; ese es el único que registra tu confirmación.',
+                'We could not identify your invitation. Please open the personal link you were sent — it is the only one that records your answer.')
+            : err === 'invitacion_borrada'
+              ? T('Esta invitación ya no está activa. Contacta a los novios para que te envíen un enlace nuevo.',
+                  'This invitation is no longer active. Please contact the couple for a new link.')
+              : T('Hubo un problema al enviar. Inténtalo de nuevo.','Something went wrong. Please try again.'),
+          ROJO);
+      })
+      .catch(function(){
+        btnConf.disabled = false;
+        btnText.textContent = T('Confirmar asistencia','Confirm attendance');
+        setFeedback(T('Sin conexión. Verifica tu internet e inténtalo de nuevo.','No connection. Check your internet and try again.'), ROJO);
+      });
+    });
+  }
+  initRSVP();
+
+  /* Copy */
+  window.copyText=function(text){
+    navigator.clipboard.writeText(text).catch(()=>{});
+    const t=document.getElementById('copyToast');
+    t.classList.add('show');
+    setTimeout(()=>t.classList.remove('show'),2400);
+  };
+
+  /* Hospedaje — carrusel con flechas, dots y swipe */
+  (function(){
+    const track=document.getElementById('hospTrack');
+    if(!track)return;
+    const slides=track.children.length;
+    const dots=document.querySelectorAll('#hospDots button');
+    let idx=0;
+    function go(i){
+      idx=(i+slides)%slides;
+      track.style.transform='translateX('+(-idx*100)+'%)';
+      dots.forEach((d,k)=>d.classList.toggle('active',k===idx));
+    }
+    const prev=document.querySelector('.hosp-arrow.prev');
+    const next=document.querySelector('.hosp-arrow.next');
+    if(prev)prev.addEventListener('click',()=>go(idx-1));
+    if(next)next.addEventListener('click',()=>go(idx+1));
+    dots.forEach((d,k)=>d.addEventListener('click',()=>go(k)));
+    let sx=0,sy=0;
+    track.addEventListener('touchstart',e=>{sx=e.touches[0].clientX;sy=e.touches[0].clientY;},{passive:true});
+    track.addEventListener('touchend',e=>{
+      const dx=e.changedTouches[0].clientX-sx, dy=e.changedTouches[0].clientY-sy;
+      if(Math.abs(dx)>40&&Math.abs(dx)>Math.abs(dy))go(dx<0?idx+1:idx-1);
+    },{passive:true});
+    go(0);
+  })();
+
+
+  /* Padrinos — uno a la vez, con fade de entrada y de salida */
+  (function(){
+    const stack=document.getElementById('padrinosStack');
+    if(!stack)return;
+    const cards=[...stack.querySelectorAll('.fam-padrinos')];
+    if(cards.length<2){cards.forEach(c=>c.classList.add('is-on'));return;}
+    /* Estas tarjetas ya no las anima el reveal general: entran con el fade propio */
+    cards.forEach(c=>c.classList.remove('rv'));
+
+    const dots=document.createElement('div');
+    dots.className='padrinos-dots';
+    cards.forEach((c,i)=>{
+      const b=document.createElement('button');
+      b.type='button';
+      b.setAttribute('aria-label','Padrinos '+(i+1)+' de '+cards.length);
+      b.addEventListener('click',()=>{show(i);restart();});
+      dots.appendChild(b);
+    });
+    stack.after(dots);
+    const bullets=[...dots.children];
+
+    let idx=0,timer=null;
+    function show(i){
+      idx=i;
+      cards.forEach((c,j)=>c.classList.toggle('is-on',j===i));
+      bullets.forEach((b,j)=>b.classList.toggle('on',j===i));
+    }
+    function next(){ show((idx+1)%cards.length); }
+    /* 4.2 s: alcanza a leerse el nombre sin que la seccion se sienta lenta */
+    function restart(){ clearInterval(timer); timer=setInterval(next,4200); }
+
+    show(0);
+    /* Solo corre mientras la seccion esta a la vista */
+    if('IntersectionObserver' in window){
+      new IntersectionObserver(es=>{
+        es.forEach(e=>{ if(e.isIntersecting){restart();} else {clearInterval(timer);} });
+      },{threshold:.25}).observe(stack);
+    } else { restart(); }
+    document.addEventListener('visibilitychange',()=>{
+      if(document.hidden) clearInterval(timer); else restart();
+    });
+  })();
+
+  /* Gift box — confetti + modal */
+  (function(){
+    const btn=document.getElementById('giftBoxBtn');
+    const overlay=document.getElementById('giftModalOverlay');
+    const closeBtn=document.getElementById('giftModalClose');
+    if(!btn||!overlay)return;
+    const colors=['#D4AF37','#B8962E','#F3E3C3','#F0D98C','#FBF1D6'];
+    function burstConfetti(){
+      const r=btn.getBoundingClientRect();
+      const originX=r.left+r.width/2, originY=r.top+r.height*.35;
+      for(let i=0;i<32;i++){
+        const p=document.createElement('div');
+        p.className='confetti-piece';
+        const size=5+Math.random()*6;
+        p.style.left=originX+'px';
+        p.style.top=originY+'px';
+        p.style.width=size+'px';
+        p.style.height=(size*.6)+'px';
+        p.style.background=colors[Math.floor(Math.random()*colors.length)];
+        document.body.appendChild(p);
+        const angle=Math.random()*Math.PI*2;
+        const dist=70+Math.random()*160;
+        const dx=Math.cos(angle)*dist, dy=Math.sin(angle)*dist-60;
+        gsap.fromTo(p,{x:0,y:0,opacity:1,rotation:0},{x:dx,y:dy,opacity:0,rotation:Math.random()*720-360,duration:1+Math.random()*.7,ease:'power2.out',onComplete:()=>p.remove()});
+      }
+    }
+    btn.addEventListener('click',()=>{
+      burstConfetti();
+      setTimeout(()=>overlay.classList.add('active'),200);
+    });
+    closeBtn.addEventListener('click',()=>overlay.classList.remove('active'));
+    overlay.addEventListener('click',(e)=>{if(e.target===overlay)overlay.classList.remove('active');});
+  })();
+}
+
+/* ══════════ CAPA DE VIDA ══════════
+   Solo transform/opacity (y un clip-path de entrada). Todo parte visible
+   o entra con fromTo; con prefers-reduced-motion no se agrega nada. */
+function smoothTo(el){
+  if(!el)return;
+  const y=el.getBoundingClientRect().top+window.scrollY-(window.innerWidth>=1024?90:16);
+  window.scrollTo({top:y,behavior:'smooth'});
+}
+function initVida(){
+  /* Flecha "Siguiente": baja a la siguiente foto; la última lleva a confirmar */
+  const fotos=[...document.querySelectorAll('.sec-foto')];
+  fotos.forEach((f,i)=>{
+    const b=f.querySelector('.sf-next');
+    if(b)b.addEventListener('click',()=>smoothTo(fotos[i+1]?fotos[i+1].querySelector('.sf-marco'):document.getElementById('rsvp')));
+  });
+  /* Tarjetas de ubicación: al tocarlas se elevan */
+  document.querySelectorAll('.loc-float').forEach(c=>{
+    c.addEventListener('click',e=>{if(e.target.closest('a'))return;c.classList.toggle('lifted');});
+  });
+  /* Confeti con los colores de la invitación al confirmar */
+  window._rsvpConfetti=function(el){
+    const r=el.getBoundingClientRect(),ox=r.left+r.width/2,oy=r.top+40;
+    const cs=['#D4AF37','#F0D98C','#F7E7CE','#B8962E','#FBF1D6'];
+    for(let i=0;i<40;i++){
+      const p=document.createElement('div');p.className='confetti-piece';
+      const sz=5+Math.random()*6;
+      p.style.cssText='left:'+ox+'px;top:'+oy+'px;width:'+sz+'px;height:'+(sz*.6)+'px;background:'+cs[i%cs.length];
+      document.body.appendChild(p);
+      const a=Math.random()*Math.PI*2,d=80+Math.random()*170;
+      gsap.fromTo(p,{x:0,y:0,opacity:1,rotation:0},{x:Math.cos(a)*d,y:Math.sin(a)*d-70,opacity:0,rotation:Math.random()*720-360,duration:1.1+Math.random()*.7,ease:'power2.out',onComplete:()=>p.remove()});
+    }
+  };
+
+  if(window.matchMedia('(prefers-reduced-motion: reduce)').matches)return;
+
+  /* Portada: la foto baja más lento y se acerca; los nombres suben y se desvanecen */
+  gsap.to('.hero-par',{yPercent:16,scale:1.08,ease:'none',scrollTrigger:{trigger:'#hero',start:'top top',end:'bottom top',scrub:true}});
+  gsap.fromTo('.hero-content',{y:0,opacity:1},{y:-90,opacity:0,ease:'none',immediateRender:false,scrollTrigger:{trigger:'#hero',start:'top top',end:'bottom top',scrub:true}});
+
+  /* Fotos: zoom continuo al hacer scroll (velocidades distintas) + revelado con máscara */
+  fotos.forEach((f,i)=>{
+    const img=f.querySelector('.sf-marco img'),marco=f.querySelector('.sf-marco');
+    const z=[1.28,1.2,1.34][i%3];
+    gsap.fromTo(img,{scale:1.02,yPercent:-4},{scale:z,yPercent:4,ease:'none',scrollTrigger:{trigger:f,start:'top bottom',end:'bottom top',scrub:true}});
+    gsap.fromTo(marco,{clipPath:'inset(16% 12% 16% 12% round 12px)'},{clipPath:'inset(0% 0% 0% 0% round 12px)',duration:1.1,ease:'power3.out',
+      scrollTrigger:{trigger:f,start:'top 85%'},onComplete:()=>gsap.set(marco,{clearProps:'clipPath'})});
+  });
+
+  /* Galería: la rueda se revela con máscara */
+  const ws=document.getElementById('wheel-scene');
+  if(ws)gsap.fromTo(ws,{clipPath:'inset(42% 0% 42% 0%)'},{clipPath:'inset(-30% -30% -30% -30%)',duration:1.2,ease:'power3.out',
+    scrollTrigger:{trigger:ws,start:'top 85%'},onComplete:()=>gsap.set(ws,{clearProps:'clipPath'})});
+
+  /* Familias: entrada nombre por nombre */
+  const fam=document.querySelector('#sfam .fam-grid');
+  if(fam)gsap.fromTo(fam.querySelectorAll('.fam-role-lbl,.fam-name,.fam-and'),{opacity:0,y:14},{opacity:1,y:0,duration:.7,stagger:.1,ease:'power2.out',
+    scrollTrigger:{trigger:fam,start:'top 85%'}});
+
+  /* Itinerario: la línea se dibuja con el scroll; cada momento entra alternando lados */
+  const line=document.querySelector('.itin-line');
+  if(line)gsap.fromTo(line,{scaleY:0},{scaleY:1,ease:'none',scrollTrigger:{trigger:'.itin-list',start:'top 78%',end:'bottom 72%',scrub:true}});
+  document.querySelectorAll('.itin-item').forEach((it,i)=>{
+    const tl=gsap.timeline({scrollTrigger:{trigger:it,start:'top 90%'}});
+    tl.fromTo(it,{opacity:0,x:i%2?42:-42},{opacity:1,x:0,duration:.75,ease:'power2.out'})
+      .fromTo(it.querySelector('.itin-dot'),{scale:0},{scale:1,duration:.45,ease:'back.out(3)'},'-=.45');
+  });
+  const rezo=document.getElementById('srezo');
+  if(rezo)gsap.fromTo(rezo,{opacity:0,y:34,scale:.96},{opacity:1,y:0,scale:1,duration:1.1,ease:'power2.out',scrollTrigger:{trigger:rezo,start:'top 88%'}});
+
+  /* Mesa de regalos: un destello cruza al entrar */
+  const sh=document.querySelector('.gift-sheen');
+  if(sh)gsap.fromTo(sh,{xPercent:-160},{xPercent:330,duration:1.4,ease:'power2.inOut',scrollTrigger:{trigger:sh.parentNode.parentNode,start:'top 80%'}});
+
+  /* Títulos de sección: reveal por palabras */
+  document.querySelectorAll('.wrap .heading,.wrap .heading-sm').forEach(h=>{
+    if(h.closest('#hero')||h.querySelector('*'))return;
+    const w=h.textContent.trim().split(/\s+/);
+    h.innerHTML=w.map(x=>'<span class="tw">'+x+'</span>').join(' ');
+    gsap.fromTo(h.querySelectorAll('.tw'),{opacity:0,y:20},{opacity:1,y:0,duration:.85,stagger:.14,ease:'power2.out',scrollTrigger:{trigger:h,start:'top 90%'}});
+  });
+
+  /* Entre secciones: los ornamentos se dibujan al pasar */
+  document.querySelectorAll('.orn').forEach(o=>{
+    gsap.fromTo(o.querySelectorAll('.orn-line'),{scaleX:0},{scaleX:1,duration:1,ease:'power2.out',scrollTrigger:{trigger:o,start:'top 92%'}});
+  });
+}
+
+/* ══════════ MENÚ DE SECCIONES ══════════ */
+function initMenu(){
+  const pill=document.getElementById('navPill'),full=document.getElementById('navFull'),btn=document.getElementById('navMenuBtn'),
+        ind=document.getElementById('navInd'),links=document.getElementById('navLinks');
+  if(!pill)return;
+  setTimeout(()=>pill.classList.add('on'),700);
+  const all=[...document.querySelectorAll('[data-sec]')];
+  function go(id){const el=document.getElementById(id);if(id==='hero')window.scrollTo({top:0,behavior:'smooth'});else smoothTo(el);}
+  function openM(){full.classList.add('open');full.setAttribute('aria-hidden','false');btn.setAttribute('aria-expanded','true');}
+  function closeM(){full.classList.remove('open');full.setAttribute('aria-hidden','true');btn.setAttribute('aria-expanded','false');}
+  btn.addEventListener('click',openM);
+  document.getElementById('nfClose').addEventListener('click',closeM);
+  document.addEventListener('keydown',e=>{if(e.key==='Escape'&&full.classList.contains('open'))closeM();});
+  all.forEach(a=>a.addEventListener('click',e=>{
+    e.preventDefault();const id=a.dataset.sec;
+    if(full.contains(a)){closeM();setTimeout(()=>go(id),380);}else go(id);
+  }));
+  document.getElementById('navShare').addEventListener('click',()=>{
+    const data={title:'Boda de Yoly y Refugio',text:'Sábado 6 de marzo de 2027 · Anaheim, California',url:location.origin+'/'};
+    if(navigator.share)navigator.share(data).catch(()=>{});
+    else if(window.copyText)window.copyText(data.url);
+  });
+  /* Sección visible: pastilla que se desliza (escritorio) y cursiva dorada (menú móvil) */
+  let curId=null;
+  function mark(id){
+    curId=id;
+    all.forEach(a=>a.classList.toggle('cur',a.dataset.sec===id&&!a.classList.contains('nav-mono')));
+    const cur=links.querySelector('a.cur');
+    if(cur){ind.style.opacity='1';ind.style.width=cur.offsetWidth+'px';ind.style.transform='translateX('+cur.offsetLeft+'px)';}
+    else ind.style.opacity='0';
+  }
+  window.addEventListener('resize',()=>{if(curId)mark(curId);});
+  const ids=[...new Set(all.map(a=>a.dataset.sec))];
+  if('IntersectionObserver' in window){
+    const io=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting)mark(e.target.id);});},{rootMargin:'-45% 0px -50% 0px'});
+    ids.forEach(id=>{const el=document.getElementById(id);if(el)io.observe(el);});
+  }
+}
+
+/* ══════════ DRESS CODE · carrusel de ideas (de boda-fabiola-y-fernando) ══════════ */
+(function(){
+  function init(){
+    var viewer=document.getElementById('dcViewer');
+    if(!viewer)return;
+    if(viewer.parentNode!==document.body)document.body.appendChild(viewer);
+    var track=document.getElementById('dcvTrack'),head=document.getElementById('dcvHead'),
+        cap=document.getElementById('dcvCap'),dots=document.getElementById('dcvDots'),
+        close=document.getElementById('dcViewerClose');
+    var LOOKS={
+      caballeros:{head:'Caballeros',items:[
+        {src:'looks/cab-3.png',cap:'Traje oscuro'},
+        {src:'looks/cab-1.png',cap:'Chaleco y pantalón de vestir'}]},
+      damas:{head:'Damas',items:[
+        {src:'looks/dama-2.png',cap:'Vestido largo de gala'},
+        {src:'looks/dama-1.png',cap:'Vestido de cóctel'}]}
+    };
+    var items=[],idx=0,last=null;
+    function render(){
+      track.style.transform='translateX('+(-idx*100)+'%)';
+      cap.textContent=items[idx].cap+'  ·  '+(idx+1)+' / '+items.length;
+      [].forEach.call(dots.children,function(d,i){d.classList.toggle('on',i===idx);});
+    }
+    function go(i){idx=(i+items.length)%items.length;render();}
+    function open(key){
+      var L=LOOKS[key];if(!L)return;
+      items=L.items;idx=0;last=document.activeElement;
+      head.textContent=L.head;track.innerHTML='';dots.innerHTML='';
+      items.forEach(function(it,i){
+        var sl=document.createElement('figure');sl.className='dcv-slide';
+        sl.innerHTML='<div class="dcv-frame"><div class="dcv-mat"><img alt=""></div></div>';
+        var im=sl.querySelector('img');im.src=it.src;im.alt=L.head+' — '+it.cap;
+        track.appendChild(sl);
+        var d=document.createElement('button');d.type='button';d.className='dcv-dot';
+        d.setAttribute('aria-label','Ver idea '+(i+1));
+        d.addEventListener('click',function(){go(i);});dots.appendChild(d);
+      });
+      render();
+      viewer.removeAttribute('hidden');requestAnimationFrame(function(){viewer.classList.add('on');});
+      document.body.style.overflow='hidden';close.focus();
+    }
+    function hide(){
+      viewer.classList.remove('on');document.body.style.overflow='';
+      setTimeout(function(){viewer.setAttribute('hidden','');},300);
+      if(last&&last.focus)last.focus();
+    }
+    document.querySelectorAll('.dc-look').forEach(function(b){
+      b.addEventListener('click',function(e){e.preventDefault();open(b.dataset.look);});
+    });
+    close.addEventListener('click',hide);
+    document.getElementById('dcvPrev').addEventListener('click',function(e){e.stopPropagation();go(idx-1);});
+    document.getElementById('dcvNext').addEventListener('click',function(e){e.stopPropagation();go(idx+1);});
+    viewer.addEventListener('click',function(e){if(e.target===viewer)hide();});
+    document.addEventListener('keydown',function(e){
+      if(!viewer.classList.contains('on'))return;
+      if(e.key==='Escape')hide();if(e.key==='ArrowLeft')go(idx-1);if(e.key==='ArrowRight')go(idx+1);
+    });
+    var x0=null;
+    track.addEventListener('touchstart',function(e){x0=e.touches[0].clientX;},{passive:true});
+    track.addEventListener('touchend',function(e){
+      if(x0===null)return;var dx=e.changedTouches[0].clientX-x0;x0=null;
+      if(Math.abs(dx)>40)go(idx+(dx<0?1:-1));
+    },{passive:true});
+  }
+  if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',init);else init();
+})();
+
+/* ── INIT ── */
+document.addEventListener('DOMContentLoaded',()=>{
+  initEnvelope();
+});
+</script>
+<script>
+/* ELYSIUM AUDIO v2 — el invitado entra y escucha la cancion.
+   - Primer gesto (sobre, idioma, boton, cualquier toque): la cancion arranca SI O SI.
+     Si el boton de musica de la plantilla la pausa en ese mismo toque, se reanuda.
+   - Despues del primer arranque ya no se fuerza nada: el boton de pausa funciona normal.
+   - Si el archivo de la cancion falla (404, host caido, HTML en vez de mp3) se usa una de respaldo. */
+(function(){
+  if(window.__elyAudio2) return; window.__elyAudio2=1;
+  var FALLBACK='https://bsjoelxktbvlavfoozhk.supabase.co/storage/v1/object/public/fotos-clientes/audio/boda-yolanda-esteve-y-refugio-gonzalez/cancion.mp3?r=2';
+  var forced=false, gestured=false;
+  function A(){ return document.querySelector('audio'); }
+  function toFallback(a){
+    if(!a || a.getAttribute('data-ely-fb')) return;
+    a.setAttribute('data-ely-fb','1');
+    try{ a.src=FALLBACK; a.load(); if(gestured){ var p=a.play(); if(p&&p.catch) p.catch(function(){}); } }catch(e){}
+  }
+  function hook(a){
+    if(!a || a.__elyHook) return; a.__elyHook=1;
+    a.addEventListener('error',function(){ toFallback(a); });
+    var ss=a.querySelectorAll('source');
+    for(var i=0;i<ss.length;i++){ ss[i].addEventListener('error',function(){ toFallback(a); }); }
+    if(a.networkState===3 || (!ss.length && !a.getAttribute('src'))) toFallback(a);
+  }
+  function kick(a){
+    try{ a.muted=false; if(a.volume<0.2) a.volume=0.6; }catch(e){}
+    if(a.paused && a.currentTime===0 && a.readyState===0){ try{ a.preload='auto'; a.load(); }catch(e){} }
+    var p; try{ p=a.play(); }catch(e){ return; }
+    if(p && p.catch) p.catch(function(){});
+  }
+  function onGesture(){
+    var a=A(); if(!a) return;
+    hook(a); gestured=true;
+    if(forced) return;
+    if(a.paused) kick(a);
+    setTimeout(function(){
+      var b=A();
+      if(!forced && b && b.paused) kick(b);
+      forced=true;
+    },150);
+  }
+  hook(A());
+  ['pointerdown','touchend','click','keydown'].forEach(function(ev){
+    document.addEventListener(ev,onGesture,{capture:true,passive:true});
+  });
+})();
+</script>
+</body>
+</html>
