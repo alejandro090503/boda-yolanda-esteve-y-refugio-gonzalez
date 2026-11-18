@@ -8,7 +8,7 @@
 <meta property="og:type" content="website">
 <meta property="og:title" content="Yoly y Refugio · VI · III · MMXXVII">
 <meta property="og:description" content="Sábado 6 de marzo de 2027 · Anaheim, California">
-<meta property="og:image" content="https://boda-yolanda-esteve-y-refugio-gonzalez.vercel.app/og-image.jpg">
+<meta property="og:image" content="https://boda-yolanda-esteve-y-refugio-gonzalez.vercel.app/og-image.jpg?v=2">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta property="og:locale" content="es_MX">
@@ -1298,6 +1298,28 @@ body{background:var(--bg);color:var(--text);font-family:'Cormorant Garamond',ser
   #rsvp .rsvp-toggle{grid-template-columns:1fr}
 }
 
+
+/* ══ ASPECTOS DE LAS PLANTILLAS 180 (verso) Y 149 (pase) ══ */
+#sverso,#spase{position:relative;overflow:hidden;isolation:isolate}
+.verse-wrap{max-width:360px;margin:0 auto}
+.verse-ornament{display:block;margin:0 auto 26px;width:min(260px,62vw);height:auto}
+.verse-quote{display:block;font-family:'Cormorant Garamond',serif;font-weight:700;font-size:74px;line-height:.5;color:#D4AF37;opacity:.85;height:34px}
+.verse-text{font-family:'Cormorant Garamond',serif;font-style:italic;font-weight:600;font-size:clamp(21px,5.8vw,25px);line-height:1.6;color:#F7E7CE;margin:10px 0 22px}
+.vword{display:inline-block}
+.verse-sig{position:relative;display:inline-block;font-family:'Italiana',serif;font-size:14px;letter-spacing:.3em;text-transform:uppercase;color:#D4AF37;padding:0 4px}
+.verse-sig::before,.verse-sig::after{content:'';position:absolute;top:50%;width:26px;height:1px;background:linear-gradient(90deg,transparent,#D4AF37)}
+.verse-sig::before{right:100%;margin-right:10px}
+.verse-sig::after{left:100%;margin-left:10px;transform:scaleX(-1)}
+.pase{display:grid;grid-template-columns:84px 1fr;gap:16px;align-items:center;text-align:left;max-width:360px;margin:26px auto 4px;padding:18px;
+  border-radius:16px;background:linear-gradient(160deg,#262118,#1C1912);border:1px solid rgba(212,175,55,.45);box-shadow:0 14px 34px rgba(0,0,0,.45)}
+.pase-tile{aspect-ratio:1;border-radius:14px;display:flex;align-items:center;justify-content:center;
+  background:radial-gradient(circle at 50% 45%,#3A2D14,#1E1A12 75%);border:1px solid rgba(212,175,55,.35)}
+.pase-tile img{width:86%;height:auto;filter:drop-shadow(0 6px 10px rgba(0,0,0,.5))}
+.pase dt{font-family:'Cormorant Garamond',serif;font-style:italic;font-weight:700;font-size:18px;color:#D4AF37;line-height:1.2}
+.pase dd{font-family:'Cormorant Garamond',serif;font-weight:600;font-size:18px;color:#F7E7CE;margin:0 0 8px;line-height:1.35}
+#pase-name{overflow-wrap:anywhere}
+.pase-two{display:flex;gap:18px;flex-wrap:wrap}
+.pase-adultos{text-align:left;max-width:360px;margin:20px auto 0}
 </style>
 </head>
 <body>
@@ -1310,8 +1332,8 @@ body{background:var(--bg);color:var(--text);font-family:'Cormorant Garamond',ser
 <div id="petals"></div>
 
 <div id="envelope-screen">
-  <img id="envImage" src="sobre.jpg" alt="Invitación de boda Yoly y Refugio">
-  <video id="envVideo" src="apertura.mp4" muted playsinline preload="auto" poster="sobre.jpg"></video>
+  <img id="envImage" src="sobre.jpg?v=2" alt="Invitación de boda Yoly y Refugio">
+  <video id="envVideo" src="apertura.mp4?v=2" muted playsinline preload="auto" poster="sobre.jpg?v=2"></video>
   <div class="env-tap" id="envTap">Toca para abrir</div>
 </div>
 
@@ -1376,6 +1398,23 @@ body{background:var(--bg);color:var(--text);font-family:'Cormorant Garamond',ser
     </p>
   </section>
 
+
+  <!-- VERSO (estilo plantilla 180) -->
+  <section id="sverso" class="sec" style="text-align:center">
+    <div class="verse-wrap">
+      <svg class="verse-ornament" viewBox="0 0 360 80" fill="none" aria-hidden="true">
+        <g stroke="var(--gold)" stroke-width=".9" opacity=".8" fill="none">
+          <path d="M30 40 Q70 18 110 40 Q140 58 170 40"/><path d="M190 40 Q220 58 250 40 Q290 18 330 40"/>
+          <circle cx="180" cy="40" r="4"/><circle cx="180" cy="40" r="1.5" fill="var(--gold)" stroke="none"/>
+          <path d="M175 28 Q180 20 185 28" opacity=".7"/><path d="M175 52 Q180 60 185 52" opacity=".7"/>
+          <path d="M10 40 L30 40" opacity=".5"/><path d="M330 40 L350 40" opacity=".5"/>
+        </g>
+      </svg>
+      <span class="verse-quote" aria-hidden="true">&ldquo;</span>
+      <p class="verse-text">El amor es paciente y bondadoso&hellip; todo lo excusa, todo lo cree, todo lo espera, todo lo soporta.</p>
+      <div class="verse-sig">1 Corintios 13</div>
+    </div>
+  </section>
 
   <section class="sec-foto sec-foto--izq"><div class="sf-marco"><img src="flota1.jpg" alt="Yoly y Refugio" loading="eager"></div><button class="sf-next" type="button" aria-label="Ir a la siguiente foto"><span>Siguiente</span><svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg></button></section>
   <!-- CUENTA REGRESIVA -->
@@ -1654,11 +1693,7 @@ body{background:var(--bg);color:var(--text);font-family:'Cormorant Garamond',ser
       <p class="ydc-lbl ydc-lbl--sug">Colores sugeridos</p>
       <p class="ydc-sug">A tu elección</p>
     </div>
-    <div class="no-kids rv">
-      <svg viewBox="0 0 24 24"><circle cx="12" cy="7" r="4"/><path d="M5.5 21v-2a4.5 4.5 0 0 1 9 0v2"/><line x1="17" y1="11" x2="23" y2="11"/></svg>
-      <span>Celebración <strong>solo para adultos</strong>. Con cariño les pedimos no traer niños al evento.<br>¡Los esperamos libres y disfrutando!</span>
-    </div>
-  </section>
+      </section>
 
 
 
@@ -1730,6 +1765,26 @@ body{background:var(--bg);color:var(--text);font-family:'Cormorant Garamond',ser
   </section>
 
     <!-- ÁLBUM DE FOTOS -->
+  <!-- PASE + SOLO ADULTOS (estilo plantilla 149) -->
+  <section id="spase" class="sec rv" style="text-align:center">
+    <span class="eyebrow">Tu lugar</span>
+    <h2 class="heading-sm">¡Esperamos contar contigo!</h2>
+    <dl class="pase" id="pase" style="display:none">
+      <div class="pase-tile"><img src="sello.webp" alt="J &amp; Y"></div>
+      <div class="pase-datos">
+        <dt>Invitación</dt><dd id="pase-name">&mdash;</dd>
+        <div class="pase-two">
+          <div><dt>Personas</dt><dd id="pase-n">&mdash;</dd></div>
+          <div><dt>Estado</dt><dd id="pase-st">Pendiente</dd></div>
+        </div>
+      </div>
+    </dl>
+    <div class="no-kids pase-adultos">
+      <svg viewBox="0 0 24 24"><circle cx="12" cy="7" r="4"/><path d="M5.5 21v-2a4.5 4.5 0 0 1 9 0v2"/><line x1="17" y1="11" x2="23" y2="11"/></svg>
+      <span>Con mucho cariño hemos reservado un lugar especialmente para ti. Los pases son personales e intransferibles: será una celebración <strong>solo para adultos</strong>. ¡Gracias por tu comprensión!</span>
+    </div>
+  </section>
+
   <section class="sec-foto sec-foto--izq"><div class="sf-marco"><img src="flota7.jpg" alt="Yoly y Refugio" loading="eager"></div><button class="sf-next" type="button" aria-label="Ir a la siguiente foto"><span>Siguiente</span><svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg></button></section>
   <section id="salbum" class="ink-sec sec rv" style="text-align:center">
     <div class="ink-bg ink-o-corner ink-d7 flip" aria-hidden="true"><i style="background-image:url('ink/ink-corner.webp')"></i></div>
@@ -1875,6 +1930,7 @@ body{background:var(--bg);color:var(--text);font-family:'Cormorant Garamond',ser
     <li style="--i:4"><a href="#galeria" data-sec="galeria">Galería</a></li>
     <li style="--i:5"><a href="#sdc" data-sec="sdc">Vestimenta</a></li>
     <li style="--i:6"><a href="#regalos" data-sec="regalos">Regalos</a></li>
+    <li style="--i:7"><a href="#spase" data-sec="spase">Tu lugar</a></li>
     <li style="--i:7"><a href="#salbum" data-sec="salbum">Álbum</a></li>
     <li style="--i:8"><a href="#rsvp" data-sec="rsvp">Confirmar</a></li>
   </ul>
@@ -2310,6 +2366,7 @@ function initMain(){
 
     function pintaEncabezado(){
       if(numEl) numEl.textContent = pasesAsignados + pasesMenores;
+      if(urlPara && window._pase) window._pase(urlPara, pasesAsignados + pasesMenores);
       if(lblEl) lblEl.textContent = pasesMenores > 0
         ? pasesAsignados + (pasesAsignados === 1 ? ' adulto' : ' adultos') + ' + ' + pasesMenores + (pasesMenores === 1 ? ' menor' : ' menores')
         : 'Pases reservados';
@@ -2426,6 +2483,7 @@ function initMain(){
     btnNo.addEventListener('click',  function(){ if(!frozen && !bloqueado){ selectRsvp('no');  setFeedback(''); } });
 
     function mostrarGracias(estado, nombres){
+      if(window._pase) window._pase(urlPara, pasesAsignados + pasesMenores, estado);
       if(estado === 'confirmado'){
         gTitleEl.textContent = T('¡Gracias por confirmar!','Thank you for confirming!');
         gSubEl.textContent = nombres.length === 1
@@ -2768,6 +2826,16 @@ function initVida(){
 
   /* Títulos metálicos desfasados para que no brillen todos a la vez */
   document.querySelectorAll('.heading,.heading-sm,.rsvp-title,.footer-names,.hero-bride,.hero-groom,.hero-amp').forEach((t,i)=>{t.style.animationDelay=(-(i*1.7)%7).toFixed(1)+'s';});
+  /* Verso (plantilla 180): ornamento, comillas y palabras */
+  const vw=document.querySelector('.verse-wrap');
+  if(vw){
+    const vt=vw.querySelector('.verse-text');
+    vt.innerHTML=vt.textContent.trim().split(/\s+/).map(w=>'<span class="vword">'+w+'</span>').join(' ');
+    gsap.fromTo('.verse-ornament',{opacity:0,y:30,scale:.9},{opacity:1,y:0,scale:1,duration:1.2,ease:'power3.out',scrollTrigger:{trigger:vw,start:'top 88%'}});
+    gsap.fromTo('.verse-quote',{opacity:0,scale:.5,rotate:-10},{opacity:.85,scale:1,rotate:0,duration:1.05,ease:'back.out(1.4)',scrollTrigger:{trigger:vw,start:'top 88%'}});
+    gsap.fromTo(vt.querySelectorAll('.vword'),{opacity:0,y:20},{opacity:1,y:0,duration:.85,stagger:.05,ease:'power3.out',scrollTrigger:{trigger:vt,start:'top 90%'}});
+    gsap.fromTo('.verse-sig',{opacity:0,y:18,scaleX:.6},{opacity:1,y:0,scaleX:1,duration:1,ease:'power3.out',scrollTrigger:{trigger:'.verse-sig',start:'top 94%'}});
+  }
   /* Títulos de sección: reveal por palabras */
   document.querySelectorAll('.wrap .heading,.wrap .heading-sm').forEach(h=>{
     if(h.closest('#hero')||h.querySelector('*'))return;
@@ -2782,6 +2850,14 @@ function initVida(){
   });
 }
 
+/* Pase personalizado (plantilla 149) */
+window._pase=function(nombre,n,estado){
+  const box=document.getElementById('pase');if(!box||!nombre)return;
+  document.getElementById('pase-name').textContent=nombre;
+  document.getElementById('pase-n').textContent=n;
+  document.getElementById('pase-st').textContent=estado==='confirmado'?'Confirmada':estado==='declino'?'No asistirá':'Pendiente';
+  box.style.display='grid';
+};
 /* ══════════ MENÚ (un solo botón) ══════════ */
 function initMenu(){
   const fab=document.getElementById('navMenuBtn'),full=document.getElementById('navFull');
