@@ -73,7 +73,7 @@ body{background:var(--bg);color:var(--text);font-family:'Cormorant Garamond',ser
 .italiana{font-family:'Italiana',serif;font-size:15px;letter-spacing:.18em;text-transform:uppercase;color:var(--dark)}
 
 /* ── SCROLL HINT ── */
-.scroll-hint{position:absolute;bottom:calc(84px + env(safe-area-inset-bottom));left:50%;transform:translateX(-50%);z-index:3;display:flex;flex-direction:column;align-items:center;gap:10px;opacity:1;transition:opacity .7s;white-space:nowrap}
+.scroll-hint{position:absolute;bottom:calc(100px + env(safe-area-inset-bottom));left:50%;transform:translateX(-50%);z-index:3;display:flex;flex-direction:column;align-items:center;gap:10px;opacity:1;transition:opacity .7s;white-space:nowrap}
 .scroll-hint.hidden{opacity:0;pointer-events:none}
 .scroll-hint-txt{font-family:'Italiana',serif;font-size:12px;letter-spacing:5px;text-transform:uppercase;color:rgba(212,175,55,.75)}
 .scroll-hint-arrow{animation:scrollbounce 1.8s ease-in-out infinite}
@@ -1338,6 +1338,50 @@ body{background:var(--bg);color:var(--text);font-family:'Cormorant Garamond',ser
 .sec-foto .sf-next svg{filter:drop-shadow(0 1px 4px rgba(0,0,0,.7))}
 .fx-off .sf-drift,.fx-off .hg,.fx-off .hero-lens span,.fx-off .hero-dust i,.fx-off .hero-drift{animation-play-state:paused!important}
 @media (prefers-reduced-motion:reduce){.sf-drift{animation:none!important}}
+
+/* ══ MENÚ PREMIUM ══ */
+.scroll-hint{gap:8px;padding:10px 18px 8px;border-radius:999px;background:rgba(14,12,8,.42);border:1px solid rgba(212,175,55,.35);
+  box-shadow:0 6px 20px rgba(0,0,0,.35)}
+.scroll-hint-txt{font-size:14px;letter-spacing:.38em;color:#FBF1D6;text-shadow:0 1px 6px rgba(0,0,0,.8);padding-left:.38em}
+.scroll-hint-arrow svg{opacity:1;stroke:#F0D98C;width:22px;height:22px}
+
+.menu-fab{height:50px;padding:0 24px 0 20px;gap:12px;overflow:hidden;
+  background:linear-gradient(160deg,rgba(38,33,24,.82),rgba(18,15,10,.86)) padding-box,
+             linear-gradient(120deg,#8E6B1E,#F6E3A1 30%,#D4AF37 55%,#FFFBEA 70%,#8E6B1E) border-box;
+  border:1px solid transparent;
+  box-shadow:0 12px 32px rgba(0,0,0,.55),0 0 24px rgba(212,175,55,.2),inset 0 1px 0 rgba(255,251,234,.14)}
+.menu-ico{gap:5px;width:20px}
+.menu-ico i{height:1.4px;background:linear-gradient(90deg,#B8962E,#FFFBEA,#D4AF37)}
+.menu-ico i:nth-child(2){width:64%;margin-left:auto}
+.menu-sep{width:1px;height:18px;background:linear-gradient(transparent,rgba(212,175,55,.8),transparent)}
+.menu-txt{font-family:'Italiana',serif;font-weight:400;font-size:15px;letter-spacing:.32em;padding-left:.32em;
+  background:var(--foil);background-size:220% 100%;-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;
+  animation:goldSweep 7s ease-in-out infinite}
+.menu-sheen{position:absolute;top:0;bottom:0;left:0;width:40%;pointer-events:none;transform:translateX(-140%) skewX(-18deg);
+  background:linear-gradient(100deg,transparent,rgba(255,251,234,.22),transparent);animation:menuSheen 7s ease-in-out 2s infinite}
+@keyframes menuSheen{0%,70%{transform:translateX(-140%) skewX(-18deg)}100%{transform:translateX(300%) skewX(-18deg)}}
+.menu-fab:active{transform:translate(-50%,0) scale(.97)}
+
+.nav-full{background:radial-gradient(ellipse 70% 55% at 50% 48%,rgba(212,175,55,.13),transparent 70%),#120F0A;overflow:hidden}
+.nf-ink{position:absolute;inset:-6%;z-index:0;pointer-events:none;opacity:.42;background:url('ink/ink-oval.webp') center/cover no-repeat;
+  -webkit-mask-image:radial-gradient(ellipse 80% 70% at 50% 50%,#000 40%,transparent 100%);mask-image:radial-gradient(ellipse 80% 70% at 50% 50%,#000 40%,transparent 100%)}
+.nf-frame{position:absolute;inset:14px;z-index:0;pointer-events:none;border:1px solid rgba(212,175,55,.45);border-radius:4px}
+.nf-frame::after{content:'';position:absolute;inset:6px;border:1px solid rgba(212,175,55,.18);border-radius:2px}
+.nav-full>*:not(.nf-ink):not(.nf-frame){position:relative;z-index:1}
+.nf-close{position:absolute!important;top:max(26px,env(safe-area-inset-top));right:26px;width:46px;height:46px;border-radius:50%;
+  background:linear-gradient(#17140E,#17140E) padding-box,linear-gradient(120deg,#8E6B1E,#F6E3A1,#D4AF37) border-box;border:1px solid transparent}
+.nf-close svg{width:20px;height:20px}
+.nf-orn{width:min(210px,58vw);height:auto;margin-bottom:14px;opacity:0;transform:translateY(-8px) scale(.94);transition:opacity .6s ease .1s,transform .6s ease .1s}
+.nav-full.open .nf-orn{opacity:.9;transform:none}
+.nf-list a{position:relative;display:inline-block;padding:7px 6px;font-size:clamp(1.6rem,7.2vw,2.25rem)}
+.nf-list a::after{content:'';position:absolute;left:12%;right:12%;bottom:4px;height:1px;transform:scaleX(0);
+  background:linear-gradient(90deg,transparent,#D4AF37,transparent);transition:transform .4s ease}
+.nf-list a.cur::after,.nf-list a:hover::after{transform:scaleX(1)}
+.nf-list a.cur{color:#F0D98C;text-shadow:0 0 18px rgba(212,175,55,.45)}
+.nf-rule{margin-top:20px;width:120px}
+.nf-date{margin-top:14px;font-family:'Italiana',serif;font-size:14px;letter-spacing:.36em;padding-left:.36em;text-transform:uppercase;color:rgba(247,231,206,.85)}
+@media (max-height:700px){.nf-list a{padding:4px 6px;font-size:clamp(1.4rem,6.4vw,1.9rem)}.nf-orn{margin-bottom:6px}}
+@media (prefers-reduced-motion:reduce){.menu-txt,.menu-sheen{animation:none}}
 </style>
 </head>
 <body>
@@ -1936,10 +1980,13 @@ body{background:var(--bg);color:var(--text);font-family:'Cormorant Garamond',ser
 
 <!-- MENÚ: un solo botón abajo al centro -->
 <button class="menu-fab" id="navMenuBtn" type="button" aria-expanded="false" aria-controls="navFull">
-  <span class="menu-ico" aria-hidden="true"><i></i><i></i><i></i></span><span class="menu-txt">Menú</span>
+  <span class="menu-ico" aria-hidden="true"><i></i><i></i><i></i></span><span class="menu-sep" aria-hidden="true"></span><span class="menu-txt">Menú</span><span class="menu-sheen" aria-hidden="true"></span>
 </button>
 <div class="nav-full" id="navFull" aria-hidden="true">
+  <div class="nf-ink" aria-hidden="true"></div>
+  <span class="nf-frame" aria-hidden="true"></span>
   <button class="nf-close" id="nfClose" type="button" aria-label="Cerrar menú"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+  <svg class="nf-orn" viewBox="0 0 360 80" fill="none" aria-hidden="true"><g stroke="#D4AF37" stroke-width=".9" fill="none"><path d="M30 40 Q70 18 110 40 Q140 58 170 40"/><path d="M190 40 Q220 58 250 40 Q290 18 330 40"/><circle cx="180" cy="40" r="4"/><circle cx="180" cy="40" r="1.5" fill="#D4AF37" stroke="none"/><path d="M175 28 Q180 20 185 28" opacity=".7"/><path d="M175 52 Q180 60 185 52" opacity=".7"/></g></svg>
   <ul class="nf-list">
     <li style="--i:0"><a href="#hero" data-sec="hero">Inicio</a></li>
     <li style="--i:1"><a href="#sfam" data-sec="sfam">Familias</a></li>
@@ -1949,10 +1996,11 @@ body{background:var(--bg);color:var(--text);font-family:'Cormorant Garamond',ser
     <li style="--i:5"><a href="#sdc" data-sec="sdc">Vestimenta</a></li>
     <li style="--i:6"><a href="#regalos" data-sec="regalos">Regalos</a></li>
     <li style="--i:7"><a href="#spase" data-sec="spase">Tu lugar</a></li>
-    <li style="--i:7"><a href="#salbum" data-sec="salbum">Álbum</a></li>
-    <li style="--i:8"><a href="#rsvp" data-sec="rsvp">Confirmar</a></li>
+    <li style="--i:8"><a href="#salbum" data-sec="salbum">Álbum</a></li>
+    <li style="--i:9"><a href="#rsvp" data-sec="rsvp">Confirmar</a></li>
   </ul>
   <span class="nf-rule" aria-hidden="true"></span>
+  <p class="nf-date">6 · Marzo · 2027</p>
 </div>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" crossorigin="anonymous"></script>
@@ -2284,7 +2332,7 @@ function initMain(){
   /* Scroll hint */
   const hint=document.getElementById('scrollHint');
   let hintHidden=false;
-  window.addEventListener('scroll',()=>{if(!hintHidden&&window.scrollY>60){hintHidden=true;hint.classList.add('hidden');}},{passive:true});
+  window.addEventListener('scroll',()=>{if(!hintHidden&&window.scrollY>window.innerHeight*.4){hintHidden=true;hint.classList.add('hidden');}},{passive:true});
 
   /* Reveal animations */
   gsap.utils.toArray('.rv').forEach(el=>{
@@ -2933,7 +2981,7 @@ function initAutoScroll(){
   const q=new URLSearchParams(location.search);
   if(window.matchMedia('(prefers-reduced-motion: reduce)').matches||location.hash||q.has('noauto'))return;
   let stopped=false,running=false,last=0,acc=0,vel=0,expectY=null,raf=0;
-  const BASE=38,SLOW=24,slowIds=['hero','galeria','scd','siti'];
+  const BASE=36,SLOW=24,slowIds=['hero','galeria','scd','siti'];
   function target(){
     const y=window.scrollY+window.innerHeight*.5;
     for(const id of slowIds){const el=document.getElementById(id);if(!el)continue;const r=el.getBoundingClientRect(),top=r.top+window.scrollY;if(y>=top&&y<=top+r.height)return SLOW;}
@@ -2943,21 +2991,21 @@ function initAutoScroll(){
     ['wheel','touchstart','pointerdown','keydown'].forEach(t=>window.removeEventListener(t,stop,true));}
   ['wheel','touchstart','pointerdown'].forEach(t=>window.addEventListener(t,stop,{passive:true,capture:true}));
   window.addEventListener('keydown',stop,{passive:true,capture:true});
-  window.addEventListener('scroll',()=>{if(running&&expectY!==null&&Math.abs(window.scrollY-expectY)>4)stop();},{passive:true});
+  window.addEventListener('scroll',()=>{if(running&&expectY!==null&&Math.abs(window.scrollY-expectY)>6)stop();},{passive:true});
+  let pos=0;
   function tick(t){
     if(stopped||!running)return;
     const dt=last?Math.min(.05,(t-last)/1000):0;last=t;
     const maxY=document.documentElement.scrollHeight-window.innerHeight;
-    const remain=maxY-window.scrollY;
-    const goal=remain<120?Math.max(0,remain/120)*target():target();
-    vel+=(goal-vel)*Math.min(1,dt*2.2);           /* arranque y frenado suaves (~1 s) */
-    acc+=vel*dt;
-    const step=Math.floor(acc);
-    if(step>=1){acc-=step;window.scrollTo(0,window.scrollY+step);expectY=window.scrollY;}
-    if(remain<=1){stop();return;}
+    const remain=maxY-pos;
+    const goal=remain<160?Math.max(0,remain/160)*target():target();
+    vel+=(goal-vel)*Math.min(1,dt*1.6);           /* arranque y frenado suaves */
+    pos=Math.min(maxY,pos+vel*dt);
+    window.scrollTo(0,pos);expectY=window.scrollY;
+    if(remain<=.5){stop();return;}
     raf=requestAnimationFrame(tick);
   }
-  function start(){if(stopped||running||document.hidden)return;running=true;last=0;expectY=window.scrollY;raf=requestAnimationFrame(tick);}
+  function start(){if(stopped||running||document.hidden)return;running=true;last=0;pos=window.scrollY;expectY=window.scrollY;raf=requestAnimationFrame(tick);}
   document.addEventListener('visibilitychange',()=>{if(document.hidden){running=false;cancelAnimationFrame(raf);}else start();});
   window._autoScrollStop=stop;
   setTimeout(start,2500);
